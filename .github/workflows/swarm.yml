@@ -1,0 +1,28 @@
+name: Swarm Daily Run
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run-swarm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install requests -q
+      - name: Run Swarm
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python agent_swarm.py --agents all
+      - name: Commit and push results
+        run: |
+          git config user.email "piyush16.shandilya@gmail.com"
+          git config user.name "whoRomeo"
+          git add -A
+          git diff --staged --quiet || git commit -m "Swarm run: $(date -u)"
+          git push
