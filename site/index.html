@@ -3,312 +3,847 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autonomous Earnings Swarm</title>
+    <title>Autonomous Earnings Swarm — Live Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #0a0e14;
+            --bg-secondary: #111820;
+            --bg-card: #161e28;
+            --bg-card-hover: #1b2533;
+            --border: #1e2a3a;
+            --border-glow: #00ff8833;
+            --text-primary: #e8eaed;
+            --text-secondary: #9aa0a6;
+            --text-muted: #5f6368;
+            --accent-green: #00ff88;
+            --accent-blue: #4d9aff;
+            --accent-purple: #7c4dff;
+            --accent-orange: #ff6d00;
+            --accent-pink: #ff4081;
+            --gradient-green: linear-gradient(135deg, #00ff88, #00ccff);
+            --gradient-purple: linear-gradient(135deg, #7c4dff, #4d9aff);
+            --gradient-warm: linear-gradient(135deg, #ff6d00, #ff4081);
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
             min-height: 100vh;
-            padding: 2rem;
+            overflow-x: hidden;
         }
+        
+        /* Animated background grid */
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .bg-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.15;
+            z-index: 0;
+            pointer-events: none;
+            animation: orbFloat 20s ease-in-out infinite;
+        }
+        
+        .bg-orb.g1 { width: 600px; height: 600px; background: var(--accent-green); top: -200px; left: -200px; animation-delay: 0s; }
+        .bg-orb.g2 { width: 500px; height: 500px; background: var(--accent-blue); bottom: -150px; right: -150px; animation-delay: -7s; }
+        .bg-orb.g3 { width: 400px; height: 400px; background: var(--accent-purple); top: 50%; left: 50%; animation-delay: -14s; }
+        
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(50px, -30px) scale(1.1); }
+            50% { transform: translate(-30px, 50px) scale(0.95); }
+            75% { transform: translate(40px, 30px) scale(1.05); }
+        }
+        
         .container {
-            max-width: 700px;
+            max-width: 1100px;
             margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
         }
-        h1 {
-            color: #00ff88;
-            font-size: 1.8rem;
-            margin-bottom: 0.3rem;
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 0.8s ease-out;
+        }
+        
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .logo-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-green);
+            border-radius: 16px;
             display: flex;
             align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+            animation: pulseGlow 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.2); }
+            50% { box-shadow: 0 0 40px rgba(0, 255, 136, 0.5); }
+        }
+        
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 800;
+            background: var(--gradient-green);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0.5rem auto 0;
+        }
+        
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
             gap: 0.5rem;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--accent-green);
+            margin-top: 1rem;
         }
-        .subtitle {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid #222;
-            padding-bottom: 1rem;
+        
+        .status-badge .dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent-green);
+            border-radius: 50%;
+            animation: blink 2s ease-in-out infinite;
         }
-        .stats-grid {
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        
+        /* Stats Bar */
+        .stats-bar {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 0.75rem;
-            margin-bottom: 2rem;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
         }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
         .stat-card {
-            background: #1a1a1a;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            border: 1px solid #2a2a2a;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
         }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-green);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .stat-card:hover {
+            border-color: rgba(0, 255, 136, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .stat-card:hover::before { opacity: 1; }
+        
         .stat-value {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #00ff88;
-        }
-        .stat-label {
-            font-size: 0.75rem;
-            color: #666;
-            margin-top: 0.3rem;
-        }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .section h2 {
-            color: #00ccff;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .idea-card, .content-card, .product-card {
-            background: #1a1a1a;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 0.75rem;
-            border-left: 3px solid #00ff88;
-        }
-        .idea-card .name {
-            font-weight: bold;
-            font-size: 0.95rem;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
             margin-bottom: 0.3rem;
+            font-family: 'JetBrains Mono', monospace;
         }
-        .idea-card .meta {
+        
+        .stat-value.green { color: var(--accent-green); text-shadow: 0 0 20px rgba(0,255,136,0.3); }
+        .stat-value.blue { color: var(--accent-blue); text-shadow: 0 0 20px rgba(77,154,255,0.3); }
+        .stat-value.purple { color: var(--accent-purple); text-shadow: 0 0 20px rgba(124,77,255,0.3); }
+        .stat-value.orange { color: var(--accent-orange); text-shadow: 0 0 20px rgba(255,109,0,0.3); }
+        
+        .stat-label {
             font-size: 0.8rem;
-            color: #888;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
         }
-        .idea-card .stars {
-            color: #ffaa00;
+        
+        /* Progress Section */
+        .progress-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
         }
-        .tag {
-            display: inline-block;
-            background: #2a2a2a;
-            padding: 0.15rem 0.5rem;
-            border-radius: 10px;
-            font-size: 0.7rem;
-            margin: 0.1rem;
-            color: #aaa;
+        
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
         }
-        .tag.high { background: #00ff88; color: #000; }
-        .tag.medium { background: #ffaa00; color: #000; }
-        .progress-container {
-            background: #2a2a2a;
+        
+        .progress-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        
+        .progress-percent {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-green);
+        }
+        
+        .progress-track {
             height: 8px;
+            background: rgba(255,255,255,0.05);
             border-radius: 4px;
             overflow: hidden;
-            margin: 1rem 0;
+            position: relative;
         }
-        .progress-bar {
-            background: linear-gradient(90deg, #00ff88, #00ccff);
+        
+        .progress-fill {
             height: 100%;
-            transition: width 0.5s;
+            background: var(--gradient-green);
+            border-radius: 4px;
+            transition: width 1.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+            position: relative;
         }
-        .progress-text {
-            text-align: center;
+        
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 20px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4));
+            border-radius: 4px;
+        }
+        
+        .progress-goals {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        /* Section Headers */
+        .section {
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+        
+        .section-icon.green { background: rgba(0,255,136,0.15); color: var(--accent-green); }
+        .section-icon.blue { background: rgba(77,154,255,0.15); color: var(--accent-blue); }
+        .section-icon.purple { background: rgba(124,77,255,0.15); color: var(--accent-purple); }
+        .section-icon.orange { background: rgba(255,109,0,0.15); color: var(--accent-orange); }
+        
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        
+        .section-count {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-left: auto;
+        }
+        
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+        }
+        
+        @media (max-width: 768px) {
+            .cards-grid { grid-template-columns: 1fr; }
+            .stats-bar { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem;
+            transition: all 0.3s ease;
+            animation: cardAppear 0.5s ease-out backwards;
+            opacity: 0;
+        }
+        
+        .card:nth-child(1) { animation-delay: 0.5s; }
+        .card:nth-child(2) { animation-delay: 0.6s; }
+        .card:nth-child(3) { animation-delay: 0.7s; }
+        .card:nth-child(4) { animation-delay: 0.8s; }
+        .card:nth-child(5) { animation-delay: 0.9s; }
+        
+        @keyframes cardAppear {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .card:hover {
+            border-color: rgba(0, 255, 136, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            background: var(--bg-card-hover);
+        }
+        
+        .card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .card-stars {
             font-size: 0.85rem;
-            color: #888;
+            color: var(--accent-orange);
+            font-weight: 600;
+            white-space: nowrap;
         }
-        .link-row {
+        
+        .card-desc {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            margin-bottom: 0.75rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+        }
+        
+        .tag {
+            font-size: 0.68rem;
+            padding: 0.2rem 0.55rem;
+            border-radius: 10px;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+        }
+        
+        .tag.high {
+            background: rgba(0, 255, 136, 0.15);
+            color: var(--accent-green);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        .tag.medium {
+            background: rgba(255, 109, 0, 0.15);
+            color: var(--accent-orange);
+            border: 1px solid rgba(255, 109, 0, 0.2);
+        }
+        .tag.low {
+            background: rgba(90, 90, 90, 0.15);
+            color: var(--text-muted);
+            border: 1px solid rgba(90, 90, 90, 0.2);
+        }
+        .tag.lang {
+            background: rgba(77, 154, 255, 0.1);
+            color: var(--accent-blue);
+        }
+        .tag.review {
+            background: rgba(124, 77, 255, 0.1);
+            color: var(--accent-purple);
+        }
+        .tag.tutorial {
+            background: rgba(255, 64, 129, 0.1);
+            color: var(--accent-pink);
+        }
+        .tag.gumroad {
+            background: rgba(0, 255, 136, 0.1);
+            color: var(--accent-green);
+        }
+        .tag.ready {
+            background: rgba(0, 255, 136, 0.08);
+            color: var(--accent-green);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+        }
+        .tag.listed {
+            background: rgba(255, 109, 0, 0.1);
+            color: var(--accent-orange);
+        }
+        
+        /* Bottom Links */
+        .bottom-links {
             display: flex;
             gap: 1rem;
             margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid #222;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            animation: fadeInUp 0.8s ease-out 0.6s backwards;
         }
-        .link-btn {
+        
+        .btn {
             flex: 1;
-            padding: 0.8rem 1rem;
-            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.9rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
             text-decoration: none;
-            font-weight: bold;
-            text-align: center;
-            transition: all 0.2s;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
         }
-        .link-btn.github {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            color: #e0e0e0;
+        
+        .btn-primary {
+            background: var(--gradient-green);
+            color: #0a0e14;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
         }
-        .link-btn.github:hover { border-color: #00ccff; }
-        .link-btn.pay {
-            background: #00ff88;
-            color: #000;
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 255, 136, 0.4);
         }
-        .link-btn.pay:hover { background: #00cc77; }
+        
+        .btn-secondary {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+        }
+        
+        .btn-secondary:hover {
+            border-color: var(--accent-blue);
+            background: var(--bg-card-hover);
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
         .footer {
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid #222;
-            color: #444;
-            font-size: 0.75rem;
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.78rem;
             text-align: center;
+            animation: fadeIn 1s ease-out 0.8s backwards;
         }
-        .refresh-info {
-            text-align: center;
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .footer-email {
+            color: var(--accent-green);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        
+        /* Shimmer loading effect for cards */
+        .card.loading {
+            background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-card-hover) 50%, var(--bg-card) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-primary); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+        
+        /* Selection */
+        ::selection { background: rgba(0, 255, 136, 0.3); color: white; }
+        
+        .last-updated {
             font-size: 0.75rem;
-            color: #444;
-            margin-top: 0.5rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
+    <div class="bg-grid"></div>
+    <div class="bg-orb g1"></div>
+    <div class="bg-orb g2"></div>
+    <div class="bg-orb g3"></div>
+    
     <div class="container">
-        <h1>
-            <span>🤖</span> Autonomous Earnings Swarm
-        </h1>
-        <div class="subtitle">
-            Self-running agent system · Researching, creating, publishing, earning<br>
-            <span id="lastUpdated">Loading...</span>
-        </div>
-
-        <div class="stats-grid">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">🤖</div>
+                <span class="logo-text">Autonomous Earnings Swarm</span>
+            </div>
+            <p class="header-subtitle">
+                Self-running AI agent system — researches opportunities, creates content &amp; products, 
+                publishes them, and tracks revenue. Operates autonomously 24/7.
+            </p>
+            <div class="status-badge">
+                <span class="dot"></span>
+                <span>Swarm Active — Last run: <span id="lastRun">loading...</span></span>
+            </div>
+        </header>
+        
+        <!-- Stats -->
+        <div class="stats-bar">
             <div class="stat-card">
-                <div class="stat-value" id="statIdeas">-</div>
+                <div class="stat-value green" id="statIdeas">-</div>
                 <div class="stat-label">Ideas Researched</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" id="statContent">-</div>
+                <div class="stat-value blue" id="statContent">-</div>
                 <div class="stat-label">Content Pieces</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" id="statProducts">-</div>
+                <div class="stat-value purple" id="statProducts">-</div>
                 <div class="stat-label">Products Listed</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" id="statEarned">-</div>
+                <div class="stat-value orange" id="statEarned">-</div>
                 <div class="stat-label">Total Earned</div>
             </div>
         </div>
-
-        <div class="progress-container">
-            <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+        
+        <!-- Progress -->
+        <div class="progress-section">
+            <div class="progress-header">
+                <span class="progress-title">🎯 Goal Progress</span>
+                <span class="progress-percent" id="progressLabel">0%</span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+            <div class="progress-goals">
+                <span>$0</span>
+                <span>$2,500</span>
+                <span>$5,000</span>
+                <span>$7,500</span>
+                <span>$10,000 🎯</span>
+            </div>
         </div>
-        <div class="progress-text">
-            Progress to $10,000 goal: <span id="progressPercent">0%</span>
-        </div>
-
+        
+        <!-- Ideas Section -->
         <div class="section">
-            <h2>📡 Recent Ideas from GitHub</h2>
-            <div id="ideasContainer">Loading...</div>
+            <div class="section-header">
+                <div class="section-icon green">📡</div>
+                <span class="section-title">Research Ideas from GitHub</span>
+                <span class="section-count" id="ideasCount">0 items</span>
+            </div>
+            <div class="cards-grid" id="ideasGrid">
+                <div class="card loading" style="grid-column: 1/-1;">
+                    <div style="text-align:center; padding:2rem; color:var(--text-muted);">Loading ideas...</div>
+                </div>
+            </div>
         </div>
-
+        
+        <!-- Content Section -->
         <div class="section">
-            <h2>🎬 Content Ready to Publish</h2>
-            <div id="contentContainer">Loading...</div>
+            <div class="section-header">
+                <div class="section-icon blue">🎬</div>
+                <span class="section-title">Content Ready to Publish</span>
+                <span class="section-count" id="contentCount">0 items</span>
+            </div>
+            <div class="cards-grid" id="contentGrid">
+                <div class="card loading" style="grid-column: 1/-1;">
+                    <div style="text-align:center; padding:2rem; color:var(--text-muted);">Loading content...</div>
+                </div>
+            </div>
         </div>
-
+        
+        <!-- Products Section -->
         <div class="section">
-            <h2>💰 Products</h2>
-            <div id="productsContainer">Loading...</div>
+            <div class="section-header">
+                <div class="section-icon orange">💰</div>
+                <span class="section-title">Digital Products</span>
+                <span class="section-count" id="productsCount">0 items</span>
+            </div>
+            <div class="cards-grid" id="productsGrid">
+                <div class="card loading" style="grid-column: 1/-1;">
+                    <div style="text-align:center; padding:2rem; color:var(--text-muted);">Loading products...</div>
+                </div>
+            </div>
         </div>
-
-        <div class="link-row">
-            <a href="https://github.com/whoRomeo/swarm" class="link-btn github">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="vertical-align: middle; margin-right: 0.3rem;">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.84-1.13-.28-.15-.68-.52-.01-.53.63-.01.06-.03.06-.03.61.01.98.11.98.11.87.15 1.33.52 1.33.52.65 1.12.91 1.72.91 1.72.06-.46.28-.83.51-1.11.03-.03.06-.06.06-.06.03-.14.25-.26.51-.28.14-.04.31-.06.49-.06.18.02.35.06.51.09.16.03.32.07.48.11.14.04.28.08.42.13.11.05.23.1.35.15.1.05.2.11.29.17.09.06.18.13.25.2.07.07.13.15.18.24.05.09.08.18.1.27.02.09.03.19.03.29 0 .09-.01.18-.03.27-.02.1-.05.2-.1.29-.05.09-.11.17-.17.24-.06.07-.13.14-.21.19-.08.05-.17.1-.26.13-.1.03-.2.06-.3.08-.1.02-.21.04-.31.05-.1.01-.2.02-.29.02-.29.01-.58.02-.87.02-.29 0-.58-.01-.87-.02-.1-.0-.2-.01-.3-.02-.1-.01-.21-.03-.31-.05-.1-.02-.2-.05-.3-.08-.09-.03-.19-.08-.26-.13-.08-.06-.15-.12-.21-.19-.06-.07-.12-.15-.17-.24-.05-.09-.1-.19-.1-.29 0-.1.01-.19.03-.27.02-.09.04-.19.08-.27.04-.08.1-.16.16-.23.06-.07.13-.13.2-.18.07-.05.15-.1.23-.13.1-.04.2-.07.31-.09.11-.02.22-.04.33-.04.11 0 .22.02.33.04.11.02.21.05.31.09.08.03.16.08.23.13.07.05.14.1.2.18.06.07.12.15.16.23.04.08.06.17.08.27.02.09.03.19.03.28 0 .1-.01.19-.03.28-.02.09-.05.18-.1.26-.05.08-.11.15-.18.21-.07.06-.15.11-.23.14-.08.03-.16.06-.24.08-.08.02-.16.03-.24.05-.08.02-.16.03-.23.05-.15.05-.3.09-.45.12-.15.03-.31.05-.46.06-.15.02-.3.03-.44.03-.27.01-.54.01-.81.01z"/>
-                </svg>
-                View Source Code
+        
+        <!-- Bottom Links -->
+        <div class="bottom-links">
+            <a href="https://github.com/whoRomeo/swarm" target="_blank" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.335.72-4.04-1.615-4.04-1.615-.355-1.385-1.11-1.755-1.11-1.755-.905-.625.065-.605.065-.605 1.005.065 1.535.955 1.535.955.875 1.535 2.195.975 2.79.735.095-.665.36-1.335.625-1.665-.34-.025-.69-.045-1.045-.045-2.55 0-4.665 2.135-4.665 4.665 0 2.135 2.14 3.94 4.665 4.665 1.74 0 3.365-.93 4.355-2.415.41-.375.79-.635 1.185-.78-.18.375-.52 1.05-.775 1.525-.2.35-.225.75-.225 1.125 0 .595.23 1.135.635 1.545.56.56 1.285.855 2.095.725.1-.675.5-1.17.985-1.47.485-.3.995-.47 1.52-.47.525 0 1.04.17 1.52.47.485.225.88.62.985 1.17.625.21 1.165-.08 1.59-.56.425-.485.635-1.14.635-1.71 0-.575-.22-1.1-.635-1.545-.415-.445-.96-.675-1.59-.675-.51 0-1.035.17-1.52.47-.485.3-.885.7-1.185 1.17-.3.47-.475.99-.475 1.515 0 .895.275 1.695.775 2.225.5 .535 1.08 1.015 1.735 1.34.655.325 1.345.52 2.08.52.735 0 1.425-.2 2.055-.585.63-.385 1.13-.935 1.465-1.625.335-.69.475-1.45.475-2.24 0-1.52-.475-2.845-1.385-3.75-.91-.91-2.055-1.385-3.345-1.385-1.29 0-2.425.475-3.345 1.385-.91.905-1.385 2.23-1.385 3.75 0 .79.14 1.55.475 2.24.335.69.835 1.24 1.465 1.625.63.385 1.32.585 2.055.585.735 0 1.425-.195 2.08-.52.655-.325 1.235-.805 1.735-1.34.5-.53.775-1.33.775-2.225 0-.525-.175-1.045-.475-1.515-.3-.47-.6-.97-.985-1.44-.4-.275-.8-.5-1.21-.675-.41-.175-.84-.275-1.29-.275-.45 0-.9.05-.135.1zm0 0"/></svg>
+                View Source on GitHub
             </a>
-            <a href="pay.html" class="link-btn pay">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="vertical-align: middle; margin-right: 0.3rem;">
-                    <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm1 0v6h14V4H1zm1 1v3h12V5H2zm3 2v1h6v-1H5z"/>
-                </svg>
+            <a href="pay.html" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
                 Support the Swarm
             </a>
         </div>
-
+        
+        <div class="last-updated" id="lastUpdated">Loading...</div>
+        
         <div class="footer">
-            <p>badboy8609@gmail.com | UPI: piyush16.shandilya@okaxis</p>
-            <p>GitHub: whoRomeo/swarm · Running since Sep 2026</p>
-            <p class="refresh-info">🔄 Auto-refreshes every 60 seconds</p>
+            <p>badboy8609@gmail.com &nbsp;|&nbsp; 
+               <a href="pay.html" class="footer-email">UPI: piyush16.shandilya@okaxis</a></p>
+            <p>GitHub: <a href="https://github.com/whoRomeo/swarm" style="color:var(--accent-blue);">whoRomeo/swarm</a> &nbsp;·&nbsp; 
+               Running since Sep 2026 &nbsp;·&nbsp; 
+               <span style="color:var(--accent-green);">v1.0</span></p>
         </div>
     </div>
-
+    
     <script>
+        // Auto-refresh timer
+        let dataCache = {};
+        
+        async function fetchJson(url) {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error('Failed to fetch ' + url);
+            return response.json();
+        }
+        
+        function formatNumber(n) {
+            if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+            if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+            return n.toString();
+        }
+        
+        function timeAgo(dateStr) {
+            if (!dateStr) return 'never';
+            const diff = Date.now() - new Date(dateStr).getTime();
+            const mins = Math.floor(diff / 60000);
+            if (mins < 1) return 'just now';
+            if (mins < 60) return mins + 'm ago';
+            const hrs = Math.floor(mins / 60);
+            if (hrs < 24) return hrs + 'h ago';
+            return Math.floor(hrs / 24) + 'd ago';
+        }
+        
         async function loadData() {
             try {
                 const [backlog, operations, products, revenue] = await Promise.all([
-                    fetch('data/backlog.json').then(r => r.json()),
-                    fetch('data/operations.json').then(r => r.json()),
-                    fetch('data/products.json').then(r => r.json()),
-                    fetch('finance/revenue_tracker.json').then(r => r.json())
+                    fetchJson('data/backlog.json'),
+                    fetchJson('data/operations.json'),
+                    fetchJson('data/products.json'),
+                    fetchJson('finance/revenue_tracker.json')
                 ]);
-
-                document.getElementById('statIdeas').textContent = backlog.length;
-                document.getElementById('statContent').textContent = operations.length;
-                document.getElementById('statProducts').textContent = products.length;
+                
+                dataCache = { backlog, operations, products, revenue };
+                
+                // Stats
+                document.getElementById('statIdeas').textContent = formatNumber(backlog.length);
+                document.getElementById('statContent').textContent = formatNumber(operations.length);
+                document.getElementById('statProducts').textContent = formatNumber(products.length);
                 
                 const earned = revenue.total_earnings || 0;
-                const earnedUsd = earned.toFixed(2);
-                const earnedInr = (earned * 83).toFixed(0);
-                document.getElementById('statEarned').textContent = '$' + earnedUsd;
+                document.getElementById('statEarned').textContent = '$' + earned.toFixed(2);
                 
+                // Progress
                 const pct = Math.min(100, (earned / 10000) * 100);
-                document.getElementById('progressBar').style.width = pct + '%';
-                document.getElementById('progressPercent').textContent = pct.toFixed(2) + '%';
+                document.getElementById('progressFill').style.width = pct + '%';
+                document.getElementById('progressLabel').textContent = pct.toFixed(2) + '%';
                 
-                document.getElementById('lastUpdated').textContent = 
-                    'Last updated: ' + new Date().toLocaleString();
-
                 // Ideas
-                const ideasHtml = backlog.slice(0, 5).map(idea => {
-                    const stars = idea.stars || '';
-                    const verdict = idea.profit_potential?.verdict || '';
-                    const tags = [verdict ? `tag ${verdict.toLowerCase()}` : '', 
-                                 stars ? 'stars' : ''].filter(Boolean);
-                    return `
-                        <div class="idea-card">
-                            <div class="name">${idea.name || idea.trend}</div>
-                            <div class="meta">${idea.description || ''} ${stars ? '⭐ ' + stars.toLocaleString() : ''}</div>
-                            <div class="meta" style="margin-top:0.3rem;">
-                                ${tags.map(t => `<span class="tag ${t.split(' ')[1]}">${t.split(' ')[0]}</span>`).join('')}
-                                ${idea.language ? `<span class="tag">${idea.language}</span>` : ''}
+                const ideasGrid = document.getElementById('ideasGrid');
+                document.getElementById('ideasCount').textContent = backlog.length + ' items';
+                
+                if (backlog.length > 0) {
+                    ideasGrid.innerHTML = backlog.slice(0, 9).map((idea, i) => {
+                        const verdict = idea.profit_potential?.verdict || '';
+                        const type = idea.type || '';
+                        const desc = (idea.description || '').substring(0, 120);
+                        const age = timeAgo(idea.created_at || idea.timestamp);
+                        return `
+                            <div class="card" style="animation-delay: ${0.5 + i * 0.08}s">
+                                <div class="card-top">
+                                    <span class="card-name">${idea.name || idea.trend}</span>
+                                    ${idea.stars ? `<span class="card-stars">⭐ ${formatNumber(idea.stars)}</span>` : ''}
+                                </div>
+                                ${desc ? `<div class="card-desc">${desc}</div>` : ''}
+                                <div class="card-tags">
+                                    ${verdict ? `<span class="tag ${verdict.toLowerCase()}">${verdict} potential</span>` : ''}
+                                    ${type ? `<span class="tag" style="background:rgba(90,90,90,0.15);color:var(--text-muted);border:1px solid rgba(90,90,90,0.2)">${type}</span>` : ''}
+                                    ${idea.language ? `<span class="tag lang">${idea.language}</span>` : ''}
+                                    ${idea.category ? `<span class="tag" style="background:rgba(77,154,255,0.1);color:var(--accent-blue);border:1px solid rgba(77,154,255,0.2)">${idea.category}</span>` : ''}
+                                    <span class="tag" style="background:rgba(90,90,90,0.1);color:var(--text-muted);border:1px solid rgba(90,90,90,0.2)">${age}</span>
+                                </div>
                             </div>
-                        </div>
-                    `;
-                }).join('');
-                document.getElementById('ideasContainer').innerHTML = ideasHtml || '<p style="color:#666;">No ideas yet</p>';
-
+                        `;
+                    }).join('');
+                } else {
+                    ideasGrid.innerHTML = '<div class="card"><div style="text-align:center;padding:2rem;color:var(--text-muted);">No ideas yet — swarm will populate after first run</div></div>';
+                }
+                
                 // Content
-                const contentHtml = operations.slice(0, 4).map(op => `
-                    <div class="content-card">
-                        <div class="name">${op.title}</div>
-                        <div class="meta">
-                            <span class="tag">${op.type}</span>
-                            <span class="tag">${op.status}</span>
-                            ${op.duration_minutes ? `<span class="tag">${op.duration_minutes} min</span>` : ''}
-                        </div>
-                    </div>
-                `).join('');
-                document.getElementById('contentContainer').innerHTML = contentHtml || '<p style="color:#666;">No content yet</p>';
-
+                const contentGrid = document.getElementById('contentGrid');
+                document.getElementById('contentCount').textContent = operations.length + ' items';
+                
+                if (operations.length > 0) {
+                    contentGrid.innerHTML = operations.slice(0, 6).map((op, i) => {
+                        const typeTag = op.type === 'showcase' ? 'review' : 
+                                       op.type === 'tutorial' ? 'tutorial' : 
+                                       op.type === 'explainer' ? 'explainer' : op.type;
+                        return `
+                            <div class="card" style="animation-delay: ${0.5 + i * 0.1}s">
+                                <div class="card-name">${op.title}</div>
+                                ${op.description ? `<div class="card-desc">${op.description.substring(0, 100)}</div>` : ''}
+                                <div class="card-tags">
+                                    <span class="tag ${typeTag}">${typeTag}</span>
+                                    <span class="tag ready">${op.status || 'ready'}</span>
+                                    ${op.duration_minutes ? `<span class="tag" style="background:rgba(255,109,0,0.1);color:var(--accent-orange);border:1px solid rgba(255,109,0,0.2)">${op.duration_minutes} min</span>` : ''}
+                                    ${op.tags ? op.tags.slice(0,2).map(t => `<span class="tag" style="background:rgba(90,90,90,0.1);color:var(--text-muted);border:1px solid rgba(90,90,90,0.2)">${t}</span>`).join('') : ''}
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+                } else {
+                    contentGrid.innerHTML = '<div class="card"><div style="text-align:center;padding:2rem;color:var(--text-muted);">No content yet — run research first</div></div>';
+                }
+                
                 // Products
-                const productsHtml = products.slice(0, 3).map(p => `
-                    <div class="product-card">
-                        <div class="name">${p.title}</div>
-                        <div class="meta">${p.description || ''}</div>
-                        <div class="meta" style="margin-top:0.3rem;">
-                            <span class="tag">${p.platform || 'Gumroad'}</span>
-                            <span class="tag">${p.price_suggestion || 'TBD'}</span>
-                        </div>
-                    </div>
-                `).join('');
-                document.getElementById('productsContainer').innerHTML = productsHtml || '<p style="color:#666;">No products yet</p>';
-
+                const productsGrid = document.getElementById('productsGrid');
+                document.getElementById('productsCount').textContent = products.length + ' items';
+                
+                if (products.length > 0) {
+                    productsGrid.innerHTML = products.slice(0, 3).map((p, i) => {
+                        return `
+                            <div class="card" style="animation-delay: ${0.5 + i * 0.1}s">
+                                <div class="card-top">
+                                    <span class="card-name">${p.title}</span>
+                                    <span class="card-stars" style="color:var(--accent-green)">${p.price_suggestion || '$29'}</span>
+                                </div>
+                                ${p.description ? `<div class="card-desc">${p.description.substring(0, 100)}</div>` : ''}
+                                <div class="card-tags">
+                                    <span class="tag gumroad">${p.platform || 'Gumroad'}</span>
+                                    <span class="tag ${p.status === 'listed' ? 'listed' : 'ready'}">${p.status || 'ready_to_list'}</span>
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+                } else {
+                    productsGrid.innerHTML = '<div class="card"><div style="text-align:center;padding:2rem;color:var(--text-muted);">No products yet — run research first</div></div>';
+                }
+                
+                // Timestamp
+                document.getElementById('lastRun').textContent = new Date().toLocaleString();
+                document.getElementById('lastUpdated').textContent = 'Auto-refreshes every 60 seconds · Last sync: ' + new Date().toLocaleString();
+                
             } catch (e) {
                 console.error('Data load error:', e);
-                document.getElementById('ideasContainer').innerHTML = 
-                    '<p style="color:#666;">Loading data...</p>';
+                // Show error state gracefully
+                if (!document.getElementById('statIdeas').textContent || document.getElementById('statIdeas').textContent === '-') {
+                    document.getElementById('statIdeas').textContent = '!';
+                    document.getElementById('statContent').textContent = '!';
+                    document.getElementById('statProducts').textContent = '!';
+                    document.getElementById('statEarned').textContent = 'ERR';
+                }
             }
         }
         
+        // Initial load
         loadData();
+        
+        // Refresh every 60 seconds
         setInterval(loadData, 60000);
+        
+        // Also refresh on focus (user comes back to tab)
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) loadData();
+        });
     </script>
 </body>
 </html>
