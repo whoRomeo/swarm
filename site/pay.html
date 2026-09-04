@@ -3,285 +3,726 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support the Swarm</title>
+    <title>Support the Swarm — Contribution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #0a0e14;
+            --bg-secondary: #111820;
+            --bg-card: #161e28;
+            --bg-card-hover: #1b2533;
+            --border: #1e2a3a;
+            --text-primary: #e8eaed;
+            --text-secondary: #9aa0a6;
+            --text-muted: #5f6368;
+            --accent-green: #00ff88;
+            --accent-blue: #4d9aff;
+            --accent-purple: #7c4dff;
+            --accent-orange: #ff6d00;
+            --accent-pink: #ff4081;
+            --gradient-green: linear-gradient(135deg, #00ff88, #00ccff);
+            --gradient-purple: linear-gradient(135deg, #7c4dff, #4d9aff);
+            --gradient-warm: linear-gradient(135deg, #ff6d00, #ff4081);
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem;
-        }
-        .container {
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-        }
-        h1 {
-            color: #00ff88;
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .subtitle {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-        }
-        .amount-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 0.75rem;
-            margin-bottom: 2rem;
-        }
-        .amount-btn {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            color: #e0e0e0;
-            padding: 1rem 0.5rem;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .amount-btn:hover {
-            border-color: #00ff88;
-            background: #222;
-        }
-        .amount-btn.selected {
-            border-color: #00ff88;
-            background: #00ff88;
-            color: #000;
-        }
-        .qr-section {
-            background: #1a1a1a;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .qr-placeholder {
-            width: 200px;
-            height: 200px;
-            background: #fff;
-            margin: 0 auto 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #333;
-            font-size: 0.8rem;
+            padding: 1.5rem;
         }
-        .upi-id {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #00ccff;
-            margin-bottom: 0.5rem;
-            word-break: break-all;
+        
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(0, 255, 136, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 136, 0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            z-index: 0;
+            pointer-events: none;
         }
-        .copy-btn {
-            background: #2a2a2a;
-            border: none;
-            color: #e0e0e0;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            margin-top: 0.5rem;
+        
+        .bg-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.12;
+            z-index: 0;
+            pointer-events: none;
+            animation: orbFloat 25s ease-in-out infinite;
         }
-        .copy-btn:hover { background: #333; }
-        .selected-amount {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #00ff88;
-            margin: 1rem 0;
+        
+        .bg-orb.g1 { width: 500px; height: 500px; background: var(--accent-green); top: -200px; right: -100px; }
+        .bg-orb.g2 { width: 400px; height: 400px; background: var(--accent-blue); bottom: -100px; left: -100px; animation-delay: -8s; }
+        .bg-orb.g3 { width: 350px; height: 350px; background: var(--accent-purple); top: 40%; left: 60%; animation-delay: -16s; }
+        
+        @keyframes orbFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(40px, -40px) scale(1.1); }
+            66% { transform: translate(-30px, 30px) scale(0.9); }
         }
-        .pay-btn {
-            background: #00ff88;
-            color: #000;
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
+        
+        .container {
             width: 100%;
-            margin-top: 1rem;
+            max-width: 420px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 0.6s ease-out;
         }
-        .pay-btn:hover { background: #00cc77; }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        
+        .card-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--gradient-green);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 1rem;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.25);
+            animation: pulseGlow 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.15); }
+            50% { box-shadow: 0 0 40px rgba(0, 255, 136, 0.4); }
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.3rem;
+        }
+        
+        .card-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+        
+        .amount-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.6rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .amount-btn {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.8rem 0;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .amount-btn:hover {
+            border-color: var(--accent-green);
+            color: var(--text-primary);
+            background: rgba(0, 255, 136, 0.05);
+        }
+        
+        .amount-btn.selected {
+            background: var(--gradient-green);
+            color: #0a0e14;
+            border-color: transparent;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+        
+        .qr-section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1.25rem;
+            text-align: center;
+        }
+        
+        .qr-box {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 0.75rem;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .qr-box::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px),
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+        }
+        
+        .qr-placeholder {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .qr-svg {
+            width: 170px;
+            height: 170px;
+        }
+        
+        .upi-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+        
+        .upi-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--accent-green);
+            word-break: break-all;
+            line-height: 1.3;
+        }
+        
+        .copy-btn {
+            margin-top: 0.6rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+        
+        .copy-btn:hover {
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+        }
+        
+        .selected-display {
+            text-align: center;
+            margin-bottom: 1.25rem;
+            padding: 0.75rem;
+            background: rgba(0, 255, 136, 0.05);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            border-radius: 10px;
+        }
+        
+        .selected-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.2rem;
+        }
+        
+        .selected-amount {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-green);
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+        
+        .pay-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--gradient-green);
+            color: #0a0e14;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .pay-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 255, 136, 0.4);
+        }
+        
         .pay-btn:disabled {
-            background: #333;
-            color: #666;
+            opacity: 0.5;
             cursor: not-allowed;
         }
-        .note {
-            color: #666;
-            font-size: 0.8rem;
-            margin-top: 1.5rem;
-            line-height: 1.5;
+        
+        .pay-btn.paid {
+            background: var(--accent-green);
+            color: #0a0e14;
         }
-        .swarm-status {
-            margin-top: 2rem;
-            padding: 1rem;
-            background: #1a1a1a;
+        
+        .instructions {
+            margin-top: 1.25rem;
+            padding: 0.8rem 1rem;
+            background: rgba(255, 109, 0, 0.05);
+            border: 1px solid rgba(255, 109, 0, 0.15);
             border-radius: 8px;
-            text-align: left;
+            font-size: 0.78rem;
+            line-height: 1.5;
+            color: var(--text-secondary);
         }
-        .status-item {
+        
+        .instructions strong {
+            color: var(--accent-orange);
+        }
+        
+        /* Swarming agents indicator */
+        .agents-indicator {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .agents-title {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+        
+        .agents-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.4rem;
+        }
+        
+        .agent-dot {
+            aspect-ratio: 1;
+            border-radius: 6px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
             display: flex;
-            justify-content: space-between;
-            padding: 0.3rem 0;
-            border-bottom: 1px solid #222;
-            font-size: 0.85rem;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            transition: all 0.3s ease;
         }
-        .status-item:last-child { border: none; }
-        .status-label { color: #888; }
-        .status-value { color: #00ff88; font-weight: bold; }
+        
+        .agent-dot.active {
+            border-color: var(--accent-green);
+            background: rgba(0, 255, 136, 0.08);
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.15);
+        }
+        
+        .agent-dot.done {
+            border-color: var(--accent-blue);
+            background: rgba(77, 154, 255, 0.08);
+        }
+        
+        .footer-text {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        
+        .footer-text a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
+    <div class="bg-grid"></div>
+    <div class="bg-orb g1"></div>
+    <div class="bg-orb g2"></div>
+    <div class="bg-orb g3"></div>
+    
     <div class="container">
-        <h1>🤖 Support the Swarm</h1>
-        <p class="subtitle">Autonomous Earnings Engine — Piyush Shandilya</p>
-
-        <div class="amount-grid" id="amountGrid">
-        </div>
-
-        <div class="qr-section">
-            <div class="qr-placeholder">
-                <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
-                    <!-- UPI QR Code placeholder (pulse/columns pattern) -->
-                    <rect x="20" y="20" width="140" height="140" fill="white" stroke="#333" stroke-width="1"/>
-                    <!-- Position detection patterns -->
-                    <rect x="25" y="25" width="35" height="35" fill="#000"/>
-                    <rect x="30" y="30" width="25" height="25" fill="#fff"/>
-                    <rect x="35" y="35" width="15" height="15" fill="#000"/>
-                    
-                    <rect x="120" y="25" width="35" height="35" fill="#000"/>
-                    <rect x="125" y="30" width="25" height="25" fill="#fff"/>
-                    <rect x="130" y="35" width="15" height="15" fill="#000"/>
-                    
-                    <rect x="25" y="120" width="35" height="35" fill="#000"/>
-                    <rect x="30" y="125" width="25" height="25" fill="#fff"/>
-                    <rect x="35" y="130" width="15" height="15" fill="#000"/>
-                    
-                    <!-- Random data modules -->
-                    <g fill="#000">
-                        <rect x="70" y="25" width="5" height="5"/>
-                        <rect x="80" y="25" width="5" height="5"/>
-                        <rect x="90" y="30" width="5" height="5"/>
-                        <rect x="100" y="25" width="5" height="5"/>
-                        <rect x="75" y="35" width="5" height="5"/>
-                        <rect x="95" y="40" width="5" height="5"/>
-                        <rect x="85" y="45" width="5" height="5"/>
-                        <rect x="110" y="30" width="5" height="5"/>
-                        <rect x="115" y="40" width="5" height="5"/>
-                        <rect x="70" y="45" width="5" height="5"/>
-                        <rect x="90" y="50" width="5" height="5"/>
-                        <rect x="105" y="50" width="5" height="5"/>
-                        <rect x="80" y="55" width="5" height="5"/>
-                        <rect x="100" y="55" width="5" height="5"/>
-                        <rect x="75" y="60" width="5" height="5"/>
-                        <rect x="110" y="60" width="5" height="5"/>
-                        
-                        <rect x="25" y="70" width="5" height="5"/>
-                        <rect x="35" y="75" width="5" height="5"/>
-                        <rect x="45" y="70" width="5" height="5"/>
-                        <rect x="55" y="80" width="5" height="5"/>
-                        <rect x="65" y="75" width="5" height="5"/>
-                        <rect x="75" y="85" width="5" height="5"/>
-                        <rect x="85" y="70" width="5" height="5"/>
-                        <rect x="95" y="80" width="5" height="5"/>
-                        <rect x="105" y="75" width="5" height="5"/>
-                        <rect x="115" y="85" width="5" height="5"/>
-                        <rect x="125" y="70" width="5" height="5"/>
-                        <rect x="135" y="80" width="5" height="5"/>
-                        <rect x="145" y="75" width="5" height="5"/>
-                        <rect x="155" y="85" width="5" height="5"/>
-                        <rect x="40" y="90" width="5" height="5"/>
-                        <rect x="60" y="95" width="5" height="5"/>
-                        <rect x="80" y="90" width="5" height="5"/>
-                        <rect x="100" y="95" width="5" height="5"/>
-                        <rect x="120" y="90" width="5" height="5"/>
-                        <rect x="140" y="95" width="5" height="5"/>
-                        <rect x="50" y="100" width="5" height="5"/>
-                        <rect x="70" y="105" width="5" height="5"/>
-                        <rect x="90" y="100" width="5" height="5"/>
-                        <rect x="110" y="105" width="5" height="5"/>
-                        <rect x="130" y="100" width="5" height="5"/>
-                        <rect x="150" y="105" width="5" height="5"/>
-                        <rect x="35" y="110" width="5" height="5"/>
-                        <rect x="55" y="115" width="5" height="5"/>
-                        <rect x="75" y="110" width="5" height="5"/>
-                        <rect x="95" y="115" width="5" height="5"/>
-                        <rect x="115" y="110" width="5" height="5"/>
-                        <rect x="135" y="115" width="5" height="5"/>
-                        <rect x="45" y="120" width="5" height="5"/>
-                        <rect x="65" y="125" width="5" height="5"/>
-                        <rect x="85" y="120" width="5" height="5"/>
-                        <rect x="105" y="125" width="5" height="5"/>
-                        <rect x="125" y="120" width="5" height="5"/>
-                        <rect x="145" y="125" width="5" height="5"/>
-                        <rect x="30" y="130" width="5" height="5"/>
-                        <rect x="50" y="135" width="5" height="5"/>
-                        <rect x="70" y="130" width="5" height="5"/>
-                        <rect x="90" y="135" width="5" height="5"/>
-                        <rect x="110" y="130" width="5" height="5"/>
-                        <rect x="130" y="135" width="5" height="5"/>
-                        <rect x="150" y="130" width="5" height="5"/>
-                        <rect x="40" y="140" width="5" height="5"/>
-                        <rect x="60" y="145" width="5" height="5"/>
-                        <rect x="80" y="140" width="5" height="5"/>
-                        <rect x="100" y="145" width="5" height="5"/>
-                        <rect x="120" y="140" width="5" height="5"/>
-                        <rect x="140" y="145" width="5" height="5"/>
-                        <rect x="160" y="140" width="5" height="5"/>
-                    </g>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🤖</div>
+                <div class="card-title">Support the Swarm</div>
+                <div class="card-subtitle">Fuel the autonomous earnings engine</div>
+            </div>
+            
+            <div class="amount-grid" id="amountGrid">
+            </div>
+            
+            <div class="qr-section">
+                <div class="qr-box">
+                    <div class="qr-placeholder">
+                        <svg class="qr-svg" viewBox="0 0 170 170" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background -->
+                            <rect width="170" height="170" fill="white"/>
+                            <!-- Position detection patterns (3 corners) -->
+                            <rect x="8" y="8" width="42" height="42" fill="#111"/>
+                            <rect x="14" y="14" width="30" height="30" fill="white"/>
+                            <rect x="20" y="20" width="18" height="18" fill="#111"/>
+                            
+                            <rect x="120" y="8" width="42" height="42" fill="#111"/>
+                            <rect x="126" y="14" width="30" height="30" fill="white"/>
+                            <rect x="132" y="20" width="18" height="18" fill="#111"/>
+                            
+                            <rect x="8" y="120" width="42" height="42" fill="#111"/>
+                            <rect x="14" y="126" width="30" height="30" fill="white"/>
+                            <rect x="20" y="132" width="18" height="18" fill="#111"/>
+                            
+                            <!-- Data modules (QR-like pattern) -->
+                            <g fill="#111">
+                                <!-- Timing patterns -->
+                                <rect x="50" y="8" width="2" height="2"/>
+                                <rect x="54" y="8" width="2" height="2"/>
+                                <rect x="58" y="8" width="2" height="2"/>
+                                <rect x="62" y="8" width="2" height="2"/>
+                                <rect x="66" y="8" width="2" height="2"/>
+                                <rect x="70" y="8" width="2" height="2"/>
+                                <rect x="74" y="8" width="2" height="2"/>
+                                <rect x="78" y="8" width="2" height="2"/>
+                                <rect x="82" y="8" width="2" height="2"/>
+                                <rect x="86" y="8" width="2" height="2"/>
+                                <rect x="90" y="8" width="2" height="2"/>
+                                <rect x="94" y="8" width="2" height="2"/>
+                                <rect x="98" y="8" width="2" height="2"/>
+                                <rect x="102" y="8" width="2" height="2"/>
+                                <rect x="106" y="8" width="2" height="2"/>
+                                <rect x="110" y="8" width="2" height="2"/>
+                                <rect x="114" y="8" width="2" height="2"/>
+                                <rect x="50" y="160" width="2" height="2"/>
+                                <rect x="54" y="160" width="2" height="2"/>
+                                <rect x="58" y="160" width="2" height="2"/>
+                                <rect x="62" y="160" width="2" height="2"/>
+                                <rect x="66" y="160" width="2" height="2"/>
+                                <rect x="70" y="160" width="2" height="2"/>
+                                <rect x="74" y="160" width="2" height="2"/>
+                                <rect x="78" y="160" width="2" height="2"/>
+                                <rect x="82" y="160" width="2" height="2"/>
+                                <rect x="86" y="160" width="2" height="2"/>
+                                <rect x="90" y="160" width="2" height="2"/>
+                                <rect x="94" y="160" width="2" height="2"/>
+                                <rect x="98" y="160" width="2" height="2"/>
+                                <rect x="102" y="160" width="2" height="2"/>
+                                <rect x="106" y="160" width="2" height="2"/>
+                                <rect x="110" y="160" width="2" height="2"/>
+                                <rect x="114" y="160" width="2" height="2"/>
+                                <rect x="8" y="50" width="2" height="2"/>
+                                <rect x="8" y="54" width="2" height="2"/>
+                                <rect x="8" y="58" width="2" height="2"/>
+                                <rect x="8" y="62" width="2" height="2"/>
+                                <rect x="8" y="66" width="2" height="2"/>
+                                <rect x="8" y="70" width="2" height="2"/>
+                                <rect x="8" y="74" width="2" height="2"/>
+                                <rect x="8" y="78" width="2" height="2"/>
+                                <rect x="8" y="82" width="2" height="2"/>
+                                <rect x="8" y="86" width="2" height="2"/>
+                                <rect x="8" y="90" width="2" height="2"/>
+                                <rect x="8" y="94" width="2" height="2"/>
+                                <rect x="8" y="98" width="2" height="2"/>
+                                <rect x="8" y="102" width="2" height="2"/>
+                                <rect x="8" y="106" width="2" height="2"/>
+                                <rect x="8" y="110" width="2" height="2"/>
+                                <rect x="8" y="114" width="2" height="2"/>
+                                <rect x="160" y="50" width="2" height="2"/>
+                                <rect x="160" y="54" width="2" height="2"/>
+                                <rect x="160" y="58" width="2" height="2"/>
+                                <rect x="160" y="62" width="2" height="2"/>
+                                <rect x="160" y="66" width="2" height="2"/>
+                                <rect x="160" y="70" width="2" height="2"/>
+                                <rect x="160" y="74" width="2" height="2"/>
+                                <rect x="160" y="78" width="2" height="2"/>
+                                <rect x="160" y="82" width="2" height="2"/>
+                                <rect x="160" y="86" width="2" height="2"/>
+                                <rect x="160" y="90" width="2" height="2"/>
+                                <rect x="160" y="94" width="2" height="2"/>
+                                <rect x="160" y="98" width="2" height="2"/>
+                                <rect x="160" y="102" width="2" height="2"/>
+                                <rect x="160" y="106" width="2" height="2"/>
+                                <rect x="160" y="110" width="2" height="2"/>
+                                <rect x="160" y="114" width="2" height="2"/>
+                                
+                                <!-- Random data -->
+                                <rect x="52" y="52" width="3" height="3"/>
+                                <rect x="58" y="52" width="3" height="3"/>
+                                <rect x="64" y="52" width="3" height="3"/>
+                                <rect x="70" y="52" width="3" height="3"/>
+                                <rect x="76" y="52" width="3" height="3"/>
+                                <rect x="82" y="52" width="3" height="3"/>
+                                <rect x="88" y="52" width="3" height="3"/>
+                                <rect x="94" y="52" width="3" height="3"/>
+                                <rect x="100" y="52" width="3" height="3"/>
+                                <rect x="106" y="52" width="3" height="3"/>
+                                <rect x="112" y="52" width="3" height="3"/>
+                                <rect x="118" y="52" width="3" height="3"/>
+                                <rect x="124" y="52" width="3" height="3"/>
+                                <rect x="130" y="52" width="3" height="3"/>
+                                <rect x="136" y="52" width="3" height="3"/>
+                                <rect x="142" y="52" width="3" height="3"/>
+                                <rect x="148" y="52" width="3" height="3"/>
+                                <rect x="154" y="52" width="3" height="3"/>
+                                
+                                <rect x="52" y="58" width="3" height="3"/>
+                                <rect x="62" y="58" width="3" height="3"/>
+                                <rect x="72" y="58" width="3" height="3"/>
+                                <rect x="82" y="58" width="3" height="3"/>
+                                <rect x="92" y="58" width="3" height="3"/>
+                                <rect x="102" y="58" width="3" height="3"/>
+                                <rect x="112" y="58" width="3" height="3"/>
+                                <rect x="122" y="58" width="3" height="3"/>
+                                <rect x="132" y="58" width="3" height="3"/>
+                                <rect x="142" y="58" width="3" height="3"/>
+                                <rect x="152" y="58" width="3" height="3"/>
+                                
+                                <rect x="52" y="64" width="3" height="3"/>
+                                <rect x="58" y="64" width="3" height="3"/>
+                                <rect x="68" y="64" width="3" height="3"/>
+                                <rect x="74" y="64" width="3" height="3"/>
+                                <rect x="84" y="64" width="3" height="3"/>
+                                <rect x="94" y="64" width="3" height="3"/>
+                                <rect x="100" y="64" width="3" height="3"/>
+                                <rect x="110" y="64" width="3" height="3"/>
+                                <rect x="120" y="64" width="3" height="3"/>
+                                <rect x="130" y="64" width="3" height="3"/>
+                                <rect x="140" y="64" width="3" height="3"/>
+                                <rect x="150" y="64" width="3" height="3"/>
+                                
+                                <rect x="52" y="70" width="3" height="3"/>
+                                <rect x="64" y="70" width="3" height="3"/>
+                                <rect x="76" y="70" width="3" height="3"/>
+                                <rect x="86" y="70" width="3" height="3"/>
+                                <rect x="96" y="70" width="3" height="3"/>
+                                <rect x="106" y="70" width="3" height="3"/>
+                                <rect x="116" y="70" width="3" height="3"/>
+                                <rect x="126" y="70" width="3" height="3"/>
+                                <rect x="136" y="70" width="3" height="3"/>
+                                <rect x="146" y="70" width="3" height="3"/>
+                                
+                                <rect x="52" y="76" width="3" height="3"/>
+                                <rect x="60" y="76" width="3" height="3"/>
+                                <rect x="72" y="76" width="3" height="3"/>
+                                <rect x="80" y="76" width="3" height="3"/>
+                                <rect x="90" y="76" width="3" height="3"/>
+                                <rect x="100" y="76" width="3" height="3"/>
+                                <rect x="110" y="76" width="3" height="3"/>
+                                <rect x="120" y="76" width="3" height="3"/>
+                                <rect x="130" y="76" width="3" height="3"/>
+                                <rect x="140" y="76" width="3" height="3"/>
+                                <rect x="150" y="76" width="3" height="3"/>
+                                
+                                <rect x="52" y="82" width="3" height="3"/>
+                                <rect x="62" y="82" width="3" height="3"/>
+                                <rect x="72" y="82" width="3" height="3"/>
+                                <rect x="82" y="82" width="3" height="3"/>
+                                <rect x="92" y="82" width="3" height="3"/>
+                                <rect x="102" y="82" width="3" height="3"/>
+                                <rect x="112" y="82" width="3" height="3"/>
+                                <rect x="122" y="82" width="3" height="3"/>
+                                <rect x="132" y="82" width="3" height="3"/>
+                                <rect x="142" y="82" width="3" height="3"/>
+                                <rect x="152" y="82" width="3" height="3"/>
+                                
+                                <rect x="52" y="88" width="3" height="3"/>
+                                <rect x="58" y="88" width="3" height="3"/>
+                                <rect x="68" y="88" width="3" height="3"/>
+                                <rect x="78" y="88" width="3" height="3"/>
+                                <rect x="88" y="88" width="3" height="3"/>
+                                <rect x="98" y="88" width="3" height="3"/>
+                                <rect x="108" y="88" width="3" height="3"/>
+                                <rect x="118" y="88" width="3" height="3"/>
+                                <rect x="128" y="88" width="3" height="3"/>
+                                <rect x="138" y="88" width="3" height="3"/>
+                                <rect x="148" y="88" width="3" height="3"/>
+                                
+                                <rect x="52" y="94" width="3" height="3"/>
+                                <rect x="64" y="94" width="3" height="3"/>
+                                <rect x="74" y="94" width="3" height="3"/>
+                                <rect x="84" y="94" width="3" height="3"/>
+                                <rect x="94" y="94" width="3" height="3"/>
+                                <rect x="104" y="94" width="3" height="3"/>
+                                <rect x="114" y="94" width="3" height="3"/>
+                                <rect x="124" y="94" width="3" height="3"/>
+                                <rect x="134" y="94" width="3" height="3"/>
+                                <rect x="144" y="94" width="3" height="3"/>
+                                <rect x="154" y="94" width="3" height="3"/>
+                                
+                                <rect x="52" y="100" width="3" height="3"/>
+                                <rect x="60" y="100" width="3" height="3"/>
+                                <rect x="70" y="100" width="3" height="3"/>
+                                <rect x="80" y="100" width="3" height="3"/>
+                                <rect x="90" y="100" width="3" height="3"/>
+                                <rect x="100" y="100" width="3" height="3"/>
+                                <rect x="110" y="100" width="3" height="3"/>
+                                <rect x="120" y="100" width="3" height="3"/>
+                                <rect x="130" y="100" width="3" height="3"/>
+                                <rect x="140" y="100" width="3" height="3"/>
+                                <rect x="150" y="100" width="3" height="3"/>
+                                
+                                <rect x="52" y="106" width="3" height="3"/>
+                                <rect x="62" y="106" width="3" height="3"/>
+                                <rect x="72" y="106" width="3" height="3"/>
+                                <rect x="82" y="106" width="3" height="3"/>
+                                <rect x="92" y="106" width="3" height="3"/>
+                                <rect x="102" y="106" width="3" height="3"/>
+                                <rect x="112" y="106" width="3" height="3"/>
+                                <rect x="122" y="106" width="3" height="3"/>
+                                <rect x="132" y="106" width="3" height="3"/>
+                                <rect x="142" y="106" width="3" height="3"/>
+                                <rect x="152" y="106" width="3" height="3"/>
+                                
+                                <rect x="52" y="112" width="3" height="3"/>
+                                <rect x="58" y="112" width="3" height="3"/>
+                                <rect x="68" y="112" width="3" height="3"/>
+                                <rect x="78" y="112" width="3" height="3"/>
+                                <rect x="88" y="112" width="3" height="3"/>
+                                <rect x="98" y="112" width="3" height="3"/>
+                                <rect x="108" y="112" width="3" height="3"/>
+                                <rect x="118" y="112" width="3" height="3"/>
+                                <rect x="128" y="112" width="3" height="3"/>
+                                <rect x="138" y="112" width="3" height="3"/>
+                                <rect x="148" y="112" width="3" height="3"/>
+                                
+                                <rect x="52" y="118" width="3" height="3"/>
+                                <rect x="64" y="118" width="3" height="3"/>
+                                <rect x="74" y="118" width="3" height="3"/>
+                                <rect x="84" y="118" width="3" height="3"/>
+                                <rect x="94" y="118" width="3" height="3"/>
+                                <rect x="104" y="118" width="3" height="3"/>
+                                <rect x="114" y="118" width="3" height="3"/>
+                                <rect x="124" y="118" width="3" height="3"/>
+                                <rect x="134" y="118" width="3" height="3"/>
+                                <rect x="144" y="118" width="3" height="3"/>
+                                <rect x="154" y="118" width="3" height="3"/>
+                                
+                                <rect x="52" y="124" width="3" height="3"/>
+                                <rect x="60" y="124" width="3" height="3"/>
+                                <rect x="70" y="124" width="3" height="3"/>
+                                <rect x="80" y="124" width="3" height="3"/>
+                                <rect x="90" y="124" width="3" height="3"/>
+                                <rect x="100" y="124" width="3" height="3"/>
+                                <rect x="110" y="124" width="3" height="3"/>
+                                <rect x="120" y="124" width="3" height="3"/>
+                                <rect x="130" y="124" width="3" height="3"/>
+                                <rect x="140" y="124" width="3" height="3"/>
+                                <rect x="150" y="124" width="3" height="3"/>
+                                
+                                <rect x="52" y="130" width="3" height="3"/>
+                                <rect x="62" y="130" width="3" height="3"/>
+                                <rect x="72" y="130" width="3" height="3"/>
+                                <rect x="82" y="130" width="3" height="3"/>
+                                <rect x="92" y="130" width="3" height="3"/>
+                                <rect x="102" y="130" width="3" height="3"/>
+                                <rect x="112" y="130" width="3" height="3"/>
+                                <rect x="122" y="130" width="3" height="3"/>
+                                <rect x="132" y="130" width="3" height="3"/>
+                                <rect x="142" y="130" width="3" height="3"/>
+                                <rect x="152" y="130" width="3" height="3"/>
+                                
+                                <rect x="52" y="136" width="3" height="3"/>
+                                <rect x="58" y="136" width="3" height="3"/>
+                                <rect x="68" y="136" width="3" height="3"/>
+                                <rect x="78" y="136" width="3" height="3"/>
+                                <rect x="88" y="136" width="3" height="3"/>
+                                <rect x="98" y="136" width="3" height="3"/>
+                                <rect x="108" y="136" width="3" height="3"/>
+                                <rect x="118" y="136" width="3" height="3"/>
+                                <rect x="128" y="136" width="3" height="3"/>
+                                <rect x="138" y="136" width="3" height="3"/>
+                                <rect x="148" y="136" width="3" height="3"/>
+                                
+                                <rect x="52" y="142" width="3" height="3"/>
+                                <rect x="64" y="142" width="3" height="3"/>
+                                <rect x="74" y="142" width="3" height="3"/>
+                                <rect x="84" y="142" width="3" height="3"/>
+                                <rect x="94" y="142" width="3" height="3"/>
+                                <rect x="104" y="142" width="3" height="3"/>
+                                <rect x="114" y="142" width="3" height="3"/>
+                                <rect x="124" y="142" width="3" height="3"/>
+                                <rect x="134" y="142" width="3" height="3"/>
+                                <rect x="144" y="142" width="3" height="3"/>
+                                <rect x="154" y="142" width="3" height="3"/>
+                                
+                                <rect x="52" y="148" width="3" height="3"/>
+                                <rect x="60" y="148" width="3" height="3"/>
+                                <rect x="70" y="148" width="3" height="3"/>
+                                <rect x="80" y="148" width="3" height="3"/>
+                                <rect x="90" y="148" width="3" height="3"/>
+                                <rect x="100" y="148" width="3" height="3"/>
+                                <rect x="110" y="148" width="3" height="3"/>
+                                <rect x="120" y="148" width="3" height="3"/>
+                                <rect x="130" y="148" width="3" height="3"/>
+                                <rect x="140" y="148" width="3" height="3"/>
+                                <rect x="150" y="148" width="3" height="3"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="upi-label">UPI ID</div>
+                <div class="upi-id">piyush16.shandilya@okaxis</div>
+                <button class="copy-btn" onclick="copyUPI()">📋 Copy UPI ID</button>
+            </div>
+            
+            <div class="selected-display">
+                <div class="selected-label">Selected Amount</div>
+                <div class="selected-amount" id="selectedAmount">₹20</div>
+            </div>
+            
+            <button class="pay-btn" id="payBtn" onclick="initiatePayment()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
+                <span id="payBtnText">Pay via UPI</span>
+            </button>
+            
+            <div class="instructions">
+                <strong>After paying:</strong> Send your Transaction ID / Reference Number in the chat so the swarm can verify and credit your account.
             </div>
-            <div class="upi-id">piyush16.shandilya@okaxis</div>
-            <button class="copy-btn" onclick="copyUPI()">📋 Copy UPI ID</button>
+            
+            <!-- Agents indicator -->
+            <div class="agents-indicator">
+                <div class="agents-title">Active Agents</div>
+                <div class="agents-grid" id="agentsGrid">
+                </div>
+            </div>
         </div>
-
-        <div class="selected-amount" id="selectedAmount">₹20</div>
-
-        <button class="pay-btn" id="payBtn" onclick="initiatePayment()">
-            Pay via UPI
-        </button>
-
-        <p class="note">
-            After paying, send your <strong>Transaction ID / Reference Number</strong> 
-            in the chat so the swarm can verify and credit your account.<br><br>
-            ⚡ The swarm runs autonomously — your contribution fuels the engine.
-        </p>
-
-        <div class="swarm-status">
-            <h3 style="color: #00ccff; font-size: 0.9rem; margin-bottom: 0.5rem;">Swarm Status</h3>
-            <div class="status-item">
-                <span class="status-label">Ideas Researched</span>
-                <span class="status-value" id="statIdeas">-</span>
-            </div>
-            <div class="status-item">
-                <span class="status-label">Content Created</span>
-                <span class="status-value" id="statContent">-</span>
-            </div>
-            <div class="status-item">
-                <span class="status-label">Products Listed</span>
-                <span class="status-value" id="statProducts">-</span>
-            </div>
-            <div class="status-item">
-                <span class="status-label">Total Earned</span>
-                <span class="status-value" id="statEarned">-</span>
-            </div>
-            <div class="status-item">
-                <span class="status-label">Goal Progress</span>
-                <span class="status-value" id="statProgress">-</span>
-            </div>
+        
+        <div class="footer-text">
+            <p>badboy8609@gmail.com &nbsp;|&nbsp; 
+               <a href="https://whoromeo.github.io/swarm">whoromeo.github.io/swarm</a></p>
+            <p>Autonomous Earnings Swarm v1.0 · Running 24/7</p>
         </div>
     </div>
-
+    
     <script>
         const AMOUNTS = [20, 50, 100, 200];
         let selectedAmount = 20;
@@ -296,7 +737,7 @@
             btn.onclick = () => selectAmount(amount);
             grid.appendChild(btn);
         });
-
+        
         function selectAmount(amount) {
             selectedAmount = amount;
             document.getElementById('selectedAmount').textContent = '₹' + amount;
@@ -304,62 +745,109 @@
                 btn.classList.toggle('selected', parseInt(btn.textContent.replace('₹','')) === amount);
             });
         }
-
+        
         function copyUPI() {
             navigator.clipboard.writeText(UPI_ID).then(() => {
                 const btn = document.querySelector('.copy-btn');
-                btn.textContent = '✓ Copied!';
+                btn.textContent = '✓ Copied to clipboard';
+                setTimeout(() => btn.textContent = '📋 Copy UPI ID', 2000);
+            }).catch(() => {
+                // Fallback
+                const textarea = document.createElement('textarea');
+                textarea.value = UPI_ID;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                const btn = document.querySelector('.copy-btn');
+                btn.textContent = '✓ Copied';
                 setTimeout(() => btn.textContent = '📋 Copy UPI ID', 2000);
             });
         }
-
+        
         function initiatePayment() {
             const payBtn = document.getElementById('payBtn');
+            const payBtnText = document.getElementById('payBtnText');
+            
             payBtn.disabled = true;
-            payBtn.textContent = '📱 Open UPI App...';
+            payBtnText.textContent = 'Opening UPI...';
             
             // Construct UPI payment URL
-            const upiUrl = `upi://pay?pa=${encodeURIComponent(UPI_ID)}&am=${selectedAmount}&cu=INR&tn=Support+Swarm`;
+            const upiUrl = `upi://pay?pa=${encodeURIComponent(UPI_ID)}&am=${selectedAmount}&cu=INR&tn=Support+Swarm+Contribution`;
             
             // Try to open in UPI app
             window.location.href = upiUrl;
             
-            // Fallback: show instructions
+            // If no UPI app handles it, show fallback
             setTimeout(() => {
-                payBtn.disabled = false;
-                payBtn.textContent = '📋 Copy Payment Link';
-                if (!window.location.href.includes('upi://')) {
+                if (window.location.href === upiUrl || !document.hasFocus()) {
+                    payBtn.disabled = false;
+                    payBtnText.textContent = '📋 Copy Payment Link';
+                    
+                    // Try copying the UPI URL
                     navigator.clipboard.writeText(upiUrl).then(() => {
-                        payBtn.textContent = '✓ Link Copied — Paste in UPI App';
+                        payBtnText.textContent = '✓ Link Copied — Paste in UPI App';
                         payBtn.disabled = true;
+                    }).catch(() => {
+                        payBtnText.textContent = '⚠️ Use UPI ID: ' + UPI_ID;
+                        payBtn.disabled = false;
                     });
                 }
             }, 2000);
         }
-
+        
+        // Agent dots animation
+        const agents = [
+            { name: 'Research', icon: '📡', active: true },
+            { name: 'Content', icon: '🎬', active: true },
+            { name: 'Publish', icon: '🚀', active: false },
+            { name: 'Products', icon: '💰', active: true },
+            { name: 'Finance', icon: '📊', active: false }
+        ];
+        
+        const agentsGrid = document.getElementById('agentsGrid');
+        agents.forEach((agent, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'agent-dot active';
+            dot.textContent = agent.icon;
+            dot.title = agent.name;
+            agentsGrid.appendChild(dot);
+            
+            // Staggered animation
+            setTimeout(() => {
+                dot.classList.add('done');
+                setTimeout(() => { dot.classList.remove('active'); }, 500);
+            }, 800 + i * 300);
+        });
+        
         // Load swarm stats
         async function loadStats() {
             try {
                 const [backlog, operations, products, revenue] = await Promise.all([
-                    fetch('backlog.json').then(r => r.json()),
-                    fetch('operations.json').then(r => r.json()),
-                    fetch('products.json').then(r => r.json()),
-                    fetch('data/revenue_tracker.json').then(r => r.json())
+                    fetch('data/backlog.json').then(r => r.json()),
+                    fetch('data/operations.json').then(r => r.json()),
+                    fetch('data/products.json').then(r => r.json()),
+                    fetch('finance/revenue_tracker.json').then(r => r.json())
                 ]);
-
-                document.getElementById('statIdeas').textContent = backlog.length;
-                document.getElementById('statContent').textContent = operations.length;
-                document.getElementById('statProducts').textContent = products.length;
                 
-                const earned = revenue.total_earnings || 0;
-                document.getElementById('statEarned').textContent = '₹' + (earned * 83).toFixed(0) + ' / $' + earned.toFixed(2);
-                document.getElementById('statProgress').textContent = (earned / 10000 * 100).toFixed(1) + '%';
+                const statPanel = document.querySelector('.card-header');
+                const statsText = document.createElement('div');
+                statsText.style.cssText = 'font-size:0.7rem;color:var(--text-muted);margin-top:0.5rem;display:flex;justify-content:center;gap:1rem;';
+                statsText.innerHTML = `
+                    <span>${backlog.length} ideas</span>
+                    <span>·</span>
+                    <span>${operations.length} content</span>
+                    <span>·</span>
+                    <span>${products.length} products</span>
+                    <span>·</span>
+                    <span>$${(revenue.total_earnings || 0).toFixed(2)} earned</span>
+                `;
+                statPanel.appendChild(statsText);
             } catch (e) {
-                console.error('Stats load error:', e);
+                // Silent fail - stats are bonus
             }
         }
         loadStats();
-        setInterval(loadStats, 60000);
     </script>
 </body>
 </html>
