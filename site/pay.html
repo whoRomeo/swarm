@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support the Swarm</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #00ff88;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .amount-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+        .amount-btn {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #e0e0e0;
+            padding: 1rem 0.5rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .amount-btn:hover {
+            border-color: #00ff88;
+            background: #222;
+        }
+        .amount-btn.selected {
+            border-color: #00ff88;
+            background: #00ff88;
+            color: #000;
+        }
+        .qr-section {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 0.8rem;
+        }
+        .upi-id {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #00ccff;
+            margin-bottom: 0.5rem;
+            word-break: break-all;
+        }
+        .copy-btn {
+            background: #2a2a2a;
+            border: none;
+            color: #e0e0e0;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+        .copy-btn:hover { background: #333; }
+        .selected-amount {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #00ff88;
+            margin: 1rem 0;
+        }
+        .pay-btn {
+            background: #00ff88;
+            color: #000;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .pay-btn:hover { background: #00cc77; }
+        .pay-btn:disabled {
+            background: #333;
+            color: #666;
+            cursor: not-allowed;
+        }
+        .note {
+            color: #666;
+            font-size: 0.8rem;
+            margin-top: 1.5rem;
+            line-height: 1.5;
+        }
+        .swarm-status {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #1a1a1a;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #222;
+            font-size: 0.85rem;
+        }
+        .status-item:last-child { border: none; }
+        .status-label { color: #888; }
+        .status-value { color: #00ff88; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Support the Swarm</h1>
+        <p class="subtitle">Autonomous Earnings Engine — Piyush Shandilya</p>
+
+        <div class="amount-grid" id="amountGrid">
+        </div>
+
+        <div class="qr-section">
+            <div class="qr-placeholder">
+                <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+                    <!-- UPI QR Code placeholder (pulse/columns pattern) -->
+                    <rect x="20" y="20" width="140" height="140" fill="white" stroke="#333" stroke-width="1"/>
+                    <!-- Position detection patterns -->
+                    <rect x="25" y="25" width="35" height="35" fill="#000"/>
+                    <rect x="30" y="30" width="25" height="25" fill="#fff"/>
+                    <rect x="35" y="35" width="15" height="15" fill="#000"/>
+                    
+                    <rect x="120" y="25" width="35" height="35" fill="#000"/>
+                    <rect x="125" y="30" width="25" height="25" fill="#fff"/>
+                    <rect x="130" y="35" width="15" height="15" fill="#000"/>
+                    
+                    <rect x="25" y="120" width="35" height="35" fill="#000"/>
+                    <rect x="30" y="125" width="25" height="25" fill="#fff"/>
+                    <rect x="35" y="130" width="15" height="15" fill="#000"/>
+                    
+                    <!-- Random data modules -->
+                    <g fill="#000">
+                        <rect x="70" y="25" width="5" height="5"/>
+                        <rect x="80" y="25" width="5" height="5"/>
+                        <rect x="90" y="30" width="5" height="5"/>
+                        <rect x="100" y="25" width="5" height="5"/>
+                        <rect x="75" y="35" width="5" height="5"/>
+                        <rect x="95" y="40" width="5" height="5"/>
+                        <rect x="85" y="45" width="5" height="5"/>
+                        <rect x="110" y="30" width="5" height="5"/>
+                        <rect x="115" y="40" width="5" height="5"/>
+                        <rect x="70" y="45" width="5" height="5"/>
+                        <rect x="90" y="50" width="5" height="5"/>
+                        <rect x="105" y="50" width="5" height="5"/>
+                        <rect x="80" y="55" width="5" height="5"/>
+                        <rect x="100" y="55" width="5" height="5"/>
+                        <rect x="75" y="60" width="5" height="5"/>
+                        <rect x="110" y="60" width="5" height="5"/>
+                        
+                        <rect x="25" y="70" width="5" height="5"/>
+                        <rect x="35" y="75" width="5" height="5"/>
+                        <rect x="45" y="70" width="5" height="5"/>
+                        <rect x="55" y="80" width="5" height="5"/>
+                        <rect x="65" y="75" width="5" height="5"/>
+                        <rect x="75" y="85" width="5" height="5"/>
+                        <rect x="85" y="70" width="5" height="5"/>
+                        <rect x="95" y="80" width="5" height="5"/>
+                        <rect x="105" y="75" width="5" height="5"/>
+                        <rect x="115" y="85" width="5" height="5"/>
+                        <rect x="125" y="70" width="5" height="5"/>
+                        <rect x="135" y="80" width="5" height="5"/>
+                        <rect x="145" y="75" width="5" height="5"/>
+                        <rect x="155" y="85" width="5" height="5"/>
+                        <rect x="40" y="90" width="5" height="5"/>
+                        <rect x="60" y="95" width="5" height="5"/>
+                        <rect x="80" y="90" width="5" height="5"/>
+                        <rect x="100" y="95" width="5" height="5"/>
+                        <rect x="120" y="90" width="5" height="5"/>
+                        <rect x="140" y="95" width="5" height="5"/>
+                        <rect x="50" y="100" width="5" height="5"/>
+                        <rect x="70" y="105" width="5" height="5"/>
+                        <rect x="90" y="100" width="5" height="5"/>
+                        <rect x="110" y="105" width="5" height="5"/>
+                        <rect x="130" y="100" width="5" height="5"/>
+                        <rect x="150" y="105" width="5" height="5"/>
+                        <rect x="35" y="110" width="5" height="5"/>
+                        <rect x="55" y="115" width="5" height="5"/>
+                        <rect x="75" y="110" width="5" height="5"/>
+                        <rect x="95" y="115" width="5" height="5"/>
+                        <rect x="115" y="110" width="5" height="5"/>
+                        <rect x="135" y="115" width="5" height="5"/>
+                        <rect x="45" y="120" width="5" height="5"/>
+                        <rect x="65" y="125" width="5" height="5"/>
+                        <rect x="85" y="120" width="5" height="5"/>
+                        <rect x="105" y="125" width="5" height="5"/>
+                        <rect x="125" y="120" width="5" height="5"/>
+                        <rect x="145" y="125" width="5" height="5"/>
+                        <rect x="30" y="130" width="5" height="5"/>
+                        <rect x="50" y="135" width="5" height="5"/>
+                        <rect x="70" y="130" width="5" height="5"/>
+                        <rect x="90" y="135" width="5" height="5"/>
+                        <rect x="110" y="130" width="5" height="5"/>
+                        <rect x="130" y="135" width="5" height="5"/>
+                        <rect x="150" y="130" width="5" height="5"/>
+                        <rect x="40" y="140" width="5" height="5"/>
+                        <rect x="60" y="145" width="5" height="5"/>
+                        <rect x="80" y="140" width="5" height="5"/>
+                        <rect x="100" y="145" width="5" height="5"/>
+                        <rect x="120" y="140" width="5" height="5"/>
+                        <rect x="140" y="145" width="5" height="5"/>
+                        <rect x="160" y="140" width="5" height="5"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="upi-id">piyush16.shandilya@okaxis</div>
+            <button class="copy-btn" onclick="copyUPI()">📋 Copy UPI ID</button>
+        </div>
+
+        <div class="selected-amount" id="selectedAmount">₹20</div>
+
+        <button class="pay-btn" id="payBtn" onclick="initiatePayment()">
+            Pay via UPI
+        </button>
+
+        <p class="note">
+            After paying, send your <strong>Transaction ID / Reference Number</strong> 
+            in the chat so the swarm can verify and credit your account.<br><br>
+            ⚡ The swarm runs autonomously — your contribution fuels the engine.
+        </p>
+
+        <div class="swarm-status">
+            <h3 style="color: #00ccff; font-size: 0.9rem; margin-bottom: 0.5rem;">Swarm Status</h3>
+            <div class="status-item">
+                <span class="status-label">Ideas Researched</span>
+                <span class="status-value" id="statIdeas">-</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Content Created</span>
+                <span class="status-value" id="statContent">-</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Products Listed</span>
+                <span class="status-value" id="statProducts">-</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Total Earned</span>
+                <span class="status-value" id="statEarned">-</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Goal Progress</span>
+                <span class="status-value" id="statProgress">-</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const AMOUNTS = [20, 50, 100, 200];
+        let selectedAmount = 20;
+        const UPI_ID = 'piyush16.shandilya@okaxis';
+        
+        // Initialize amount buttons
+        const grid = document.getElementById('amountGrid');
+        AMOUNTS.forEach(amount => {
+            const btn = document.createElement('button');
+            btn.className = 'amount-btn' + (amount === selectedAmount ? ' selected' : '');
+            btn.textContent = '₹' + amount;
+            btn.onclick = () => selectAmount(amount);
+            grid.appendChild(btn);
+        });
+
+        function selectAmount(amount) {
+            selectedAmount = amount;
+            document.getElementById('selectedAmount').textContent = '₹' + amount;
+            document.querySelectorAll('.amount-btn').forEach(btn => {
+                btn.classList.toggle('selected', parseInt(btn.textContent.replace('₹','')) === amount);
+            });
+        }
+
+        function copyUPI() {
+            navigator.clipboard.writeText(UPI_ID).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.textContent = '✓ Copied!';
+                setTimeout(() => btn.textContent = '📋 Copy UPI ID', 2000);
+            });
+        }
+
+        function initiatePayment() {
+            const payBtn = document.getElementById('payBtn');
+            payBtn.disabled = true;
+            payBtn.textContent = '📱 Open UPI App...';
+            
+            // Construct UPI payment URL
+            const upiUrl = `upi://pay?pa=${encodeURIComponent(UPI_ID)}&am=${selectedAmount}&cu=INR&tn=Support+Swarm`;
+            
+            // Try to open in UPI app
+            window.location.href = upiUrl;
+            
+            // Fallback: show instructions
+            setTimeout(() => {
+                payBtn.disabled = false;
+                payBtn.textContent = '📋 Copy Payment Link';
+                if (!window.location.href.includes('upi://')) {
+                    navigator.clipboard.writeText(upiUrl).then(() => {
+                        payBtn.textContent = '✓ Link Copied — Paste in UPI App';
+                        payBtn.disabled = true;
+                    });
+                }
+            }, 2000);
+        }
+
+        // Load swarm stats
+        async function loadStats() {
+            try {
+                const [backlog, operations, products, revenue] = await Promise.all([
+                    fetch('backlog.json').then(r => r.json()),
+                    fetch('operations.json').then(r => r.json()),
+                    fetch('products.json').then(r => r.json()),
+                    fetch('finance/revenue_tracker.json').then(r => r.json())
+                ]);
+
+                document.getElementById('statIdeas').textContent = backlog.length;
+                document.getElementById('statContent').textContent = operations.length;
+                document.getElementById('statProducts').textContent = products.length;
+                
+                const earned = revenue.total_earnings || 0;
+                document.getElementById('statEarned').textContent = '₹' + (earned * 83).toFixed(0) + ' / $' + earned.toFixed(2);
+                document.getElementById('statProgress').textContent = (earned / 10000 * 100).toFixed(1) + '%';
+            } catch (e) {
+                console.error('Stats load error:', e);
+            }
+        }
+        loadStats();
+        setInterval(loadStats, 60000);
+    </script>
+</body>
+</html>
