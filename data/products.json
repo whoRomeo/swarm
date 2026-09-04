@@ -13,13 +13,13 @@
       "full_name": "openclaw/openclaw",
       "url": "https://github.com/openclaw/openclaw",
       "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
-      "stars": 388862,
+      "stars": 388866,
       "language": "TypeScript",
       "created_at": "2025-11-24T10:16:47Z",
       "profit_potential": {
         "score": 6,
         "reasons": [
-          "High stars (388862)",
+          "High stars (388866)",
           "Solves concrete problem",
           "Actively maintained"
         ],
@@ -47,7 +47,7 @@
         {
           "type": "video",
           "title": "This openclaw Project is INSANE (GitHub Trending)",
-          "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 388862 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+          "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 388866 stars and is trending on GitHub. Let me show you why it's worth your attention.",
           "format": "showcase/review",
           "duration_estimate": "5-8 minutes",
           "monetization": [
@@ -67,12 +67,12 @@
           ]
         }
       ],
-      "timestamp": "2026-09-05T03:32:17.262669"
+      "timestamp": "2026-09-05T05:06:27.083172"
     },
     "status": "listed",
     "listing_url": null,
-    "created_at": "2026-09-05T03:32:19.068700",
-    "files_directory": "products\\product_1"
+    "created_at": "2026-09-05T05:06:29.311446",
+    "files_directory": "products\\product_5"
   },
   {
     "type": "template",
@@ -88,13 +88,13 @@
       "full_name": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
-      "stars": 281787,
+      "stars": 281797,
       "language": "Shell",
       "created_at": "2025-10-09T19:45:18Z",
       "profit_potential": {
         "score": 4,
         "reasons": [
-          "High stars (281787)",
+          "High stars (281797)",
           "Actively maintained"
         ],
         "verdict": "MEDIUM"
@@ -121,7 +121,7 @@
         {
           "type": "video",
           "title": "This superpowers Project is INSANE (GitHub Trending)",
-          "description": "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 281787 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+          "description": "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 281797 stars and is trending on GitHub. Let me show you why it's worth your attention.",
           "format": "showcase/review",
           "duration_estimate": "5-8 minutes",
           "monetization": [
@@ -141,11 +141,11 @@
           ]
         }
       ],
-      "timestamp": "2026-09-05T03:32:17.262669"
+      "timestamp": "2026-09-05T05:06:27.083172"
     },
     "status": "listed",
     "listing_url": null,
-    "created_at": "2026-09-05T03:32:19.069811",
-    "files_directory": "products\\product_2"
+    "created_at": "2026-09-05T05:06:29.312191",
+    "files_directory": "products\\product_6"
   }
 ]

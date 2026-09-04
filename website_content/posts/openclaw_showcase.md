@@ -8,7 +8,7 @@ source: https://github.com/openclaw/openclaw
 
 # This openclaw Project is INSANE
 
-Exploring openclaw - a trending GitHub project with 388862 stars. The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 
+Exploring openclaw - a trending GitHub project with 388866 stars. The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 
 
 ## Key Points
 
@@ -21,7 +21,7 @@ Exploring openclaw - a trending GitHub project with 388862 stars. The AI that re
 
 ```
 [COLD OPEN - 0:00-0:15]
-"What if I told you there's a project on GitHub right now with 388862 stars that could change how you work?"
+"What if I told you there's a project on GitHub right now with 388866 stars that could change how you work?"
 
 [INTRO - 0:15-0:45]
 "Hey everyone, today we're looking at openclaw. This project has been making waves on GitHub and I think you need to know about it."

@@ -8,7 +8,7 @@ source: https://github.com/obra/superpowers
 
 # This superpowers Project is INSANE
 
-Exploring superpowers - a trending GitHub project with 281787 stars. An agentic skills framework & software development methodology that works.
+Exploring superpowers - a trending GitHub project with 281797 stars. An agentic skills framework & software development methodology that works.
 
 ## Key Points
 
@@ -21,7 +21,7 @@ Exploring superpowers - a trending GitHub project with 281787 stars. An agentic 
 
 ```
 [COLD OPEN - 0:00-0:15]
-"What if I told you there's a project on GitHub right now with 281787 stars that could change how you work?"
+"What if I told you there's a project on GitHub right now with 281797 stars that could change how you work?"
 
 [INTRO - 0:15-0:45]
 "Hey everyone, today we're looking at superpowers. This project has been making waves on GitHub and I think you need to know about it."
