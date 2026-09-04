@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Earnings Swarm — Live Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0a0e14; --card: #111820; --card2: #161e28;
+            --border: #1e2a3a; --txt: #e8eaed; --muted: #5f6368;
+            --green: #00ff88; --blue: #4d9aff; --purple: #7c4dff;
+            --orange: #ff6d00; --pink: #ff4081;
+        }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--bg); color: var(--txt);
+            min-height: 100vh; padding: 1.5rem;
+        }
+        /* Animated background */
+        .bg-grid {
+            position: fixed; inset: 0; z-index: 0; pointer-events: none;
+            background-image:
+                linear-gradient(rgba(0,255,136,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,255,136,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        .bg-orbs { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+        .bg-orbs span {
+            position: absolute; border-radius: 50%; filter: blur(80px);
+            animation: float 20s ease-in-out infinite;
+        }
+        .bg-orbs .o1 { width: 500px; height: 500px; background: var(--green); top: -150px; left: -150px; opacity: 0.1; }
+        .bg-orbs .o2 { width: 400px; height: 400px; background: var(--blue); bottom: -100px; right: -100px; opacity: 0.08; animation-delay: -7s; }
+        .bg-orbs .o3 { width: 350px; height: 350px; background: var(--purple); top: 40%; left: 50%; opacity: 0.06; animation-delay: -14s; }
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            33% { transform: translate(40px, -40px); }
+            66% { transform: translate(-30px, 30px); }
+        }
+        .container { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+        
+        /* Header */
+        header { text-align: center; margin-bottom: 2.5rem; animation: fadeIn 0.6s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        .brand { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+        .logo {
+            width: 52px; height: 52px; border-radius: 14px;
+            background: linear-gradient(135deg, var(--green), var(--blue));
+            display: flex; align-items: center; justify-content: center;
+            font-size: 26px; box-shadow: 0 0 30px rgba(0,255,136,0.25);
+            animation: pulse 3s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(0,255,136,0.15); }
+            50% { box-shadow: 0 0 40px rgba(0,255,136,0.4); }
+        }
+        h1 {
+            font-size: 1.6rem; font-weight: 800;
+            background: linear-gradient(135deg, var(--green), var(--blue));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .sub { color: #9aa0a6; font-size: 0.9rem; line-height: 1.5; max-width: 480px; margin: 0.5rem auto 0; }
+        .live-badge {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            margin-top: 0.75rem; padding: 0.3rem 0.8rem;
+            background: rgba(0,255,136,0.08); border: 1px solid rgba(0,255,136,0.2);
+            border-radius: 20px; font-size: 0.75rem; color: var(--green);
+        }
+        .live-badge .dot { width: 6px; height: 6px; background: var(--green); border-radius: 50%; animation: blink 2s infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+        
+        /* Stats */
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-bottom: 2rem; animation: fadeIn 0.6s ease-out 0.1s backwards; }
+        @media (max-width: 700px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+        .stat {
+            background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+            padding: 1rem; position: relative; overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .stat:hover { border-color: rgba(0,255,136,0.2); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+        .stat::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+            background: linear-gradient(90deg, var(--green), var(--blue)); opacity: 0; transition: opacity 0.3s;
+        }
+        .stat:hover::before { opacity: 1; }
+        .stat-val { font-family: 'JetBrains Mono', monospace; font-size: 1.8rem; font-weight: 700; margin-bottom: 0.2rem; }
+        .stat-val.g { color: var(--green); text-shadow: 0 0 15px rgba(0,255,136,0.25); }
+        .stat-val.b { color: var(--blue); text-shadow: 0 0 15px rgba(77,154,255,0.25); }
+        .stat-val.p { color: var(--purple); text-shadow: 0 0 15px rgba(124,77,255,0.25); }
+        .stat-val.o { color: var(--orange); text-shadow: 0 0 15px rgba(255,109,0,0.25); }
+        .stat-lbl { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+        
+        /* Progress bar */
+        .progress-card {
+            background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+            padding: 1.25rem; margin-bottom: 2rem; animation: fadeIn 0.6s ease-out 0.15s backwards;
+        }
+        .progress-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+        .progress-title { font-size: 0.9rem; color: #9aa0a6; }
+        .progress-pct { font-family: 'JetBrains Mono', monospace; font-size: 1rem; font-weight: 700; color: var(--green); }
+        .progress-bar { height: 6px; background: rgba(255,255,255,0.04); border-radius: 3px; overflow: hidden; }
+        .progress-fill {
+            height: 100%; width: 0%; border-radius: 3px;
+            background: linear-gradient(90deg, var(--green), var(--blue));
+            transition: width 1.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+            position: relative;
+        }
+        .progress-fill::after {
+            content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 15px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3));
+        }
+        .progress-markers { display: flex; justify-content: space-between; margin-top: 0.35rem; font-size: 0.68rem; color: var(--muted); }
+        
+        /* Section */
+        .section { margin-bottom: 2rem; animation: fadeIn 0.6s ease-out 0.2s backwards; }
+        .section-head { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+        .section-icon {
+            width: 30px; height: 30px; border-radius: 8px;
+            display: flex; align-items: center; justify-content: center; font-size: 0.9rem;
+        }
+        .section-icon.g { background: rgba(0,255,136,0.12); color: var(--green); }
+        .section-icon.b { background: rgba(77,154,255,0.12); color: var(--blue); }
+        .section-icon.o { background: rgba(255,109,0,0.12); color: var(--orange); }
+        .section-title { font-size: 1rem; font-weight: 600; }
+        .section-count { margin-left: auto; font-size: 0.75rem; color: var(--muted); }
+        
+        /* Cards */
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+        @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+        .card {
+            background: var(--card2); border: 1px solid var(--border); border-radius: 8px;
+            padding: 0.85rem; transition: all 0.3s ease;
+            opacity: 0; transform: translateY(8px);
+        }
+        .card:hover { border-color: rgba(0,255,136,0.15); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); background: #1a2330; }
+        .card-name { font-weight: 600; font-size: 0.88rem; margin-bottom: 0.25rem; line-height: 1.3; }
+        .card-desc { font-size: 0.75rem; color: #9aa0a6; line-height: 1.4; margin-bottom: 0.55rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+        .tag {
+            font-size: 0.62rem; padding: 0.15rem 0.45rem; border-radius: 8px;
+            font-weight: 500; letter-spacing: 0.01em;
+        }
+        .tag.high { background: rgba(0,255,136,0.12); color: var(--green); border: 1px solid rgba(0,255,136,0.15); }
+        .tag.med { background: rgba(255,109,0,0.12); color: var(--orange); border: 1px solid rgba(255,109,0,0.15); }
+        .tag.low { background: rgba(95,99,104,0.12); color: var(--muted); border: 1px solid rgba(95,99,104,0.15); }
+        .tag.lang { background: rgba(77,154,255,0.08); color: var(--blue); }
+        .tag.review { background: rgba(124,77,255,0.08); color: var(--purple); }
+        .tag.tutorial { background: rgba(255,64,129,0.08); color: var(--pink); }
+        .tag.stars { color: var(--orange); font-weight: 600; }
+        .tag.age { background: rgba(95,99,104,0.08); color: var(--muted); }
+        
+        /* Buttons */
+        .links { display: flex; gap: 0.75rem; margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--border); animation: fadeIn 0.6s ease-out 0.3s backwards; }
+        .btn {
+            flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+            padding: 0.8rem 1rem; border-radius: 8px; font-weight: 600; font-size: 0.85rem;
+            text-decoration: none; transition: all 0.3s ease; cursor: pointer; border: none;
+        }
+        .btn-primary { background: linear-gradient(135deg, var(--green), #00cc6a); color: #0a0e14; box-shadow: 0 0 15px rgba(0,255,136,0.2); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(0,255,136,0.35); }
+        .btn-secondary { background: var(--card); border: 1px solid var(--border); color: var(--txt); }
+        .btn-secondary:hover { border-color: var(--blue); background: #1a2535; transform: translateY(-2px); }
+        
+        /* Footer */
+        footer {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            color: var(--muted); font-size: 0.72rem; text-align: center; line-height: 1.6;
+        }
+        footer a { color: var(--blue); text-decoration: none; }
+        footer .green { color: var(--green); }
+        .update-time { text-align: center; font-size: 0.7rem; color: var(--muted); margin-top: 0.5rem; }
+        
+        /* Loading placeholder */
+        .loading-card {
+            background: var(--card2); border: 1px solid var(--border); border-radius: 8px;
+            padding: 2rem; text-align: center; color: var(--muted); font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-orbs"><span class="o1"></span><span class="o2"></span><span class="o3"></span></div>
+    
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">🤖</div>
+                <h1>Autonomous Earnings Swarm</h1>
+            </div>
+            <p class="sub">Self-running AI agent system — researches, creates, publishes, and earns autonomously. Operates 24/7.</p>
+            <div class="live-badge"><span class="dot"></span> Swarm Active</div>
+        </header>
+        
+        <div class="stats">
+            <div class="stat"><div class="stat-val g" id="s1">-</div><div class="stat-lbl">Ideas Researched</div></div>
+            <div class="stat"><div class="stat-val b" id="s2">-</div><div class="stat-lbl">Content Pieces</div></div>
+            <div class="stat"><div class="stat-val p" id="s3">-</div><div class="stat-lbl">Products Listed</div></div>
+            <div class="stat"><div class="stat-val o" id="s4">-</div><div class="stat-lbl">Total Earned</div></div>
+        </div>
+        
+        <div class="progress-card">
+            <div class="progress-top">
+                <span class="progress-title">🎯 Goal Progress: $10,000</span>
+                <span class="progress-pct" id="pct">0%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" id="fill"></div></div>
+            <div class="progress-markers"><span>$0</span><span>$2.5K</span><span>$5K</span><span>$7.5K</span><span>$10K 🎯</span></div>
+        </div>
+        
+        <div class="section">
+            <div class="section-head">
+                <div class="section-icon g">📡</div>
+                <span class="section-title">Research Ideas from GitHub</span>
+                <span class="section-count" id="ic">0 items</span>
+            </div>
+            <div class="grid" id="ig"><div class="loading-card">Loading...</div></div>
+        </div>
+        
+        <div class="section">
+            <div class="section-head">
+                <div class="section-icon b">🎬</div>
+                <span class="section-title">Content Ready to Publish</span>
+                <span class="section-count" id="cc">0 items</span>
+            </div>
+            <div class="grid" id="cg"><div class="loading-card">Loading...</div></div>
+        </div>
+        
+        <div class="section">
+            <div class="section-head">
+                <div class="section-icon o">💰</div>
+                <span class="section-title">Digital Products</span>
+                <span class="section-count" id="pc">0 items</span>
+            </div>
+            <div class="grid" id="pg"><div class="loading-card">Loading...</div></div>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/whoRomeo/swarm" target="_blank" class="btn btn-secondary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.335.72-4.04-1.615-4.04-1.615-.355-1.385-1.11-1.755-1.11-1.755-.905-.625.065-.605.065-.605 1.005.065 1.535.955 1.535.955.875 1.535 2.195.975 2.79.735.095-.665.36-1.335.625-1.665-.34-.025-.69-.045-1.045-.045-2.55 0-4.665 2.135-4.665 4.665 0 2.135 2.14 3.94 4.665 4.665 1.74 0 3.365-.93 4.355-2.415.41-.375.79-.635 1.185-.78-.18.375-.52 1.05-.775 1.525-.2.35-.225.75-.225 1.125 0 .595.23 1.135.635 1.545.56.56 1.285.855 2.095.725.1-.675.5-1.17.985-1.47.485-.3.995-.47 1.52-.47.525 0 1.04.17 1.52.47.485.225.88.62.985 1.17.625.21 1.165-.08 1.59-.56.425-.485.635-1.14.635-1.71 0-.575-.22-1.1-.635-1.545-.415-.445-.96-.675-1.59-.675-.51 0-1.035.17-1.52.47-.485.3-.885.7-1.185 1.17-.3.47-.475.99-.475 1.515 0 .895.275 1.695.775 2.225.5 .535 1.08 1.015 1.735 1.34.655.325 1.345.52 2.08.52.735 0 1.425-.2 2.055-.585.63-.385 1.13-.935 1.465-1.625.335-.69.475-1.45.475-2.24 0-1.52-.475-2.845-1.385-3.75-.91-.91-2.055-1.385-3.345-1.385-1.29 0-2.425.475-3.345 1.385-.91.905-1.385 2.23-1.385 3.75 0 .79.14 1.55.475 2.24.335.69.835 1.24 1.465 1.625.63.385 1.32.585 2.055.585.735 0 1.425-.195 2.08-.52.655-.325 1.235-.805 1.735-1.34.5-.53.775-1.33.775-2.225 0-.525-.175-1.045-.475-1.515-.3-.47-.6-.97-.985-1.44-.4-.275-.8-.5-1.21-.675-.41-.175-.84-.275-1.29-.275-.45 0-.9.05-.135.1zm0 0"/></svg>
+                Source Code
+            </a>
+            <a href="pay.html" class="btn btn-primary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Support the Swarm
+            </a>
+        </div>
+        
+        <div class="update-time" id="ut"></div>
+        
+        <footer>
+            <p><a href="mailto:badboy8609@gmail.com" class="green">badboy8609@gmail.com</a> &nbsp;|&nbsp;
+               <a href="pay.html" class="green">UPI: piyush16.shandilya@okaxis</a></p>
+            <p><a href="https://github.com/whoRomeo/swarm">whoRomeo/swarm</a> &nbsp;·&nbsp; Running since Sep 2026 &nbsp;·&nbsp; v1.0</p>
+        </footer>
+    </div>
+    
+    <script>
+        async function fetchJSON(url) {
+            const r = await fetch(url);
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.json();
+        }
+        
+        function fmt(n) {
+            if (n >= 1000000) return (n/1000000).toFixed(1)+'M';
+            if (n >= 1000) return (n/1000).toFixed(1)+'K';
+            return n.toString();
+        }
+        
+        function ago(dateStr) {
+            if (!dateStr) return '';
+            const diff = Date.now() - new Date(dateStr).getTime();
+            const m = Math.floor(diff/60000);
+            if (m < 1) return 'now';
+            if (m < 60) return m+'m ago';
+            const h = Math.floor(m/60);
+            if (h < 24) return h+'h ago';
+            return Math.floor(h/24)+'d ago';
+        }
+        
+        async function load() {
+            try {
+                const [bl, ops, prods, rev] = await Promise.all([
+                    fetchJSON('data/backlog.json'),
+                    fetchJSON('data/operations.json'),
+                    fetchJSON('data/products.json'),
+                    fetchJSON('finance/revenue_tracker.json')
+                ]);
+                
+                document.getElementById('s1').textContent = fmt(bl.length);
+                document.getElementById('s2').textContent = fmt(ops.length);
+                document.getElementById('s3').textContent = fmt(prods.length);
+                document.getElementById('s4').textContent = '$' + (rev.total_earnings || 0).toFixed(2);
+                
+                const earned = rev.total_earnings || 0;
+                const pct = Math.min(100, (earned/10000)*100);
+                document.getElementById('fill').style.width = pct + '%';
+                document.getElementById('pct').textContent = pct.toFixed(2) + '%';
+                document.getElementById('ut').textContent = 'Auto-refreshes every 60s · ' + new Date().toLocaleString();
+                
+                // Ideas
+                document.getElementById('ic').textContent = bl.length + ' items';
+                const ig = document.getElementById('ig');
+                if (bl.length === 0) {
+                    ig.innerHTML = '<div class="loading-card" style="grid-column:1/-1">No ideas yet — swarm will populate on first run</div>';
+                } else {
+                    ig.innerHTML = bl.slice(0,9).map((item,i) => {
+                        const v = item.profit_potential?.verdict || '';
+                        const d = (item.description || '').substring(0, 100);
+                        const a = ago(item.created_at || item.timestamp);
+                        const stars = item.stars ? `<span class="tag stars">⭐ ${fmt(item.stars)}</span>` : '';
+                        const lang = item.language ? `<span class="tag lang">${item.language}</span>` : '';
+                        const cat = item.category ? `<span class="tag" style="background:rgba(77,154,255,0.08);color:var(--blue);border:1px solid rgba(77,154,255,0.12)">${item.category}</span>` : '';
+                        const age = a ? `<span class="tag age">${a}</span>` : '';
+                        const vtag = v ? `<span class="tag ${v.toLowerCase()}">${v} potential</span>` : '';
+                        return `<div class="card" style="animation-delay:${0.15+i*0.05}s">
+                            <div class="card-name">${item.name || item.trend}</div>
+                            ${d ? `<div class="card-desc">${d}</div>` : ''}
+                            <div class="card-tags">${stars}${vtag}${lang}${cat}${age}</div>
+                        </div>`;
+                    }).join('');
+                }
+                
+                // Content
+                document.getElementById('cc').textContent = ops.length + ' items';
+                const cg = document.getElementById('cg');
+                if (ops.length === 0) {
+                    cg.innerHTML = '<div class="loading-card" style="grid-column:1/-1">No content yet — run research first</div>';
+                } else {
+                    cg.innerHTML = ops.slice(0,6).map((op,i) => {
+                        const t = op.type || 'video';
+                        const s = op.status || 'ready';
+                        const dur = op.duration_minutes ? `<span class="tag" style="background:rgba(255,109,0,0.08);color:var(--orange);border:1px solid rgba(255,109,0,0.12)">${op.duration_minutes} min</span>` : '';
+                        const tags = op.tags?.slice(0,2).map(t => `<span class="tag age">${t}</span>`).join('') || '';
+                        const desc = op.description ? op.description.substring(0, 90) : '';
+                        return `<div class="card" style="animation-delay:${0.15+i*0.07}s">
+                            <div class="card-name">${op.title}</div>
+                            ${desc ? `<div class="card-desc">${desc}</div>` : ''}
+                            <div class="card-tags">
+                                <span class="tag ${t}">${t}</span>
+                                <span class="tag" style="background:rgba(0,255,136,0.08);color:var(--green);border:1px solid rgba(0,255,136,0.12)">${s}</span>
+                                ${dur}${tags}
+                            </div>
+                        </div>`;
+                    }).join('');
+                }
+                
+                // Products
+                document.getElementById('pc').textContent = prods.length + ' items';
+                const pg = document.getElementById('pg');
+                if (prods.length === 0) {
+                    pg.innerHTML = '<div class="loading-card" style="grid-column:1/-1">No products yet — run research first</div>';
+                } else {
+                    pg.innerHTML = prods.slice(0,3).map((p,i) => {
+                        return `<div class="card" style="animation-delay:${0.15+i*0.1}s">
+                            <div class="card-name">${p.title}</div>
+                            ${p.description ? `<div class="card-desc">${p.description.substring(0, 100)}</div>` : ''}
+                            <div class="card-tags">
+                                <span class="tag" style="background:rgba(0,255,136,0.08);color:var(--green);border:1px solid rgba(0,255,136,0.12)">${p.platform || 'Gumroad'}</span>
+                                <span class="tag" style="background:rgba(255,109,0,0.08);color:var(--orange);border:1px solid rgba(255,109,0,0.12)">${p.price_suggestion || '$29'}</span>
+                                <span class="tag" style="background:rgba(0,255,136,0.08);color:var(--green);border:1px solid rgba(0,255,136,0.12)">${p.status || 'ready'}</span>
+                            </div>
+                        </div>`;
+                    }).join('');
+                }
+            } catch (e) {
+                console.error('Load error:', e);
+            }
+        }
+        
+        load();
+        setInterval(load, 60000);
+        document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "openclaw_showcase",
+    "title": "This openclaw Project is INSANE",
+    "type": "showcase",
+    "duration_minutes": 5,
+    "script": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 388862 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at openclaw. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is openclaw? The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e \n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try openclaw yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "hooks": [
+      "388862 stars and growing",
+      "Could change how you work",
+      "You need to see this"
+    ],
+    "tags": [
+      "github",
+      "trending",
+      "openclaw",
+      "tech",
+      "review"
+    ],
+    "description": "Exploring openclaw - a trending GitHub project with 388862 stars. The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+    "source_url": "https://github.com/openclaw/openclaw",
+    "voiceover_text": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 388862 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at openclaw. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is openclaw? The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e \n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try openclaw yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "word_count": 148,
+    "estimated_duration_minutes": 0.9866666666666667,
+    "voiceover_file": "audio/openclaw_showcase_voiceover.mp3",
+    "thumbnail_brief": {
+      "prompt": "YouTube thumbnail, This openclaw Project is INSANE, GitHub logo, code screenshot, computer screen, vibrant colors, bold typography, high contrast, 1280x720, professional quality",
+      "dimensions": "1280x720",
+      "text_overlay": "This openclaw Project is INSANE",
+      "style": "bold_minimal"
+    },
+    "status": "script_ready",
+    "created_at": "2026-09-05T03:32:19.064879"
+  },
+  {
+    "id": "openclaw_tutorial",
+    "title": "How to Use openclaw (Complete Tutorial)",
+    "type": "tutorial",
+    "duration_minutes": 10,
+    "script": "[INTRO - 0:00-0:30]\n\"Want to learn how to use openclaw? In this video, I'll walk you through everything from installation to your first project.\"\n\n[PREREQUISITES - 0:30-1:00]\n\"Before we start, you'll need: [list prerequisites]\"\n\n[INSTALLATION - 1:00-3:00]\n\"Step 1: Install openclaw...\"\n\"Step 2: Configure...\"\n\"Step 3: Verify installation...\"\n\n[BASIC USAGE - 3:00-7:00]\n\"Let's build something real with openclaw...\"\n[Walk through a practical example]\n\n[ADVANCED TIPS - 7:00-9:00]\n\"Once you've got the basics, here are pro tips...\"\n[3-4 advanced tips]\n\n[OUTRO - 9:00-10:00]\n\"If this helped, hit like and subscribe for more. Check the description for the repo link and any resources mentioned.\"",
+    "hooks": [
+      "Complete tutorial",
+      "From zero to working",
+      "Save hours of trial and error"
+    ],
+    "tags": [
+      "tutorial",
+      "how-to",
+      "openclaw",
+      "beginner",
+      "guide"
+    ],
+    "description": "Complete tutorial for openclaw. Learn how to install, configure, and use openclaw for your projects.",
+    "source_url": "https://github.com/openclaw/openclaw",
+    "voiceover_text": "[INTRO - 0:00-0:30]\n\"Want to learn how to use openclaw? In this video, I'll walk you through everything from installation to your first project.\"\n\n[PREREQUISITES - 0:30-1:00]\n\"Before we start, you'll need: [list prerequisites]\"\n\n[INSTALLATION - 1:00-3:00]\n\"Step 1: Install openclaw...\"\n\"Step 2: Configure...\"\n\"Step 3: Verify installation...\"\n\n[BASIC USAGE - 3:00-7:00]\n\"Let's build something real with openclaw...\"\n[Walk through a practical example]\n\n[ADVANCED TIPS - 7:00-9:00]\n\"Once you've got the basics, here are pro tips...\"\n[3-4 advanced tips]\n\n[OUTRO - 9:00-10:00]\n\"If this helped, hit like and subscribe for more. Check the description for the repo link and any resources mentioned.\"",
+    "word_count": 102,
+    "estimated_duration_minutes": 0.68,
+    "voiceover_file": "audio/openclaw_tutorial_voiceover.mp3",
+    "thumbnail_brief": {
+      "prompt": "YouTube thumbnail, How to Use openclaw (Complete Tutorial), Step-by-step graphics, checkmarks, progress bar, vibrant colors, bold typography, high contrast, 1280x720, professional quality",
+      "dimensions": "1280x720",
+      "text_overlay": "How to Use openclaw (Complete Tutorial)",
+      "style": "bold_minimal"
+    },
+    "status": "script_ready",
+    "created_at": "2026-09-05T03:32:19.064879"
+  },
+  {
+    "id": "superpowers_showcase",
+    "title": "This superpowers Project is INSANE",
+    "type": "showcase",
+    "duration_minutes": 5,
+    "script": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 281787 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at superpowers. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is superpowers? An agentic skills framework & software development methodology that works.\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try superpowers yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "hooks": [
+      "281787 stars and growing",
+      "Could change how you work",
+      "You need to see this"
+    ],
+    "tags": [
+      "github",
+      "trending",
+      "superpowers",
+      "tech",
+      "review"
+    ],
+    "description": "Exploring superpowers - a trending GitHub project with 281787 stars. An agentic skills framework & software development methodology that works.",
+    "source_url": "https://github.com/obra/superpowers",
+    "voiceover_text": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 281787 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at superpowers. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is superpowers? An agentic skills framework & software development methodology that works.\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try superpowers yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "word_count": 144,
+    "estimated_duration_minutes": 0.96,
+    "voiceover_file": "audio/superpowers_showcase_voiceover.mp3",
+    "thumbnail_brief": {
+      "prompt": "YouTube thumbnail, This superpowers Project is INSANE, GitHub logo, code screenshot, computer screen, vibrant colors, bold typography, high contrast, 1280x720, professional quality",
+      "dimensions": "1280x720",
+      "text_overlay": "This superpowers Project is INSANE",
+      "style": "bold_minimal"
+    },
+    "status": "script_ready",
+    "created_at": "2026-09-05T03:32:19.064879"
+  },
+  {
+    "id": "superpowers_tutorial",
+    "title": "How to Use superpowers (Complete Tutorial)",
+    "type": "tutorial",
+    "duration_minutes": 10,
+    "script": "[INTRO - 0:00-0:30]\n\"Want to learn how to use superpowers? In this video, I'll walk you through everything from installation to your first project.\"\n\n[PREREQUISITES - 0:30-1:00]\n\"Before we start, you'll need: [list prerequisites]\"\n\n[INSTALLATION - 1:00-3:00]\n\"Step 1: Install superpowers...\"\n\"Step 2: Configure...\"\n\"Step 3: Verify installation...\"\n\n[BASIC USAGE - 3:00-7:00]\n\"Let's build something real with superpowers...\"\n[Walk through a practical example]\n\n[ADVANCED TIPS - 7:00-9:00]\n\"Once you've got the basics, here are pro tips...\"\n[3-4 advanced tips]\n\n[OUTRO - 9:00-10:00]\n\"If this helped, hit like and subscribe for more. Check the description for the repo link and any resources mentioned.\"",
+    "hooks": [
+      "Complete tutorial",
+      "From zero to working",
+      "Save hours of trial and error"
+    ],
+    "tags": [
+      "tutorial",
+      "how-to",
+      "superpowers",
+      "beginner",
+      "guide"
+    ],
+    "description": "Complete tutorial for superpowers. Learn how to install, configure, and use superpowers for your projects.",
+    "source_url": "https://github.com/obra/superpowers",
+    "voiceover_text": "[INTRO - 0:00-0:30]\n\"Want to learn how to use superpowers? In this video, I'll walk you through everything from installation to your first project.\"\n\n[PREREQUISITES - 0:30-1:00]\n\"Before we start, you'll need: [list prerequisites]\"\n\n[INSTALLATION - 1:00-3:00]\n\"Step 1: Install superpowers...\"\n\"Step 2: Configure...\"\n\"Step 3: Verify installation...\"\n\n[BASIC USAGE - 3:00-7:00]\n\"Let's build something real with superpowers...\"\n[Walk through a practical example]\n\n[ADVANCED TIPS - 7:00-9:00]\n\"Once you've got the basics, here are pro tips...\"\n[3-4 advanced tips]\n\n[OUTRO - 9:00-10:00]\n\"If this helped, hit like and subscribe for more. Check the description for the repo link and any resources mentioned.\"",
+    "word_count": 102,
+    "estimated_duration_minutes": 0.68,
+    "voiceover_file": "audio/superpowers_tutorial_voiceover.mp3",
+    "thumbnail_brief": {
+      "prompt": "YouTube thumbnail, How to Use superpowers (Complete Tutorial), Step-by-step graphics, checkmarks, progress bar, vibrant colors, bold typography, high contrast, 1280x720, professional quality",
+      "dimensions": "1280x720",
+      "text_overlay": "How to Use superpowers (Complete Tutorial)",
+      "style": "bold_minimal"
+    },
+    "status": "script_ready",
+    "created_at": "2026-09-05T03:32:19.066327"
+  },
+  {
+    "id": "hermes-agent_showcase",
+    "title": "This hermes-agent Project is INSANE",
+    "type": "showcase",
+    "duration_minutes": 5,
+    "script": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 241437 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at hermes-agent. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is hermes-agent? The agent that grows with you\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try hermes-agent yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "hooks": [
+      "241437 stars and growing",
+      "Could change how you work",
+      "You need to see this"
+    ],
+    "tags": [
+      "github",
+      "trending",
+      "hermes-agent",
+      "tech",
+      "review"
+    ],
+    "description": "Exploring hermes-agent - a trending GitHub project with 241437 stars. The agent that grows with you",
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "voiceover_text": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 241437 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at hermes-agent. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is hermes-agent? The agent that grows with you\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try hermes-agent yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "word_count": 140,
+    "estimated_duration_minutes": 0.9333333333333333,
+    "voiceover_file": "audio/hermes-agent_showcase_voiceover.mp3",
+    "thumbnail_brief": {
+      "prompt": "YouTube thumbnail, This hermes-agent Project is INSANE, GitHub logo, code screenshot, computer screen, vibrant colors, bold typography, high contrast, 1280x720, professional quality",
+      "dimensions": "1280x720",
+      "text_overlay": "This hermes-agent Project is INSANE",
+      "style": "bold_minimal"
+    },
+    "status": "script_ready",
+    "created_at": "2026-09-05T03:32:19.066327"
+  },
+  {
+    "id": "hermes-agent_tutorial",
+    "title": "How to Use hermes-agent (Complete Tutorial)",
+    "type": "tutorial",
+    "duration_minutes": 10,
+    "script": "[INTRO - 0:00-0:30]\n\"Want to learn how to use hermes-agent? In this video, I'll walk you through everything from installation to your first project.\"\n\n[PREREQUISITES - 0:30-1:00]\n\"Before we start, you'll need: [list prerequisites]\"\n\n[INSTALLATION - 1:00-3:00]\n\"Step 1: Install hermes-agent...\"\n\"Step 2: Configure...\"\n\"Step 3: Verify installation...\"\n\n[BASIC USAGE - 3:00-7:00]\n\"Let's build something real with hermes-agent...\"\n[Walk through a practical example]\n\n[ADVANCED TIPS - 7:00-9:00]\n\"Once you've got the basics, here are pro tips...\"\n[3-4 advanced tips]\n\n[OUTRO - 9:00-10:00]\n\"If this helped, hit like and subscribe for more. Check the description for the repo link and any resources mentioned.\"",
+    "hooks": [
+      "Complete tutorial",
+      "From zero to working",
+      "Save hours of trial and error"
+    ],
+    "tags": [
+      "tutorial",
+      "how-to",
+      "hermes-agent",
+      "beginner",
+      "guide"
+    ],
+    "description": "Complete tutorial for hermes-agent. Learn how to install, configure, and use hermes-agent for your projects.",
+    "source_url": "https://github.com/NousResearch/hermes-agent",
+    "voiceover_text": "[INTRO - 0:00-0:30]\n\"Want to learn how to use hermes-agent? In this video, I'll walk you through everything from installation to your first project.\"\n\n[PREREQUISITES - 0:30-1:00]\n\"Before we start, you'll need: [list prerequisites]\"\n\n[INSTALLATION - 1:00-3:00]\n\"Step 1: Install hermes-agent...\"\n\"Step 2: Configure...\"\n\"Step 3: Verify installation...\"\n\n[BASIC USAGE - 3:00-7:00]\n\"Let's build something real with hermes-agent...\"\n[Walk through a practical example]\n\n[ADVANCED TIPS - 7:00-9:00]\n\"Once you've got the basics, here are pro tips...\"\n[3-4 advanced tips]\n\n[OUTRO - 9:00-10:00]\n\"If this helped, hit like and subscribe for more. Check the description for the repo link and any resources mentioned.\"",
+    "word_count": 102,
+    "estimated_duration_minutes": 0.68,
+    "voiceover_file": "audio/hermes-agent_tutorial_voiceover.mp3",
+    "thumbnail_brief": {
+      "prompt": "YouTube thumbnail, How to Use hermes-agent (Complete Tutorial), Step-by-step graphics, checkmarks, progress bar, vibrant colors, bold typography, high contrast, 1280x720, professional quality",
+      "dimensions": "1280x720",
+      "text_overlay": "How to Use hermes-agent (Complete Tutorial)",
+      "style": "bold_minimal"
+    },
+    "status": "script_ready",
+    "created_at": "2026-09-05T03:32:19.066327"
+  }
+]

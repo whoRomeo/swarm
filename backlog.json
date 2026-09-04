@@ -1,0 +1,1932 @@
+[
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "openclaw",
+    "full_name": "openclaw/openclaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+    "stars": 388862,
+    "language": "TypeScript",
+    "created_at": "2025-11-24T10:16:47Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (388862)",
+        "Solves concrete problem",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "openclaw - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of openclaw with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build openclaw: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend openclaw for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This openclaw Project is INSANE (GitHub Trending)",
+        "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 388862 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with openclaw (Step by Step)",
+        "description": "How to use openclaw to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "superpowers",
+    "full_name": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "description": "An agentic skills framework & software development methodology that works.",
+    "stars": 281787,
+    "language": "Shell",
+    "created_at": "2025-10-09T19:45:18Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (281787)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "superpowers - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of superpowers with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build superpowers: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend superpowers for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This superpowers Project is INSANE (GitHub Trending)",
+        "description": "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 281787 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with superpowers (Step by Step)",
+        "description": "How to use superpowers to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "hermes-agent",
+    "full_name": "NousResearch/hermes-agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "description": "The agent that grows with you",
+    "stars": 241437,
+    "language": "Python",
+    "created_at": "2025-07-22T22:22:28Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (241437)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "hermes-agent - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of hermes-agent with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build hermes-agent: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend hermes-agent for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This hermes-agent Project is INSANE (GitHub Trending)",
+        "description": "Showcasing hermes-agent - The agent that grows with you. This project has 241437 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with hermes-agent (Step by Step)",
+        "description": "How to use hermes-agent to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "n8n",
+    "full_name": "n8n-io/n8n",
+    "url": "https://github.com/n8n-io/n8n",
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+    "stars": 203365,
+    "language": "TypeScript",
+    "created_at": "2019-06-22T09:24:21Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (203365)",
+        "Solves concrete problem",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "n8n - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of n8n with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build n8n: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend n8n for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This n8n Project is INSANE (GitHub Trending)",
+        "description": "Showcasing n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with cus. This project has 203365 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with n8n (Step by Step)",
+        "description": "How to use n8n to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "AutoGPT",
+    "full_name": "Significant-Gravitas/AutoGPT",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "stars": 187129,
+    "language": "Python",
+    "created_at": "2023-03-16T09:21:07Z",
+    "profit_potential": {
+      "score": 8,
+      "reasons": [
+        "High stars (187129)",
+        "Has commercial signals",
+        "Solves concrete problem",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "AutoGPT - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of AutoGPT with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build AutoGPT: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend AutoGPT for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This AutoGPT Project is INSANE (GitHub Trending)",
+        "description": "Showcasing AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provi. This project has 187129 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with AutoGPT (Step by Step)",
+        "description": "How to use AutoGPT to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "firecrawl",
+    "full_name": "firecrawl/firecrawl",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "description": "The context API to search, scrape, and interact with the web at scale. \ud83d\udd25",
+    "stars": 176498,
+    "language": "TypeScript",
+    "created_at": "2024-04-15T21:02:29Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (176498)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "firecrawl - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of firecrawl with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build firecrawl: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend firecrawl for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This firecrawl Project is INSANE (GitHub Trending)",
+        "description": "Showcasing firecrawl - The context API to search, scrape, and interact with the web at scale. \ud83d\udd25. This project has 176498 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with firecrawl (Step by Step)",
+        "description": "How to use firecrawl to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "prompts.chat",
+    "full_name": "f/prompts.chat",
+    "url": "https://github.com/f/prompts.chat",
+    "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source \u2014 self-host for your organization with complete privacy.",
+    "stars": 169319,
+    "language": "HTML",
+    "created_at": "2022-12-05T13:54:13Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (169319)",
+        "Has commercial signals",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "prompts.chat - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of prompts.chat with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build prompts.chat: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend prompts.chat for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This prompts.chat Project is INSANE (GitHub Trending)",
+        "description": "Showcasing prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and op. This project has 169319 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with prompts.chat (Step by Step)",
+        "description": "How to use prompts.chat to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "stable-diffusion-webui",
+    "full_name": "AUTOMATIC1111/stable-diffusion-webui",
+    "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "description": "Stable Diffusion web UI",
+    "stars": 164811,
+    "language": "Python",
+    "created_at": "2022-08-22T14:05:26Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (164811)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "stable-diffusion-webui - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of stable-diffusion-webui with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build stable-diffusion-webui: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend stable-diffusion-webui for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This stable-diffusion-webui Project is INSANE (GitHub Trending)",
+        "description": "Showcasing stable-diffusion-webui - Stable Diffusion web UI. This project has 164811 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with stable-diffusion-webui (Step by Step)",
+        "description": "How to use stable-diffusion-webui to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "JavaGuide",
+    "full_name": "Snailclimb/JavaGuide",
+    "url": "https://github.com/Snailclimb/JavaGuide",
+    "description": "Java \u9762\u8bd5 & \u540e\u7aef\u901a\u7528\u9762\u8bd5\u6307\u5357\uff0c\u8986\u76d6\u8ba1\u7b97\u673a\u57fa\u7840\u3001\u6570\u636e\u5e93\u3001\u5206\u5e03\u5f0f\u3001\u9ad8\u5e76\u53d1\u3001\u7cfb\u7edf\u8bbe\u8ba1\u4e0e AI \u5e94\u7528\u5f00\u53d1",
+    "stars": 158277,
+    "language": "JavaScript",
+    "created_at": "2018-05-07T13:27:00Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (158277)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "JavaGuide - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of JavaGuide with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build JavaGuide: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend JavaGuide for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This JavaGuide Project is INSANE (GitHub Trending)",
+        "description": "Showcasing JavaGuide - Java \u9762\u8bd5 & \u540e\u7aef\u901a\u7528\u9762\u8bd5\u6307\u5357\uff0c\u8986\u76d6\u8ba1\u7b97\u673a\u57fa\u7840\u3001\u6570\u636e\u5e93\u3001\u5206\u5e03\u5f0f\u3001\u9ad8\u5e76\u53d1\u3001\u7cfb\u7edf\u8bbe\u8ba1\u4e0e AI \u5e94\u7528\u5f00\u53d1. This project has 158277 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with JavaGuide (Step by Step)",
+        "description": "How to use JavaGuide to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "automation_ai",
+    "name": "dify",
+    "full_name": "langgenius/dify",
+    "url": "https://github.com/langgenius/dify",
+    "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+    "stars": 154466,
+    "language": "TypeScript",
+    "created_at": "2023-04-12T07:40:24Z",
+    "profit_potential": {
+      "score": 8,
+      "reasons": [
+        "High stars (154466)",
+        "Has commercial signals",
+        "Solves concrete problem",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "dify - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of dify with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build dify: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend dify for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This dify Project is INSANE (GitHub Trending)",
+        "description": "Showcasing dify - Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative wor. This project has 154466 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with dify (Step by Step)",
+        "description": "How to use dify to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:17.262669"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "freeCodeCamp",
+    "full_name": "freeCodeCamp/freeCodeCamp",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "stars": 455007,
+    "language": "TypeScript",
+    "created_at": "2014-12-24T17:49:19Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (455007)",
+        "Has commercial signals",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "freeCodeCamp - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of freeCodeCamp with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build freeCodeCamp: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend freeCodeCamp for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This freeCodeCamp Project is INSANE (GitHub Trending)",
+        "description": "Showcasing freeCodeCamp - freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer scienc. This project has 455007 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with freeCodeCamp (Step by Step)",
+        "description": "How to use freeCodeCamp to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "system-design-primer",
+    "full_name": "donnemartin/system-design-primer",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+    "stars": 367949,
+    "language": "Python",
+    "created_at": "2017-02-26T16:15:28Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (367949)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "system-design-primer - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of system-design-primer with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build system-design-primer: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend system-design-primer for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This system-design-primer Project is INSANE (GitHub Trending)",
+        "description": "Showcasing system-design-primer - Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashc. This project has 367949 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with system-design-primer (Step by Step)",
+        "description": "How to use system-design-primer to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "awesome-python",
+    "full_name": "vinta/awesome-python",
+    "url": "https://github.com/vinta/awesome-python",
+    "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
+    "stars": 318275,
+    "language": "Python",
+    "created_at": "2014-06-27T21:00:06Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (318275)",
+        "Solves concrete problem",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "awesome-python - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of awesome-python with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build awesome-python: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend awesome-python for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This awesome-python Project is INSANE (GitHub Trending)",
+        "description": "Showcasing awesome-python - The definitive list that answers \"I want to do X in Python, which tool should I use?\". This project has 318275 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with awesome-python (Step by Step)",
+        "description": "How to use awesome-python to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "project-based-learning",
+    "full_name": "practical-tutorials/project-based-learning",
+    "url": "https://github.com/practical-tutorials/project-based-learning",
+    "description": "Curated list of project-based tutorials",
+    "stars": 282084,
+    "language": "Python",
+    "created_at": "2017-04-12T05:07:46Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (282084)",
+        "Has commercial signals",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "project-based-learning - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of project-based-learning with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build project-based-learning: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend project-based-learning for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This project-based-learning Project is INSANE (GitHub Trending)",
+        "description": "Showcasing project-based-learning - Curated list of project-based tutorials. This project has 282084 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with project-based-learning (Step by Step)",
+        "description": "How to use project-based-learning to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "react",
+    "full_name": "react/react",
+    "url": "https://github.com/react/react",
+    "description": "The library for web and native user interfaces.",
+    "stars": 249076,
+    "language": "JavaScript",
+    "created_at": "2013-05-24T16:15:54Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (249076)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "react - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of react with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build react: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend react for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This react Project is INSANE (GitHub Trending)",
+        "description": "Showcasing react - The library for web and native user interfaces.. This project has 249076 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with react (Step by Step)",
+        "description": "How to use react to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "Python",
+    "full_name": "TheAlgorithms/Python",
+    "url": "https://github.com/TheAlgorithms/Python",
+    "description": "All Algorithms implemented in Python",
+    "stars": 224257,
+    "language": "Python",
+    "created_at": "2016-07-16T09:44:01Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (224257)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "Python - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of Python with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build Python: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend Python for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This Python Project is INSANE (GitHub Trending)",
+        "description": "Showcasing Python - All Algorithms implemented in Python. This project has 224257 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with Python (Step by Step)",
+        "description": "How to use Python to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "vue",
+    "full_name": "vuejs/vue",
+    "url": "https://github.com/vuejs/vue",
+    "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core",
+    "stars": 211630,
+    "language": "TypeScript",
+    "created_at": "2013-07-29T03:24:51Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (211630)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "vue - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of vue with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build vue: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend vue for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This vue Project is INSANE (GitHub Trending)",
+        "description": "Showcasing vue - This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core. This project has 211630 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with vue (Step by Step)",
+        "description": "How to use vue to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "tensorflow",
+    "full_name": "tensorflow/tensorflow",
+    "url": "https://github.com/tensorflow/tensorflow",
+    "description": "An Open Source Machine Learning Framework for Everyone",
+    "stars": 198827,
+    "language": "C++",
+    "created_at": "2015-11-07T01:19:20Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (198827)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "tensorflow - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of tensorflow with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build tensorflow: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend tensorflow for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This tensorflow Project is INSANE (GitHub Trending)",
+        "description": "Showcasing tensorflow - An Open Source Machine Learning Framework for Everyone. This project has 198827 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with tensorflow (Step by Step)",
+        "description": "How to use tensorflow to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "javascript-algorithms",
+    "full_name": "trekhleb/javascript-algorithms",
+    "url": "https://github.com/trekhleb/javascript-algorithms",
+    "description": "\ud83d\udcdd Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+    "stars": 196612,
+    "language": "JavaScript",
+    "created_at": "2018-03-24T07:47:04Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (196612)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "javascript-algorithms - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of javascript-algorithms with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build javascript-algorithms: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend javascript-algorithms for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This javascript-algorithms Project is INSANE (GitHub Trending)",
+        "description": "Showcasing javascript-algorithms - \ud83d\udcdd Algorithms and data structures implemented in JavaScript with explanations and links to further re. This project has 196612 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with javascript-algorithms (Step by Step)",
+        "description": "How to use javascript-algorithms to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "programming_tools",
+    "name": "ohmyzsh",
+    "full_name": "ohmyzsh/ohmyzsh",
+    "url": "https://github.com/ohmyzsh/ohmyzsh",
+    "description": "\ud83d\ude43   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
+    "stars": 189552,
+    "language": "Shell",
+    "created_at": "2009-08-28T18:15:37Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (189552)",
+        "Solves concrete problem",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "ohmyzsh - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of ohmyzsh with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build ohmyzsh: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend ohmyzsh for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This ohmyzsh Project is INSANE (GitHub Trending)",
+        "description": "Showcasing ohmyzsh - \ud83d\ude43   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configu. This project has 189552 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with ohmyzsh (Step by Step)",
+        "description": "How to use ohmyzsh to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:18.302023"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "build-your-own-x",
+    "full_name": "codecrafters-io/build-your-own-x",
+    "url": "https://github.com/codecrafters-io/build-your-own-x",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "stars": 545224,
+    "language": "Markdown",
+    "created_at": "2018-05-09T12:03:18Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (545224)",
+        "Has commercial signals",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "build-your-own-x - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of build-your-own-x with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build build-your-own-x: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend build-your-own-x for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This build-your-own-x Project is INSANE (GitHub Trending)",
+        "description": "Showcasing build-your-own-x - Master programming by recreating your favorite technologies from scratch.. This project has 545224 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with build-your-own-x (Step by Step)",
+        "description": "How to use build-your-own-x to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "awesome",
+    "full_name": "sindresorhus/awesome",
+    "url": "https://github.com/sindresorhus/awesome",
+    "description": "\ud83d\ude0e Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
+    "stars": 503008,
+    "language": null,
+    "created_at": "2014-07-11T13:42:37Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (503008)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "awesome - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of awesome with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build awesome: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend awesome for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This awesome Project is INSANE (GitHub Trending)",
+        "description": "Showcasing awesome - \ud83d\ude0e Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled . This project has 503008 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with awesome (Step by Step)",
+        "description": "How to use awesome to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "public-apis",
+    "full_name": "public-apis/public-apis",
+    "url": "https://github.com/public-apis/public-apis",
+    "description": "A collective list of free APIs",
+    "stars": 475300,
+    "language": "Python",
+    "created_at": "2016-03-20T23:49:42Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (475300)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "public-apis - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of public-apis with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build public-apis: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend public-apis for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This public-apis Project is INSANE (GitHub Trending)",
+        "description": "Showcasing public-apis - A collective list of free APIs. This project has 475300 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with public-apis (Step by Step)",
+        "description": "How to use public-apis to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "freeCodeCamp",
+    "full_name": "freeCodeCamp/freeCodeCamp",
+    "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+    "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+    "stars": 455007,
+    "language": "TypeScript",
+    "created_at": "2014-12-24T17:49:19Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (455007)",
+        "Has commercial signals",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "freeCodeCamp - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of freeCodeCamp with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build freeCodeCamp: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend freeCodeCamp for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This freeCodeCamp Project is INSANE (GitHub Trending)",
+        "description": "Showcasing freeCodeCamp - freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer scienc. This project has 455007 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with freeCodeCamp (Step by Step)",
+        "description": "How to use freeCodeCamp to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "free-programming-books",
+    "full_name": "EbookFoundation/free-programming-books",
+    "url": "https://github.com/EbookFoundation/free-programming-books",
+    "description": ":books: Freely available programming books",
+    "stars": 395978,
+    "language": "Python",
+    "created_at": "2013-10-11T06:50:37Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (395978)",
+        "Has commercial signals",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "free-programming-books - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of free-programming-books with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build free-programming-books: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend free-programming-books for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This free-programming-books Project is INSANE (GitHub Trending)",
+        "description": "Showcasing free-programming-books - :books: Freely available programming books. This project has 395978 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with free-programming-books (Step by Step)",
+        "description": "How to use free-programming-books to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "openclaw",
+    "full_name": "openclaw/openclaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+    "stars": 388862,
+    "language": "TypeScript",
+    "created_at": "2025-11-24T10:16:47Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (388862)",
+        "Solves concrete problem",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "openclaw - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of openclaw with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build openclaw: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend openclaw for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This openclaw Project is INSANE (GitHub Trending)",
+        "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 388862 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with openclaw (Step by Step)",
+        "description": "How to use openclaw to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "system-design-primer",
+    "full_name": "donnemartin/system-design-primer",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+    "stars": 367949,
+    "language": "Python",
+    "created_at": "2017-02-26T16:15:28Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (367949)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "system-design-primer - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of system-design-primer with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build system-design-primer: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend system-design-primer for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This system-design-primer Project is INSANE (GitHub Trending)",
+        "description": "Showcasing system-design-primer - Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashc. This project has 367949 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with system-design-primer (Step by Step)",
+        "description": "How to use system-design-primer to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "developer-roadmap",
+    "full_name": "nilbuild/developer-roadmap",
+    "url": "https://github.com/nilbuild/developer-roadmap",
+    "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+    "stars": 366310,
+    "language": "TypeScript",
+    "created_at": "2017-03-15T13:45:52Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (366310)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "developer-roadmap - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of developer-roadmap with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build developer-roadmap: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend developer-roadmap for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This developer-roadmap Project is INSANE (GitHub Trending)",
+        "description": "Showcasing developer-roadmap - Interactive roadmaps, guides and other educational content to help developers grow in their careers.. This project has 366310 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with developer-roadmap (Step by Step)",
+        "description": "How to use developer-roadmap to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "coding-interview-university",
+    "full_name": "jwasham/coding-interview-university",
+    "url": "https://github.com/jwasham/coding-interview-university",
+    "description": "A complete computer science study plan to become a software engineer.",
+    "stars": 360362,
+    "language": null,
+    "created_at": "2016-06-06T02:34:12Z",
+    "profit_potential": {
+      "score": 4,
+      "reasons": [
+        "High stars (360362)",
+        "Actively maintained"
+      ],
+      "verdict": "MEDIUM"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "coding-interview-university - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of coding-interview-university with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build coding-interview-university: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend coding-interview-university for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This coding-interview-university Project is INSANE (GitHub Trending)",
+        "description": "Showcasing coding-interview-university - A complete computer science study plan to become a software engineer.. This project has 360362 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with coding-interview-university (Step by Step)",
+        "description": "How to use coding-interview-university to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "github_repo",
+    "category": "recent_popular",
+    "name": "awesome-python",
+    "full_name": "vinta/awesome-python",
+    "url": "https://github.com/vinta/awesome-python",
+    "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
+    "stars": 318275,
+    "language": "Python",
+    "created_at": "2014-06-27T21:00:06Z",
+    "profit_potential": {
+      "score": 6,
+      "reasons": [
+        "High stars (318275)",
+        "Solves concrete problem",
+        "Actively maintained"
+      ],
+      "verdict": "HIGH"
+    },
+    "product_idea": [
+      {
+        "type": "template",
+        "title": "awesome-python - Production-Ready Template",
+        "description": "A polished, documented, production-ready version of awesome-python with best practices, tests, and deployment config included.",
+        "price_suggestion": "$29-99",
+        "platform": "Gumroad",
+        "effort_estimate": "4-8 hours"
+      },
+      {
+        "type": "tutorial",
+        "title": "How to Build awesome-python: Complete Guide",
+        "description": "A step-by-step video course or ebook teaching how to use and extend awesome-python for real-world projects.",
+        "price_suggestion": "$19-49",
+        "platform": "Gumroad + YouTube",
+        "effort_estimate": "6-12 hours"
+      }
+    ],
+    "content_idea": [
+      {
+        "type": "video",
+        "title": "This awesome-python Project is INSANE (GitHub Trending)",
+        "description": "Showcasing awesome-python - The definitive list that answers \"I want to do X in Python, which tool should I use?\". This project has 318275 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "format": "showcase/review",
+        "duration_estimate": "5-8 minutes",
+        "monetization": [
+          "adsense",
+          "affiliate"
+        ]
+      },
+      {
+        "type": "video",
+        "title": "Build a Business with awesome-python (Step by Step)",
+        "description": "How to use awesome-python to build something profitable. Complete walkthrough from setup to deployment.",
+        "format": "tutorial",
+        "duration_estimate": "10-15 minutes",
+        "monetization": [
+          "adsense",
+          "digital_product"
+        ]
+      }
+    ],
+    "timestamp": "2026-09-05T03:32:19.058376"
+  },
+  {
+    "type": "web_trend",
+    "category": "ai_agents",
+    "trend": "AI agents for automation",
+    "search_volume": "HIGH",
+    "profit_angle": "People want to build AI agents but don't know how - sell templates, courses, consultations",
+    "content_ideas": [
+      "How to Build Your First AI Agent in 2024",
+      "5 AI Agent Projects You Can Sell Today",
+      "AI Agent Framework Comparison 2024"
+    ],
+    "product_ideas": [
+      "AI Agent Template Pack ($49)",
+      "AI Agent Starter Course ($99)",
+      "Custom AI Agent Building Service"
+    ],
+    "timestamp": "2026-09-05T03:32:19.061454"
+  },
+  {
+    "type": "web_trend",
+    "category": "automation",
+    "trend": "No-code automation tools",
+    "search_volume": "HIGH",
+    "profit_angle": "Business owners want to automate without coding - sell automation setups, templates, consulting",
+    "content_ideas": [
+      "Automate Your Entire Business with No Code",
+      "5 Automation Tools That Save 10 Hours/Week",
+      "Build an Automated Lead Generation System"
+    ],
+    "product_ideas": [
+      "Automation Template Library ($29/month)",
+      "Business Automation Audit ($99 one-time)",
+      "Pre-built Automation Workflows"
+    ],
+    "timestamp": "2026-09-05T03:32:19.061454"
+  },
+  {
+    "type": "web_trend",
+    "category": "developer_tools",
+    "trend": "Developer productivity tools",
+    "search_volume": "MEDIUM",
+    "profit_angle": "Developers spend money on tools that make them faster - sell IDE extensions, CLI tools, boilerplates",
+    "content_ideas": [
+      "Tools That Make Me 10x Faster as a Developer",
+      "My Entire Developer Setup 2024",
+      "Build Your Own Developer Tools (and Sell Them)"
+    ],
+    "product_ideas": [
+      "Developer Boilerplate Bundle ($79)",
+      "CLI Tool Collection ($29)",
+      "IDE Extension Template"
+    ],
+    "timestamp": "2026-09-05T03:32:19.061454"
+  }
+]
