@@ -1,4 +1,314 @@
-<html>
-<head><meta http-equiv="refresh" content="0; url=pay.html"></head>
-<body><p>Redirecting to payment page...</p></body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Earnings Swarm</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #00ff88;
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #222;
+            padding-bottom: 1rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: #1a1a1a;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #2a2a2a;
+        }
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00ff88;
+        }
+        .stat-label {
+            font-size: 0.75rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            color: #00ccff;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .idea-card, .content-card, .product-card {
+            background: #1a1a1a;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+            border-left: 3px solid #00ff88;
+        }
+        .idea-card .name {
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+        }
+        .idea-card .meta {
+            font-size: 0.8rem;
+            color: #888;
+        }
+        .idea-card .stars {
+            color: #ffaa00;
+        }
+        .tag {
+            display: inline-block;
+            background: #2a2a2a;
+            padding: 0.15rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            margin: 0.1rem;
+            color: #aaa;
+        }
+        .tag.high { background: #00ff88; color: #000; }
+        .tag.medium { background: #ffaa00; color: #000; }
+        .progress-container {
+            background: #2a2a2a;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, #00ff88, #00ccff);
+            height: 100%;
+            transition: width 0.5s;
+        }
+        .progress-text {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        .link-row {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #222;
+        }
+        .link-btn {
+            flex: 1;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .link-btn.github {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #e0e0e0;
+        }
+        .link-btn.github:hover { border-color: #00ccff; }
+        .link-btn.pay {
+            background: #00ff88;
+            color: #000;
+        }
+        .link-btn.pay:hover { background: #00cc77; }
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #222;
+            color: #444;
+            font-size: 0.75rem;
+            text-align: center;
+        }
+        .refresh-info {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #444;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span>🤖</span> Autonomous Earnings Swarm
+        </h1>
+        <div class="subtitle">
+            Self-running agent system · Researching, creating, publishing, earning<br>
+            <span id="lastUpdated">Loading...</span>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="statIdeas">-</div>
+                <div class="stat-label">Ideas Researched</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statContent">-</div>
+                <div class="stat-label">Content Pieces</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statProducts">-</div>
+                <div class="stat-label">Products Listed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statEarned">-</div>
+                <div class="stat-label">Total Earned</div>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+        </div>
+        <div class="progress-text">
+            Progress to $10,000 goal: <span id="progressPercent">0%</span>
+        </div>
+
+        <div class="section">
+            <h2>📡 Recent Ideas from GitHub</h2>
+            <div id="ideasContainer">Loading...</div>
+        </div>
+
+        <div class="section">
+            <h2>🎬 Content Ready to Publish</h2>
+            <div id="contentContainer">Loading...</div>
+        </div>
+
+        <div class="section">
+            <h2>💰 Products</h2>
+            <div id="productsContainer">Loading...</div>
+        </div>
+
+        <div class="link-row">
+            <a href="https://github.com/whoRomeo/swarm" class="link-btn github">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="vertical-align: middle; margin-right: 0.3rem;">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.84-1.13-.28-.15-.68-.52-.01-.53.63-.01.06-.03.06-.03.61.01.98.11.98.11.87.15 1.33.52 1.33.52.65 1.12.91 1.72.91 1.72.06-.46.28-.83.51-1.11.03-.03.06-.06.06-.06.03-.14.25-.26.51-.28.14-.04.31-.06.49-.06.18.02.35.06.51.09.16.03.32.07.48.11.14.04.28.08.42.13.11.05.23.1.35.15.1.05.2.11.29.17.09.06.18.13.25.2.07.07.13.15.18.24.05.09.08.18.1.27.02.09.03.19.03.29 0 .09-.01.18-.03.27-.02.1-.05.2-.1.29-.05.09-.11.17-.17.24-.06.07-.13.14-.21.19-.08.05-.17.1-.26.13-.1.03-.2.06-.3.08-.1.02-.21.04-.31.05-.1.01-.2.02-.29.02-.29.01-.58.02-.87.02-.29 0-.58-.01-.87-.02-.1-.0-.2-.01-.3-.02-.1-.01-.21-.03-.31-.05-.1-.02-.2-.05-.3-.08-.09-.03-.19-.08-.26-.13-.08-.06-.15-.12-.21-.19-.06-.07-.12-.15-.17-.24-.05-.09-.1-.19-.1-.29 0-.1.01-.19.03-.27.02-.09.04-.19.08-.27.04-.08.1-.16.16-.23.06-.07.13-.13.2-.18.07-.05.15-.1.23-.13.1-.04.2-.07.31-.09.11-.02.22-.04.33-.04.11 0 .22.02.33.04.11.02.21.05.31.09.08.03.16.08.23.13.07.05.14.1.2.18.06.07.12.15.16.23.04.08.06.17.08.27.02.09.03.19.03.28 0 .1-.01.19-.03.28-.02.09-.05.18-.1.26-.05.08-.11.15-.18.21-.07.06-.15.11-.23.14-.08.03-.16.06-.24.08-.08.02-.16.03-.24.05-.08.02-.16.03-.23.05-.15.05-.3.09-.45.12-.15.03-.31.05-.46.06-.15.02-.3.03-.44.03-.27.01-.54.01-.81.01z"/>
+                </svg>
+                View Source Code
+            </a>
+            <a href="pay.html" class="link-btn pay">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="vertical-align: middle; margin-right: 0.3rem;">
+                    <path d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm1 0v6h14V4H1zm1 1v3h12V5H2zm3 2v1h6v-1H5z"/>
+                </svg>
+                Support the Swarm
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>badboy8609@gmail.com | UPI: piyush16.shandilya@okaxis</p>
+            <p>GitHub: whoRomeo/swarm · Running since Sep 2026</p>
+            <p class="refresh-info">🔄 Auto-refreshes every 60 seconds</p>
+        </div>
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                const [backlog, operations, products, revenue] = await Promise.all([
+                    fetch('backlog.json').then(r => r.json()),
+                    fetch('operations.json').then(r => r.json()),
+                    fetch('products.json').then(r => r.json()),
+                    fetch('finance/revenue_tracker.json').then(r => r.json())
+                ]);
+
+                document.getElementById('statIdeas').textContent = backlog.length;
+                document.getElementById('statContent').textContent = operations.length;
+                document.getElementById('statProducts').textContent = products.length;
+                
+                const earned = revenue.total_earnings || 0;
+                const earnedUsd = earned.toFixed(2);
+                const earnedInr = (earned * 83).toFixed(0);
+                document.getElementById('statEarned').textContent = '$' + earnedUsd;
+                
+                const pct = Math.min(100, (earned / 10000) * 100);
+                document.getElementById('progressBar').style.width = pct + '%';
+                document.getElementById('progressPercent').textContent = pct.toFixed(2) + '%';
+                
+                document.getElementById('lastUpdated').textContent = 
+                    'Last updated: ' + new Date().toLocaleString();
+
+                // Ideas
+                const ideasHtml = backlog.slice(0, 5).map(idea => {
+                    const stars = idea.stars || '';
+                    const verdict = idea.profit_potential?.verdict || '';
+                    const tags = [verdict ? `tag ${verdict.toLowerCase()}` : '', 
+                                 stars ? 'stars' : ''].filter(Boolean);
+                    return `
+                        <div class="idea-card">
+                            <div class="name">${idea.name || idea.trend}</div>
+                            <div class="meta">${idea.description || ''} ${stars ? '⭐ ' + stars.toLocaleString() : ''}</div>
+                            <div class="meta" style="margin-top:0.3rem;">
+                                ${tags.map(t => `<span class="tag ${t.split(' ')[1]}">${t.split(' ')[0]}</span>`).join('')}
+                                ${idea.language ? `<span class="tag">${idea.language}</span>` : ''}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+                document.getElementById('ideasContainer').innerHTML = ideasHtml || '<p style="color:#666;">No ideas yet</p>';
+
+                // Content
+                const contentHtml = operations.slice(0, 4).map(op => `
+                    <div class="content-card">
+                        <div class="name">${op.title}</div>
+                        <div class="meta">
+                            <span class="tag">${op.type}</span>
+                            <span class="tag">${op.status}</span>
+                            ${op.duration_minutes ? `<span class="tag">${op.duration_minutes} min</span>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+                document.getElementById('contentContainer').innerHTML = contentHtml || '<p style="color:#666;">No content yet</p>';
+
+                // Products
+                const productsHtml = products.slice(0, 3).map(p => `
+                    <div class="product-card">
+                        <div class="name">${p.title}</div>
+                        <div class="meta">${p.description || ''}</div>
+                        <div class="meta" style="margin-top:0.3rem;">
+                            <span class="tag">${p.platform || 'Gumroad'}</span>
+                            <span class="tag">${p.price_suggestion || 'TBD'}</span>
+                        </div>
+                    </div>
+                `).join('');
+                document.getElementById('productsContainer').innerHTML = productsHtml || '<p style="color:#666;">No products yet</p>';
+
+            } catch (e) {
+                console.error('Data load error:', e);
+                document.getElementById('ideasContainer').innerHTML = 
+                    '<p style="color:#666;">Loading data...</p>';
+            }
+        }
+        
+        loadData();
+        setInterval(loadData, 60000);
+    </script>
+</body>
 </html>
