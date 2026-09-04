@@ -344,7 +344,7 @@
                     fetch('backlog.json').then(r => r.json()),
                     fetch('operations.json').then(r => r.json()),
                     fetch('products.json').then(r => r.json()),
-                    fetch('finance/revenue_tracker.json').then(r => r.json())
+                    fetch('data/revenue_tracker.json').then(r => r.json())
                 ]);
 
                 document.getElementById('statIdeas').textContent = backlog.length;

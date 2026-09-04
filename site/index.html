@@ -233,9 +233,9 @@
         async function loadData() {
             try {
                 const [backlog, operations, products, revenue] = await Promise.all([
-                    fetch('backlog.json').then(r => r.json()),
-                    fetch('operations.json').then(r => r.json()),
-                    fetch('products.json').then(r => r.json()),
+                    fetch('data/backlog.json').then(r => r.json()),
+                    fetch('data/operations.json').then(r => r.json()),
+                    fetch('data/products.json').then(r => r.json()),
                     fetch('finance/revenue_tracker.json').then(r => r.json())
                 ]);
 
