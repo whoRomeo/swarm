@@ -5,11 +5,14 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
 jobs:
   run-swarm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -18,6 +21,8 @@ jobs:
       - name: Run Swarm
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GUMROAD_TOKEN: ${{ secrets.GUMROAD_TOKEN }}
         run: python agent_swarm.py --agents all
       - name: Commit and push results
         run: |
