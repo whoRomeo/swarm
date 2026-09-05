@@ -4,9 +4,9 @@
     "title": "This openclaw Project is INSANE",
     "type": "showcase",
     "duration_minutes": 5,
-    "script": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 388866 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at openclaw. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is openclaw? The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e \n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try openclaw yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "script": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 388871 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at openclaw. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is openclaw? The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e \n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try openclaw yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
     "hooks": [
-      "388866 stars and growing",
+      "388871 stars and growing",
       "Could change how you work",
       "You need to see this"
     ],
@@ -17,9 +17,9 @@
       "tech",
       "review"
     ],
-    "description": "Exploring openclaw - a trending GitHub project with 388866 stars. The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+    "description": "Exploring openclaw - a trending GitHub project with 388871 stars. The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
     "source_url": "https://github.com/openclaw/openclaw",
-    "voiceover_text": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 388866 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at openclaw. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is openclaw? The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e \n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try openclaw yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "voiceover_text": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 388871 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at openclaw. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is openclaw? The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e \n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try openclaw yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
     "word_count": 148,
     "estimated_duration_minutes": 0.9866666666666667,
     "voiceover_file": "audio/openclaw_showcase_voiceover.mp3",
@@ -30,7 +30,7 @@
       "style": "bold_minimal"
     },
     "status": "script_ready",
-    "created_at": "2026-09-05T05:06:29.307684"
+    "created_at": "2026-09-05T01:46:06.394966"
   },
   {
     "id": "openclaw_tutorial",
@@ -63,16 +63,16 @@
       "style": "bold_minimal"
     },
     "status": "script_ready",
-    "created_at": "2026-09-05T05:06:29.307684"
+    "created_at": "2026-09-05T01:46:06.395120"
   },
   {
     "id": "superpowers_showcase",
     "title": "This superpowers Project is INSANE",
     "type": "showcase",
     "duration_minutes": 5,
-    "script": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 281797 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at superpowers. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is superpowers? An agentic skills framework & software development methodology that works.\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try superpowers yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "script": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 281808 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at superpowers. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is superpowers? An agentic skills framework & software development methodology that works.\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try superpowers yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
     "hooks": [
-      "281797 stars and growing",
+      "281808 stars and growing",
       "Could change how you work",
       "You need to see this"
     ],
@@ -83,9 +83,9 @@
       "tech",
       "review"
     ],
-    "description": "Exploring superpowers - a trending GitHub project with 281797 stars. An agentic skills framework & software development methodology that works.",
+    "description": "Exploring superpowers - a trending GitHub project with 281808 stars. An agentic skills framework & software development methodology that works.",
     "source_url": "https://github.com/obra/superpowers",
-    "voiceover_text": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 281797 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at superpowers. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is superpowers? An agentic skills framework & software development methodology that works.\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try superpowers yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "voiceover_text": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 281808 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at superpowers. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is superpowers? An agentic skills framework & software development methodology that works.\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try superpowers yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
     "word_count": 144,
     "estimated_duration_minutes": 0.96,
     "voiceover_file": "audio/superpowers_showcase_voiceover.mp3",
@@ -96,7 +96,7 @@
       "style": "bold_minimal"
     },
     "status": "script_ready",
-    "created_at": "2026-09-05T05:06:29.307684"
+    "created_at": "2026-09-05T01:46:06.395411"
   },
   {
     "id": "superpowers_tutorial",
@@ -129,16 +129,16 @@
       "style": "bold_minimal"
     },
     "status": "script_ready",
-    "created_at": "2026-09-05T05:06:29.307684"
+    "created_at": "2026-09-05T01:46:06.395569"
   },
   {
     "id": "hermes-agent_showcase",
     "title": "This hermes-agent Project is INSANE",
     "type": "showcase",
     "duration_minutes": 5,
-    "script": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 241472 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at hermes-agent. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is hermes-agent? The agent that grows with you\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try hermes-agent yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "script": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 241501 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at hermes-agent. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is hermes-agent? The agent that grows with you\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try hermes-agent yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
     "hooks": [
-      "241472 stars and growing",
+      "241501 stars and growing",
       "Could change how you work",
       "You need to see this"
     ],
@@ -149,9 +149,9 @@
       "tech",
       "review"
     ],
-    "description": "Exploring hermes-agent - a trending GitHub project with 241472 stars. The agent that grows with you",
+    "description": "Exploring hermes-agent - a trending GitHub project with 241501 stars. The agent that grows with you",
     "source_url": "https://github.com/NousResearch/hermes-agent",
-    "voiceover_text": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 241472 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at hermes-agent. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is hermes-agent? The agent that grows with you\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try hermes-agent yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
+    "voiceover_text": "[COLD OPEN - 0:00-0:15]\n\"What if I told you there's a project on GitHub right now with 241501 stars that could change how you work?\"\n\n[INTRO - 0:15-0:45]\n\"Hey everyone, today we're looking at hermes-agent. This project has been making waves on GitHub and I think you need to know about it.\"\n\n[BODY - 0:45-4:00]\n\"So what exactly is hermes-agent? The agent that grows with you\n\nHere's why it matters:\n1. [Point 1 - unique value proposition]\n2. [Point 2 - how it solves a real problem]  \n3. [Point 3 - who it's for]\n\nLet me show you how it works...\"\n\n[PROS & CONS - 4:00-4:45]\n\"Pros: [list 3 pros]\nCons: [list 2 cons]\"\n\n[CALL TO ACTION - 4:45-5:00]\n\"If you found this useful, hit subscribe. And check the description for links to try hermes-agent yourself.\"\n\n[OUTRO]\n\"Thanks for watching!\"",
     "word_count": 140,
     "estimated_duration_minutes": 0.9333333333333333,
     "voiceover_file": "audio/hermes-agent_showcase_voiceover.mp3",
@@ -162,7 +162,7 @@
       "style": "bold_minimal"
     },
     "status": "script_ready",
-    "created_at": "2026-09-05T05:06:29.307684"
+    "created_at": "2026-09-05T01:46:06.395791"
   },
   {
     "id": "hermes-agent_tutorial",
@@ -195,6 +195,6 @@
       "style": "bold_minimal"
     },
     "status": "script_ready",
-    "created_at": "2026-09-05T05:06:29.307684"
+    "created_at": "2026-09-05T01:46:06.395959"
   }
 ]
