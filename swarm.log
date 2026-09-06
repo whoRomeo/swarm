@@ -556,3 +556,56 @@
 2026-09-06 14:32:03,963 [INFO] SWARM RUN COMPLETE
 2026-09-06 14:32:03,963 [INFO] ============================================================
 2026-09-06 14:32:03,963 [INFO] Finished at: 2026-09-06T14:32:03.963355
+2026-09-06 19:42:21,948 [INFO] ============================================================
+2026-09-06 19:42:21,948 [INFO] AUTONOMOUS EARNINGS SWARM - STARTING
+2026-09-06 19:42:21,948 [INFO] ============================================================
+2026-09-06 19:42:21,948 [INFO] Started at: 2026-09-06T19:42:21.948361
+2026-09-06 19:42:21,948 [INFO] ============================================================
+2026-09-06 19:42:21,948 [INFO] AGENT 1: RESEARCH & IDEATION
+2026-09-06 19:42:21,948 [INFO] ============================================================
+2026-09-06 19:42:21,948 [INFO] Scanning GitHub trending repos...
+2026-09-06 19:42:23,222 [INFO] Found 30 trending GitHub projects
+2026-09-06 19:42:23,222 [INFO] Searching for trending topics...
+2026-09-06 19:42:23,222 [INFO] Web trends found: 3
+2026-09-06 19:42:23,222 [INFO] Found 3 web trends
+2026-09-06 19:42:23,224 [INFO] Total ideas generated: 33
+2026-09-06 19:42:23,224 [INFO] Backlog saved to data/backlog.json
+2026-09-06 19:42:23,225 [INFO] ============================================================
+2026-09-06 19:42:23,225 [INFO] AGENT 2: CONTENT PRODUCTION
+2026-09-06 19:42:23,225 [INFO] ============================================================
+2026-09-06 19:42:23,225 [INFO] Processing idea: openclaw
+2026-09-06 19:42:23,225 [ERROR] Content production failed for {'type': 'github_repo', 'category': 'automation_ai', 'name': 'openclaw', 'full_name': 'openclaw/openclaw', 'url': 'https://github.com/openclaw/openclaw', 'description': 'The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ', 'stars': 389037, 'language': 'TypeScript', 'created_at': '2025-11-24T10:16:47Z', 'profit_potential': {'score': 6, 'reasons': ['High stars (389037)', 'Solves concrete problem', 'Actively maintained'], 'verdict': 'HIGH'}, 'product_idea': [{'type': 'template', 'title': 'openclaw - Production-Ready Template', 'description': 'A polished, documented, production-ready version of openclaw with best practices, tests, and deployment config included.', 'price_suggestion': '$29-99', 'platform': 'Gumroad', 'effort_estimate': '4-8 hours'}, {'type': 'tutorial', 'title': 'How to Build openclaw: Complete Guide', 'description': 'A step-by-step video course or ebook teaching how to use and extend openclaw for real-world projects.', 'price_suggestion': '$19-49', 'platform': 'Gumroad + YouTube', 'effort_estimate': '6-12 hours'}], 'content_idea': [{'type': 'video', 'title': 'This openclaw Project is INSANE (GitHub Trending)', 'description': "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 . This project has 389037 stars and is trending on GitHub. Let me show you why it's worth your attention.", 'format': 'showcase/review', 'duration_estimate': '5-8 minutes', 'monetization': ['adsense', 'affiliate']}, {'type': 'video', 'title': 'Build a Business with openclaw (Step by Step)', 'description': 'How to use openclaw to build something profitable. Complete walkthrough from setup to deployment.', 'format': 'tutorial', 'duration_estimate': '10-15 minutes', 'monetization': ['adsense', 'digital_product']}], 'timestamp': '2026-09-06T19:42:22.445231'}: 'AgentSwarm' object has no attribute '_generate_video'
+2026-09-06 19:42:23,225 [INFO] Processing idea: superpowers
+2026-09-06 19:42:23,225 [ERROR] Content production failed for {'type': 'github_repo', 'category': 'automation_ai', 'name': 'superpowers', 'full_name': 'obra/superpowers', 'url': 'https://github.com/obra/superpowers', 'description': 'An agentic skills framework & software development methodology that works.', 'stars': 282359, 'language': 'Shell', 'created_at': '2025-10-09T19:45:18Z', 'profit_potential': {'score': 4, 'reasons': ['High stars (282359)', 'Actively maintained'], 'verdict': 'MEDIUM'}, 'product_idea': [{'type': 'template', 'title': 'superpowers - Production-Ready Template', 'description': 'A polished, documented, production-ready version of superpowers with best practices, tests, and deployment config included.', 'price_suggestion': '$29-99', 'platform': 'Gumroad', 'effort_estimate': '4-8 hours'}, {'type': 'tutorial', 'title': 'How to Build superpowers: Complete Guide', 'description': 'A step-by-step video course or ebook teaching how to use and extend superpowers for real-world projects.', 'price_suggestion': '$19-49', 'platform': 'Gumroad + YouTube', 'effort_estimate': '6-12 hours'}], 'content_idea': [{'type': 'video', 'title': 'This superpowers Project is INSANE (GitHub Trending)', 'description': "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 282359 stars and is trending on GitHub. Let me show you why it's worth your attention.", 'format': 'showcase/review', 'duration_estimate': '5-8 minutes', 'monetization': ['adsense', 'affiliate']}, {'type': 'video', 'title': 'Build a Business with superpowers (Step by Step)', 'description': 'How to use superpowers to build something profitable. Complete walkthrough from setup to deployment.', 'format': 'tutorial', 'duration_estimate': '10-15 minutes', 'monetization': ['adsense', 'digital_product']}], 'timestamp': '2026-09-06T19:42:22.445250'}: 'AgentSwarm' object has no attribute '_generate_video'
+2026-09-06 19:42:23,225 [INFO] Processing idea: hermes-agent
+2026-09-06 19:42:23,225 [ERROR] Content production failed for {'type': 'github_repo', 'category': 'automation_ai', 'name': 'hermes-agent', 'full_name': 'NousResearch/hermes-agent', 'url': 'https://github.com/NousResearch/hermes-agent', 'description': 'The agent that grows with you', 'stars': 242448, 'language': 'Python', 'created_at': '2025-07-22T22:22:28Z', 'profit_potential': {'score': 4, 'reasons': ['High stars (242448)', 'Actively maintained'], 'verdict': 'MEDIUM'}, 'product_idea': [{'type': 'template', 'title': 'hermes-agent - Production-Ready Template', 'description': 'A polished, documented, production-ready version of hermes-agent with best practices, tests, and deployment config included.', 'price_suggestion': '$29-99', 'platform': 'Gumroad', 'effort_estimate': '4-8 hours'}, {'type': 'tutorial', 'title': 'How to Build hermes-agent: Complete Guide', 'description': 'A step-by-step video course or ebook teaching how to use and extend hermes-agent for real-world projects.', 'price_suggestion': '$19-49', 'platform': 'Gumroad + YouTube', 'effort_estimate': '6-12 hours'}], 'content_idea': [{'type': 'video', 'title': 'This hermes-agent Project is INSANE (GitHub Trending)', 'description': "Showcasing hermes-agent - The agent that grows with you. This project has 242448 stars and is trending on GitHub. Let me show you why it's worth your attention.", 'format': 'showcase/review', 'duration_estimate': '5-8 minutes', 'monetization': ['adsense', 'affiliate']}, {'type': 'video', 'title': 'Build a Business with hermes-agent (Step by Step)', 'description': 'How to use hermes-agent to build something profitable. Complete walkthrough from setup to deployment.', 'format': 'tutorial', 'duration_estimate': '10-15 minutes', 'monetization': ['adsense', 'digital_product']}], 'timestamp': '2026-09-06T19:42:22.445259'}: 'AgentSwarm' object has no attribute '_generate_video'
+2026-09-06 19:42:23,225 [INFO] Total productions: 0
+2026-09-06 19:42:23,226 [INFO] ============================================================
+2026-09-06 19:42:23,226 [INFO] AGENT 4: PRODUCT CREATION
+2026-09-06 19:42:23,226 [INFO] ============================================================
+2026-09-06 19:42:23,226 [INFO] Creating product from: openclaw
+2026-09-06 19:42:23,226 [INFO]   Product: openclaw - Production-Ready Template
+2026-09-06 19:42:23,226 [INFO]   Platform: Gumroad
+2026-09-06 19:42:23,226 [INFO] Creating product from: superpowers
+2026-09-06 19:42:23,226 [INFO]   Product: superpowers - Production-Ready Template
+2026-09-06 19:42:23,226 [INFO]   Platform: Gumroad
+2026-09-06 19:42:23,227 [INFO] Created 2 products
+2026-09-06 19:42:23,227 [INFO] ============================================================
+2026-09-06 19:42:23,227 [INFO] AGENT 3: PUBLISHING
+2026-09-06 19:42:23,227 [INFO] ============================================================
+2026-09-06 19:42:23,227 [INFO] Published 0 pieces
+2026-09-06 19:42:23,227 [INFO] ============================================================
+2026-09-06 19:42:23,227 [INFO] AGENT 5: FINANCE TRACKING
+2026-09-06 19:42:23,227 [INFO] ============================================================
+2026-09-06 19:42:23,227 [INFO] Tracking revenue across platforms...
+2026-09-06 19:42:23,228 [INFO]   YouTube AdSense: $0.00 (0 views)
+2026-09-06 19:42:23,228 [INFO]   Gumroad Sales: $0.00 (0 sales)
+2026-09-06 19:42:23,228 [INFO]   Affiliate: $0.00 (0 conversions)
+2026-09-06 19:42:23,228 [INFO] Threshold check: $0.00 / $100.00 (need $100.00 more)
+2026-09-06 19:42:23,228 [INFO] Total earnings tracked: $0.00
+2026-09-06 19:42:23,228 [INFO] Goal: $10,000
+2026-09-06 19:42:23,228 [INFO] Progress: 0.0%
+2026-09-06 19:42:23,228 [INFO] ============================================================
+2026-09-06 19:42:23,228 [INFO] SWARM RUN COMPLETE
+2026-09-06 19:42:23,228 [INFO] ============================================================
+2026-09-06 19:42:23,228 [INFO] Finished at: 2026-09-06T19:42:23.228951
