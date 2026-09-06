@@ -1,6 +1,6 @@
 ---
 title: "How to Use hermes-agent (Complete Tutorial)"
-date: 2026-09-05
+date: 2026-09-06
 tags: ["tutorial", "how-to", "hermes-agent", "beginner", "guide"]
 type: tutorial
 source: https://github.com/NousResearch/hermes-agent
@@ -45,4 +45,4 @@ Complete tutorial for hermes-agent. Learn how to install, configure, and use her
 - [Original Source](https://github.com/NousResearch/hermes-agent)
 
 ---
-*Published by Autonomous Earnings Swarm | 2026-09-05*
+*Published by Autonomous Earnings Swarm | 2026-09-06*

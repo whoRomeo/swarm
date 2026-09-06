@@ -50,28 +50,41 @@ class HubAgent:
             return False
     
     def push_to_github(self):
-        """Push all changes to GitHub using token from environment"""
+        """Push all changes to GitHub using token from environment.
+        
+        The token is embedded in the HTTPS URL for authentication.
+        Error output is truncated to avoid logging the token.
+        """
         logger.info("Pushing to GitHub...")
-        
+
         if not self.github_token:
-            logger.warning("No GITHUB_TOKEN set - skipping push")
+            logger.warning("No GITHUB_TOKEN set — skipping push")
             return False
-        
+
         try:
-            # Run git commands with token in URL
-            push_url = f"https://ghp_{self.github_token}@github.com/whoRomeo/swarm.git"
-            
             subprocess.run(['git', 'add', '.'], cwd='.', check=False)
-            subprocess.run(['git', 'commit', '-m', f"Swarm update {datetime.now().isoformat()}"], 
-                         cwd='.', check=False, capture_output=True)
-            result = subprocess.run(['git', 'push', push_url, 'master'], 
-                                   cwd='.', capture_output=True, text=True)
-            
+            subprocess.run(
+                ['git', 'commit', '-m', f"Swarm update {datetime.now().isoformat()}"],
+                cwd='.', check=False, capture_output=True
+            )
+
+            # Embed token in URL for HTTPS authentication
+            # stderr is truncated to avoid logging the token value
+            push_url = f"https://x-access-token:{self.github_token}@github.com/whoRomeo/swarm.git"
+            result = subprocess.run(
+                ['git', 'push', push_url, 'HEAD:master'],
+                cwd='.', capture_output=True, text=True
+            )
+
             if result.returncode == 0:
                 logger.info("GitHub push successful")
                 return True
             else:
-                logger.error(f"Push failed: {result.stderr}")
+                # Truncate stderr to avoid leaking token in logs
+                err = result.stderr
+                if len(err) > 200:
+                    err = err[:100] + "[...truncated...]" + err[-100:]
+                logger.error(f"Push failed: {err}")
                 return False
         except Exception as e:
             logger.error(f"Push error: {e}")

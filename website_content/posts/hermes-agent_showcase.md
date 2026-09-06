@@ -1,6 +1,6 @@
 ---
 title: "This hermes-agent Project is INSANE"
-date: 2026-09-05
+date: 2026-09-06
 tags: ["github", "trending", "hermes-agent", "tech", "review"]
 type: showcase
 source: https://github.com/NousResearch/hermes-agent
@@ -8,7 +8,7 @@ source: https://github.com/NousResearch/hermes-agent
 
 # This hermes-agent Project is INSANE
 
-Exploring hermes-agent - a trending GitHub project with 241787 stars. The agent that grows with you
+Exploring hermes-agent - a trending GitHub project with 242042 stars. The agent that grows with you
 
 ## Key Points
 
@@ -21,7 +21,7 @@ Exploring hermes-agent - a trending GitHub project with 241787 stars. The agent 
 
 ```
 [COLD OPEN - 0:00-0:15]
-"What if I told you there's a project on GitHub right now with 241787 stars that could change how you work?"
+"What if I told you there's a project on GitHub right now with 242042 stars that could change how you work?"
 
 [INTRO - 0:15-0:45]
 "Hey everyone, today we're looking at hermes-agent. This project has been making waves on GitHub and I think you need to know about it."
@@ -52,4 +52,4 @@ Cons: [list 2 cons]"
 - [Original Source](https://github.com/NousResearch/hermes-agent)
 
 ---
-*Published by Autonomous Earnings Swarm | 2026-09-05*
+*Published by Autonomous Earnings Swarm | 2026-09-06*

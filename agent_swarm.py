@@ -342,33 +342,37 @@ class AgentSwarm:
         return productions
     
     def _produce_content(self, idea):
-        """Produce content from an idea"""
+        """Produce content from an idea: scripts + voiceover + thumbnail + video"""
         productions = []
-        
+
         # Generate scripts
         scripts = self._generate_scripts(idea)
-        
+
         for script in scripts:
             # Generate voiceover filename
             voiceover_file = f"audio/{script['id']}_voiceover.mp3"
-            
+
             # Generate thumbnail brief
             thumbnail_brief = self._generate_thumbnail_brief(script)
-            
+
+            # Generate video (calls video_generator module)
+            video_result = self._generate_video(script)
+
             production = {
                 **script,
                 "voiceover_file": voiceover_file,
                 "thumbnail_brief": thumbnail_brief,
-                "status": "script_ready",
+                **video_result,
+                "status": video_result.get('status', 'script_ready'),
                 "created_at": datetime.now().isoformat()
             }
             productions.append(production)
-            
-            # In production, this would call TTS API and image generation
+
             logger.info(f"  - Script: {script['title']}")
             logger.info(f"  - Voiceover: {voiceover_file}")
             logger.info(f"  - Thumbnail: {thumbnail_brief['prompt']}")
-        
+            logger.info(f"  - Video: {video_result.get('status', 'pending')} — {video_result.get('video_path', video_result.get('video_error', 'no output'))}")
+
         return productions
     
     def _generate_scripts(self, idea):
@@ -579,25 +583,68 @@ Cons: [list 2 cons]"
         return published
     
     def _upload_to_youtube(self, content):
-        """Upload video to YouTube (API integration)"""
-        # In production, this uses YouTube Data API v3
-        # Requires: OAuth setup, API key, video file
-        
+        """Upload video to YouTube via OAuth 2.0 (real API call).
+
+        Requires: YOUTUBE_REFRESH_TOKEN, YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET
+        as GitHub repository secrets. Uses google-api-python-client.
+
+        If video file doesn't exist yet, returns 'ready_to_generate' status.
+        """
+        import sys
+        # Add parent dir to path so we can import youtube_oauth
+        sys.path.insert(0, str(Path(__file__).parent))
+        from youtube_oauth import upload_video, get_service
+
+        video_file = Path('videos') / f"{content['id']}.mp4"
+        thumbnail_file = Path('thumbnails') / f"{content['id']}.jpg"
+
         result = {
-            "status": "pending_upload",
-            "video_id": None,
-            "url": None,
-            "upload_timestamp": None
+            'status': 'pending_upload',
+            'video_id': None,
+            'url': None,
+            'upload_timestamp': None,
+            'video_file': str(video_file) if video_file.exists() else None,
+            'thumbnail_file': str(thumbnail_file) if thumbnail_file.exists() else None
         }
-        
-        if self.config.get('youtube_api_key'):
-            # Would use Google API client to upload
-            logger.info("  YouTube API available - ready for upload")
-            # result['status'] = "ready_to_upload"
+
+        # Check if video file exists
+        if not video_file.exists():
+            logger.info(f"  Video file not ready: {video_file} — needs generation first")
+            result['status'] = 'ready_to_generate'
+            return result
+
+        # Try OAuth-authenticated upload
+        service = get_service()
+        if not service:
+            logger.warning("  YouTube OAuth not configured — check YOUTUBE_REFRESH_TOKEN, CLIENT_ID, CLIENT_SECRET secrets")
+            result['status'] = 'oauth_not_configured'
+            return result
+
+        logger.info(f"  Uploading to YouTube: {content['title']}")
+
+        tags = content.get('tags', ['swarm', 'autonomous', 'ai'])
+        description = content.get('description', '') or f"Auto-generated content from Autonomous Earnings Swarm.\n\n{content.get('script', '')[:500]}"
+
+        upload_result = upload_video(
+            file_path=str(video_file),
+            title=content['title'][:100],
+            description=description,
+            tags=tags,
+            category_id='22',  # People & Blogs
+            privacy_status='unlisted',
+            thumbnail_path=str(thumbnail_file) if thumbnail_file.exists() else None
+        )
+
+        result.update(upload_result)
+        result['status'] = upload_result['status']
+        result['video_id'] = upload_result.get('video_id')
+        result['url'] = upload_result.get('url')
+
+        if upload_result['status'] == 'published':
+            logger.info(f"  Uploaded: {upload_result['url']}")
         else:
-            logger.info("  No YouTube API key configured - skipping upload")
-            result['status'] = "skipped_no_api_key"
-        
+            logger.warning(f"  Upload failed: {upload_result.get('error', 'unknown')}")
+
         return result
     
     def _publish_to_website(self, content):

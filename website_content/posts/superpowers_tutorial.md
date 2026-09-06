@@ -1,6 +1,6 @@
 ---
 title: "How to Use superpowers (Complete Tutorial)"
-date: 2026-09-05
+date: 2026-09-06
 tags: ["tutorial", "how-to", "superpowers", "beginner", "guide"]
 type: tutorial
 source: https://github.com/obra/superpowers
@@ -45,4 +45,4 @@ Complete tutorial for superpowers. Learn how to install, configure, and use supe
 - [Original Source](https://github.com/obra/superpowers)
 
 ---
-*Published by Autonomous Earnings Swarm | 2026-09-05*
+*Published by Autonomous Earnings Swarm | 2026-09-06*
