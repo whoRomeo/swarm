@@ -199,10 +199,10 @@ Write-Host "[6/12] Secret scan..." -ForegroundColor Yellow
 $secretMatches = @()
 
 $patterns = @(
-    "ghp_[A-Za-z0-9]+",
-    "github_pat_[A-Za-z0-9_]+",
-    "sk-or-v1-[A-Za-z0-9]+",
-    "AIza[A-Za-z0-9_-]+"
+    "\bghp_[A-Za-z0-9]{36}\b",
+    "\bgithub_pat_[A-Za-z0-9_]{20,}\b",
+    "\bsk-or-v1-[A-Za-z0-9_-]+=\b",
+    "\bAIza[A-Za-z0-9_-]{35}\b"
 )
 
 foreach ($pattern in $patterns) {
