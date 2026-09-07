@@ -1,151 +1,58 @@
 [
   {
-    "type": "template",
-    "title": "openclaw - Production-Ready Template",
-    "description": "A polished, documented, production-ready version of openclaw with best practices, tests, and deployment config included.",
-    "price_suggestion": "$29-99",
+    "type": "guide",
+    "title": "The Complete Guide to AI agents for automation",
+    "description": "Everything you need to know about AI agents for automation - from beginner to advanced.",
+    "price_suggestion": "$19",
     "platform": "Gumroad",
-    "effort_estimate": "4-8 hours",
+    "status": "ready_to_list",
     "idea_source": {
-      "type": "github_repo",
-      "category": "automation_ai",
-      "name": "openclaw",
-      "full_name": "openclaw/openclaw",
-      "url": "https://github.com/openclaw/openclaw",
-      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
-      "stars": 389037,
-      "language": "TypeScript",
-      "created_at": "2025-11-24T10:16:47Z",
-      "profit_potential": {
-        "score": 6,
-        "reasons": [
-          "High stars (389037)",
-          "Solves concrete problem",
-          "Actively maintained"
-        ],
-        "verdict": "HIGH"
-      },
-      "product_idea": [
-        {
-          "type": "template",
-          "title": "openclaw - Production-Ready Template",
-          "description": "A polished, documented, production-ready version of openclaw with best practices, tests, and deployment config included.",
-          "price_suggestion": "$29-99",
-          "platform": "Gumroad",
-          "effort_estimate": "4-8 hours"
-        },
-        {
-          "type": "tutorial",
-          "title": "How to Build openclaw: Complete Guide",
-          "description": "A step-by-step video course or ebook teaching how to use and extend openclaw for real-world projects.",
-          "price_suggestion": "$19-49",
-          "platform": "Gumroad + YouTube",
-          "effort_estimate": "6-12 hours"
-        }
+      "type": "web_trend",
+      "category": "ai_agents",
+      "trend": "AI agents for automation",
+      "search_volume": "HIGH",
+      "profit_angle": "People want to build AI agents but don't know how - sell templates, courses, consultations",
+      "content_ideas": [
+        "How to Build Your First AI Agent in 2024",
+        "5 AI Agent Projects You Can Sell Today",
+        "AI Agent Framework Comparison 2024"
       ],
-      "content_idea": [
-        {
-          "type": "video",
-          "title": "This openclaw Project is INSANE (GitHub Trending)",
-          "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 389037 stars and is trending on GitHub. Let me show you why it's worth your attention.",
-          "format": "showcase/review",
-          "duration_estimate": "5-8 minutes",
-          "monetization": [
-            "adsense",
-            "affiliate"
-          ]
-        },
-        {
-          "type": "video",
-          "title": "Build a Business with openclaw (Step by Step)",
-          "description": "How to use openclaw to build something profitable. Complete walkthrough from setup to deployment.",
-          "format": "tutorial",
-          "duration_estimate": "10-15 minutes",
-          "monetization": [
-            "adsense",
-            "digital_product"
-          ]
-        }
+      "product_ideas": [
+        "AI Agent Template Pack ($49)",
+        "AI Agent Starter Course ($99)",
+        "Custom AI Agent Building Service"
       ],
-      "timestamp": "2026-09-06T19:42:22.445231"
+      "timestamp": "2026-09-07T01:38:00.018309"
     },
-    "status": "listed",
-    "listing_url": null,
-    "created_at": "2026-09-06T19:42:23.226172",
+    "created_at": "2026-09-07T01:38:00.019660",
     "files_directory": "products/product_13"
   },
   {
-    "type": "template",
-    "title": "superpowers - Production-Ready Template",
-    "description": "A polished, documented, production-ready version of superpowers with best practices, tests, and deployment config included.",
-    "price_suggestion": "$29-99",
+    "type": "guide",
+    "title": "The Complete Guide to No-code automation tools",
+    "description": "Everything you need to know about No-code automation tools - from beginner to advanced.",
+    "price_suggestion": "$19",
     "platform": "Gumroad",
-    "effort_estimate": "4-8 hours",
+    "status": "ready_to_list",
     "idea_source": {
-      "type": "github_repo",
-      "category": "automation_ai",
-      "name": "superpowers",
-      "full_name": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "stars": 282359,
-      "language": "Shell",
-      "created_at": "2025-10-09T19:45:18Z",
-      "profit_potential": {
-        "score": 4,
-        "reasons": [
-          "High stars (282359)",
-          "Actively maintained"
-        ],
-        "verdict": "MEDIUM"
-      },
-      "product_idea": [
-        {
-          "type": "template",
-          "title": "superpowers - Production-Ready Template",
-          "description": "A polished, documented, production-ready version of superpowers with best practices, tests, and deployment config included.",
-          "price_suggestion": "$29-99",
-          "platform": "Gumroad",
-          "effort_estimate": "4-8 hours"
-        },
-        {
-          "type": "tutorial",
-          "title": "How to Build superpowers: Complete Guide",
-          "description": "A step-by-step video course or ebook teaching how to use and extend superpowers for real-world projects.",
-          "price_suggestion": "$19-49",
-          "platform": "Gumroad + YouTube",
-          "effort_estimate": "6-12 hours"
-        }
+      "type": "web_trend",
+      "category": "automation",
+      "trend": "No-code automation tools",
+      "search_volume": "HIGH",
+      "profit_angle": "Business owners want to automate without coding - sell automation setups, templates, consulting",
+      "content_ideas": [
+        "Automate Your Entire Business with No Code",
+        "5 Automation Tools That Save 10 Hours/Week",
+        "Build an Automated Lead Generation System"
       ],
-      "content_idea": [
-        {
-          "type": "video",
-          "title": "This superpowers Project is INSANE (GitHub Trending)",
-          "description": "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 282359 stars and is trending on GitHub. Let me show you why it's worth your attention.",
-          "format": "showcase/review",
-          "duration_estimate": "5-8 minutes",
-          "monetization": [
-            "adsense",
-            "affiliate"
-          ]
-        },
-        {
-          "type": "video",
-          "title": "Build a Business with superpowers (Step by Step)",
-          "description": "How to use superpowers to build something profitable. Complete walkthrough from setup to deployment.",
-          "format": "tutorial",
-          "duration_estimate": "10-15 minutes",
-          "monetization": [
-            "adsense",
-            "digital_product"
-          ]
-        }
+      "product_ideas": [
+        "Automation Template Library ($29/month)",
+        "Business Automation Audit ($99 one-time)",
+        "Pre-built Automation Workflows"
       ],
-      "timestamp": "2026-09-06T19:42:22.445250"
+      "timestamp": "2026-09-07T01:38:00.018315"
     },
-    "status": "listed",
-    "listing_url": null,
-    "created_at": "2026-09-06T19:42:23.226600",
+    "created_at": "2026-09-07T01:38:00.020100",
     "files_directory": "products/product_14"
   }
 ]
