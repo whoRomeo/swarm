@@ -67,11 +67,11 @@
           ]
         }
       ],
-      "timestamp": "2026-09-11T20:10:20.783435"
+      "timestamp": "2026-09-12T01:55:20.193662"
     },
     "status": "listed",
     "listing_url": null,
-    "created_at": "2026-09-11T20:10:21.910461",
+    "created_at": "2026-09-12T01:55:21.185211",
     "files_directory": "products/product_13"
   },
   {
@@ -88,13 +88,13 @@
       "full_name": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
-      "stars": 285294,
+      "stars": 285388,
       "language": "Shell",
       "created_at": "2025-10-09T19:45:18Z",
       "profit_potential": {
         "score": 4,
         "reasons": [
-          "High stars (285294)",
+          "High stars (285388)",
           "Actively maintained"
         ],
         "verdict": "MEDIUM"
@@ -121,7 +121,7 @@
         {
           "type": "video",
           "title": "This superpowers Project is INSANE (GitHub Trending)",
-          "description": "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 285294 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+          "description": "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 285388 stars and is trending on GitHub. Let me show you why it's worth your attention.",
           "format": "showcase/review",
           "duration_estimate": "5-8 minutes",
           "monetization": [
@@ -141,11 +141,11 @@
           ]
         }
       ],
-      "timestamp": "2026-09-11T20:10:20.783455"
+      "timestamp": "2026-09-12T01:55:20.193682"
     },
     "status": "listed",
     "listing_url": null,
-    "created_at": "2026-09-11T20:10:21.910955",
+    "created_at": "2026-09-12T01:55:21.185510",
     "files_directory": "products/product_14"
   }
 ]
