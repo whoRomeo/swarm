@@ -1,26 +1,26 @@
 [
   {
     "type": "template",
-    "title": "openclaw - Production-Ready Template",
-    "description": "A polished, documented, production-ready version of openclaw with best practices, tests, and deployment config included.",
+    "title": "freeCodeCamp - Production-Ready Template",
+    "description": "A polished, documented, production-ready version of freeCodeCamp with best practices, tests, and deployment config included.",
     "price_suggestion": "$29-99",
     "platform": "Gumroad",
     "effort_estimate": "4-8 hours",
     "idea_source": {
       "type": "github_repo",
-      "category": "automation_ai",
-      "name": "openclaw",
-      "full_name": "openclaw/openclaw",
-      "url": "https://github.com/openclaw/openclaw",
-      "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
-      "stars": 392402,
+      "category": "programming_tools",
+      "name": "freeCodeCamp",
+      "full_name": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "stars": 457475,
       "language": "TypeScript",
-      "created_at": "2025-11-24T10:16:47Z",
+      "created_at": "2014-12-24T17:49:19Z",
       "profit_potential": {
         "score": 6,
         "reasons": [
-          "High stars (392402)",
-          "Solves concrete problem",
+          "High stars (457475)",
+          "Has commercial signals",
           "Actively maintained"
         ],
         "verdict": "HIGH"
@@ -28,16 +28,16 @@
       "product_idea": [
         {
           "type": "template",
-          "title": "openclaw - Production-Ready Template",
-          "description": "A polished, documented, production-ready version of openclaw with best practices, tests, and deployment config included.",
+          "title": "freeCodeCamp - Production-Ready Template",
+          "description": "A polished, documented, production-ready version of freeCodeCamp with best practices, tests, and deployment config included.",
           "price_suggestion": "$29-99",
           "platform": "Gumroad",
           "effort_estimate": "4-8 hours"
         },
         {
           "type": "tutorial",
-          "title": "How to Build openclaw: Complete Guide",
-          "description": "A step-by-step video course or ebook teaching how to use and extend openclaw for real-world projects.",
+          "title": "How to Build freeCodeCamp: Complete Guide",
+          "description": "A step-by-step video course or ebook teaching how to use and extend freeCodeCamp for real-world projects.",
           "price_suggestion": "$19-49",
           "platform": "Gumroad + YouTube",
           "effort_estimate": "6-12 hours"
@@ -46,8 +46,8 @@
       "content_idea": [
         {
           "type": "video",
-          "title": "This openclaw Project is INSANE (GitHub Trending)",
-          "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 392402 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+          "title": "This freeCodeCamp Project is INSANE (GitHub Trending)",
+          "description": "Showcasing freeCodeCamp - freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer scienc. This project has 457475 stars and is trending on GitHub. Let me show you why it's worth your attention.",
           "format": "showcase/review",
           "duration_estimate": "5-8 minutes",
           "monetization": [
@@ -57,8 +57,8 @@
         },
         {
           "type": "video",
-          "title": "Build a Business with openclaw (Step by Step)",
-          "description": "How to use openclaw to build something profitable. Complete walkthrough from setup to deployment.",
+          "title": "Build a Business with freeCodeCamp (Step by Step)",
+          "description": "How to use freeCodeCamp to build something profitable. Complete walkthrough from setup to deployment.",
           "format": "tutorial",
           "duration_estimate": "10-15 minutes",
           "monetization": [
@@ -67,34 +67,34 @@
           ]
         }
       ],
-      "timestamp": "2026-10-19T02:10:15.153008"
+      "timestamp": "2026-10-19T11:26:44.552612"
     },
     "status": "listed",
     "listing_url": null,
-    "created_at": "2026-10-19T02:10:16.204499",
+    "created_at": "2026-10-19T11:26:45.109752",
     "files_directory": "products/product_13"
   },
   {
     "type": "template",
-    "title": "superpowers - Production-Ready Template",
-    "description": "A polished, documented, production-ready version of superpowers with best practices, tests, and deployment config included.",
+    "title": "system-design-primer - Production-Ready Template",
+    "description": "A polished, documented, production-ready version of system-design-primer with best practices, tests, and deployment config included.",
     "price_suggestion": "$29-99",
     "platform": "Gumroad",
     "effort_estimate": "4-8 hours",
     "idea_source": {
       "type": "github_repo",
-      "category": "automation_ai",
-      "name": "superpowers",
-      "full_name": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "stars": 301674,
-      "language": "Shell",
-      "created_at": "2025-10-09T19:45:18Z",
+      "category": "programming_tools",
+      "name": "system-design-primer",
+      "full_name": "donnemartin/system-design-primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+      "stars": 374723,
+      "language": "Python",
+      "created_at": "2017-02-26T16:15:28Z",
       "profit_potential": {
         "score": 4,
         "reasons": [
-          "High stars (301674)",
+          "High stars (374723)",
           "Actively maintained"
         ],
         "verdict": "MEDIUM"
@@ -102,16 +102,16 @@
       "product_idea": [
         {
           "type": "template",
-          "title": "superpowers - Production-Ready Template",
-          "description": "A polished, documented, production-ready version of superpowers with best practices, tests, and deployment config included.",
+          "title": "system-design-primer - Production-Ready Template",
+          "description": "A polished, documented, production-ready version of system-design-primer with best practices, tests, and deployment config included.",
           "price_suggestion": "$29-99",
           "platform": "Gumroad",
           "effort_estimate": "4-8 hours"
         },
         {
           "type": "tutorial",
-          "title": "How to Build superpowers: Complete Guide",
-          "description": "A step-by-step video course or ebook teaching how to use and extend superpowers for real-world projects.",
+          "title": "How to Build system-design-primer: Complete Guide",
+          "description": "A step-by-step video course or ebook teaching how to use and extend system-design-primer for real-world projects.",
           "price_suggestion": "$19-49",
           "platform": "Gumroad + YouTube",
           "effort_estimate": "6-12 hours"
@@ -120,8 +120,8 @@
       "content_idea": [
         {
           "type": "video",
-          "title": "This superpowers Project is INSANE (GitHub Trending)",
-          "description": "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 301674 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+          "title": "This system-design-primer Project is INSANE (GitHub Trending)",
+          "description": "Showcasing system-design-primer - Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashc. This project has 374723 stars and is trending on GitHub. Let me show you why it's worth your attention.",
           "format": "showcase/review",
           "duration_estimate": "5-8 minutes",
           "monetization": [
@@ -131,8 +131,8 @@
         },
         {
           "type": "video",
-          "title": "Build a Business with superpowers (Step by Step)",
-          "description": "How to use superpowers to build something profitable. Complete walkthrough from setup to deployment.",
+          "title": "Build a Business with system-design-primer (Step by Step)",
+          "description": "How to use system-design-primer to build something profitable. Complete walkthrough from setup to deployment.",
           "format": "tutorial",
           "duration_estimate": "10-15 minutes",
           "monetization": [
@@ -141,11 +141,11 @@
           ]
         }
       ],
-      "timestamp": "2026-10-19T02:10:15.153026"
+      "timestamp": "2026-10-19T11:26:44.552631"
     },
     "status": "listed",
     "listing_url": null,
-    "created_at": "2026-10-19T02:10:16.204785",
+    "created_at": "2026-10-19T11:26:45.110074",
     "files_directory": "products/product_14"
   }
 ]

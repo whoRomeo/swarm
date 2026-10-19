@@ -9142,3 +9142,56 @@
 2026-10-19 02:10:16,205 [INFO] SWARM RUN COMPLETE
 2026-10-19 02:10:16,205 [INFO] ============================================================
 2026-10-19 02:10:16,205 [INFO] Finished at: 2026-10-19T02:10:16.205891
+2026-10-19 11:26:43,657 [INFO] ============================================================
+2026-10-19 11:26:43,657 [INFO] AUTONOMOUS EARNINGS SWARM - STARTING
+2026-10-19 11:26:43,657 [INFO] ============================================================
+2026-10-19 11:26:43,657 [INFO] Started at: 2026-10-19T11:26:43.657221
+2026-10-19 11:26:43,657 [INFO] ============================================================
+2026-10-19 11:26:43,657 [INFO] AGENT 1: RESEARCH & IDEATION
+2026-10-19 11:26:43,657 [INFO] ============================================================
+2026-10-19 11:26:43,657 [INFO] Scanning GitHub trending repos...
+2026-10-19 11:26:45,107 [INFO] Found 20 trending GitHub projects
+2026-10-19 11:26:45,107 [INFO] Searching for trending topics...
+2026-10-19 11:26:45,107 [INFO] Web trends found: 3
+2026-10-19 11:26:45,107 [INFO] Found 3 web trends
+2026-10-19 11:26:45,108 [INFO] Total ideas generated: 23
+2026-10-19 11:26:45,108 [INFO] Backlog saved to data/backlog.json
+2026-10-19 11:26:45,108 [INFO] ============================================================
+2026-10-19 11:26:45,108 [INFO] AGENT 2: CONTENT PRODUCTION
+2026-10-19 11:26:45,109 [INFO] ============================================================
+2026-10-19 11:26:45,109 [INFO] Processing idea: freeCodeCamp
+2026-10-19 11:26:45,109 [ERROR] Content production failed for {'type': 'github_repo', 'category': 'programming_tools', 'name': 'freeCodeCamp', 'full_name': 'freeCodeCamp/freeCodeCamp', 'url': 'https://github.com/freeCodeCamp/freeCodeCamp', 'description': "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.", 'stars': 457475, 'language': 'TypeScript', 'created_at': '2014-12-24T17:49:19Z', 'profit_potential': {'score': 6, 'reasons': ['High stars (457475)', 'Has commercial signals', 'Actively maintained'], 'verdict': 'HIGH'}, 'product_idea': [{'type': 'template', 'title': 'freeCodeCamp - Production-Ready Template', 'description': 'A polished, documented, production-ready version of freeCodeCamp with best practices, tests, and deployment config included.', 'price_suggestion': '$29-99', 'platform': 'Gumroad', 'effort_estimate': '4-8 hours'}, {'type': 'tutorial', 'title': 'How to Build freeCodeCamp: Complete Guide', 'description': 'A step-by-step video course or ebook teaching how to use and extend freeCodeCamp for real-world projects.', 'price_suggestion': '$19-49', 'platform': 'Gumroad + YouTube', 'effort_estimate': '6-12 hours'}], 'content_idea': [{'type': 'video', 'title': 'This freeCodeCamp Project is INSANE (GitHub Trending)', 'description': "Showcasing freeCodeCamp - freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer scienc. This project has 457475 stars and is trending on GitHub. Let me show you why it's worth your attention.", 'format': 'showcase/review', 'duration_estimate': '5-8 minutes', 'monetization': ['adsense', 'affiliate']}, {'type': 'video', 'title': 'Build a Business with freeCodeCamp (Step by Step)', 'description': 'How to use freeCodeCamp to build something profitable. Complete walkthrough from setup to deployment.', 'format': 'tutorial', 'duration_estimate': '10-15 minutes', 'monetization': ['adsense', 'digital_product']}], 'timestamp': '2026-10-19T11:26:44.552612'}: 'AgentSwarm' object has no attribute '_generate_video'
+2026-10-19 11:26:45,109 [INFO] Processing idea: system-design-primer
+2026-10-19 11:26:45,109 [ERROR] Content production failed for {'type': 'github_repo', 'category': 'programming_tools', 'name': 'system-design-primer', 'full_name': 'donnemartin/system-design-primer', 'url': 'https://github.com/donnemartin/system-design-primer', 'description': 'Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.', 'stars': 374723, 'language': 'Python', 'created_at': '2017-02-26T16:15:28Z', 'profit_potential': {'score': 4, 'reasons': ['High stars (374723)', 'Actively maintained'], 'verdict': 'MEDIUM'}, 'product_idea': [{'type': 'template', 'title': 'system-design-primer - Production-Ready Template', 'description': 'A polished, documented, production-ready version of system-design-primer with best practices, tests, and deployment config included.', 'price_suggestion': '$29-99', 'platform': 'Gumroad', 'effort_estimate': '4-8 hours'}, {'type': 'tutorial', 'title': 'How to Build system-design-primer: Complete Guide', 'description': 'A step-by-step video course or ebook teaching how to use and extend system-design-primer for real-world projects.', 'price_suggestion': '$19-49', 'platform': 'Gumroad + YouTube', 'effort_estimate': '6-12 hours'}], 'content_idea': [{'type': 'video', 'title': 'This system-design-primer Project is INSANE (GitHub Trending)', 'description': "Showcasing system-design-primer - Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashc. This project has 374723 stars and is trending on GitHub. Let me show you why it's worth your attention.", 'format': 'showcase/review', 'duration_estimate': '5-8 minutes', 'monetization': ['adsense', 'affiliate']}, {'type': 'video', 'title': 'Build a Business with system-design-primer (Step by Step)', 'description': 'How to use system-design-primer to build something profitable. Complete walkthrough from setup to deployment.', 'format': 'tutorial', 'duration_estimate': '10-15 minutes', 'monetization': ['adsense', 'digital_product']}], 'timestamp': '2026-10-19T11:26:44.552631'}: 'AgentSwarm' object has no attribute '_generate_video'
+2026-10-19 11:26:45,109 [INFO] Processing idea: awesome-python
+2026-10-19 11:26:45,109 [ERROR] Content production failed for {'type': 'github_repo', 'category': 'programming_tools', 'name': 'awesome-python', 'full_name': 'vinta/awesome-python', 'url': 'https://github.com/vinta/awesome-python', 'description': 'The definitive list that answers "I want to do X in Python, which tool should I use?"', 'stars': 328605, 'language': 'Python', 'created_at': '2014-06-27T21:00:06Z', 'profit_potential': {'score': 6, 'reasons': ['High stars (328605)', 'Solves concrete problem', 'Actively maintained'], 'verdict': 'HIGH'}, 'product_idea': [{'type': 'template', 'title': 'awesome-python - Production-Ready Template', 'description': 'A polished, documented, production-ready version of awesome-python with best practices, tests, and deployment config included.', 'price_suggestion': '$29-99', 'platform': 'Gumroad', 'effort_estimate': '4-8 hours'}, {'type': 'tutorial', 'title': 'How to Build awesome-python: Complete Guide', 'description': 'A step-by-step video course or ebook teaching how to use and extend awesome-python for real-world projects.', 'price_suggestion': '$19-49', 'platform': 'Gumroad + YouTube', 'effort_estimate': '6-12 hours'}], 'content_idea': [{'type': 'video', 'title': 'This awesome-python Project is INSANE (GitHub Trending)', 'description': 'Showcasing awesome-python - The definitive list that answers "I want to do X in Python, which tool should I use?". This project has 328605 stars and is trending on GitHub. Let me show you why it\'s worth your attention.', 'format': 'showcase/review', 'duration_estimate': '5-8 minutes', 'monetization': ['adsense', 'affiliate']}, {'type': 'video', 'title': 'Build a Business with awesome-python (Step by Step)', 'description': 'How to use awesome-python to build something profitable. Complete walkthrough from setup to deployment.', 'format': 'tutorial', 'duration_estimate': '10-15 minutes', 'monetization': ['adsense', 'digital_product']}], 'timestamp': '2026-10-19T11:26:44.552638'}: 'AgentSwarm' object has no attribute '_generate_video'
+2026-10-19 11:26:45,109 [INFO] Total productions: 0
+2026-10-19 11:26:45,109 [INFO] ============================================================
+2026-10-19 11:26:45,109 [INFO] AGENT 4: PRODUCT CREATION
+2026-10-19 11:26:45,109 [INFO] ============================================================
+2026-10-19 11:26:45,109 [INFO] Creating product from: freeCodeCamp
+2026-10-19 11:26:45,109 [INFO]   Product: freeCodeCamp - Production-Ready Template
+2026-10-19 11:26:45,110 [INFO]   Platform: Gumroad
+2026-10-19 11:26:45,110 [INFO] Creating product from: system-design-primer
+2026-10-19 11:26:45,110 [INFO]   Product: system-design-primer - Production-Ready Template
+2026-10-19 11:26:45,110 [INFO]   Platform: Gumroad
+2026-10-19 11:26:45,110 [INFO] Created 2 products
+2026-10-19 11:26:45,110 [INFO] ============================================================
+2026-10-19 11:26:45,110 [INFO] AGENT 3: PUBLISHING
+2026-10-19 11:26:45,110 [INFO] ============================================================
+2026-10-19 11:26:45,111 [INFO] Published 0 pieces
+2026-10-19 11:26:45,111 [INFO] ============================================================
+2026-10-19 11:26:45,111 [INFO] AGENT 5: FINANCE TRACKING
+2026-10-19 11:26:45,111 [INFO] ============================================================
+2026-10-19 11:26:45,111 [INFO] Tracking revenue across platforms...
+2026-10-19 11:26:45,111 [INFO]   YouTube AdSense: $0.00 (0 views)
+2026-10-19 11:26:45,111 [INFO]   Gumroad Sales: $0.00 (0 sales)
+2026-10-19 11:26:45,111 [INFO]   Affiliate: $0.00 (0 conversions)
+2026-10-19 11:26:45,111 [INFO] Threshold check: $0.00 / $100.00 (need $100.00 more)
+2026-10-19 11:26:45,111 [INFO] Total earnings tracked: $0.00
+2026-10-19 11:26:45,111 [INFO] Goal: $10,000
+2026-10-19 11:26:45,111 [INFO] Progress: 0.0%
+2026-10-19 11:26:45,112 [INFO] ============================================================
+2026-10-19 11:26:45,112 [INFO] SWARM RUN COMPLETE
+2026-10-19 11:26:45,112 [INFO] ============================================================
+2026-10-19 11:26:45,112 [INFO] Finished at: 2026-10-19T11:26:45.112102
