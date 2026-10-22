@@ -6,13 +6,13 @@
     "full_name": "openclaw/openclaw",
     "url": "https://github.com/openclaw/openclaw",
     "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
-    "stars": 392684,
+    "stars": 392707,
     "language": "TypeScript",
     "created_at": "2025-11-24T10:16:47Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (392684)",
+        "High stars (392707)",
         "Solves concrete problem",
         "Actively maintained"
       ],
@@ -40,7 +40,7 @@
       {
         "type": "video",
         "title": "This openclaw Project is INSANE (GitHub Trending)",
-        "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 392684 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 392707 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -60,7 +60,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180686"
+    "timestamp": "2026-10-22T02:14:19.378004"
   },
   {
     "type": "github_repo",
@@ -69,13 +69,13 @@
     "full_name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "description": "An agentic skills framework & software development methodology that works.",
-    "stars": 303114,
+    "stars": 303184,
     "language": "Shell",
     "created_at": "2025-10-09T19:45:18Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (303114)",
+        "High stars (303184)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -102,7 +102,7 @@
       {
         "type": "video",
         "title": "This superpowers Project is INSANE (GitHub Trending)",
-        "description": "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 303114 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing superpowers - An agentic skills framework & software development methodology that works.. This project has 303184 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -122,7 +122,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180705"
+    "timestamp": "2026-10-22T02:14:19.378025"
   },
   {
     "type": "github_repo",
@@ -131,13 +131,13 @@
     "full_name": "NousResearch/hermes-agent",
     "url": "https://github.com/NousResearch/hermes-agent",
     "description": "The agent that grows with you",
-    "stars": 255857,
+    "stars": 255981,
     "language": "Python",
     "created_at": "2025-07-22T22:22:28Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (255857)",
+        "High stars (255981)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -164,7 +164,7 @@
       {
         "type": "video",
         "title": "This hermes-agent Project is INSANE (GitHub Trending)",
-        "description": "Showcasing hermes-agent - The agent that grows with you. This project has 255857 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing hermes-agent - The agent that grows with you. This project has 255981 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -184,7 +184,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180713"
+    "timestamp": "2026-10-22T02:14:19.378032"
   },
   {
     "type": "github_repo",
@@ -193,13 +193,13 @@
     "full_name": "n8n-io/n8n",
     "url": "https://github.com/n8n-io/n8n",
     "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-    "stars": 208242,
+    "stars": 208261,
     "language": "TypeScript",
     "created_at": "2019-06-22T09:24:21Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (208242)",
+        "High stars (208261)",
         "Solves concrete problem",
         "Actively maintained"
       ],
@@ -227,7 +227,7 @@
       {
         "type": "video",
         "title": "This n8n Project is INSANE (GitHub Trending)",
-        "description": "Showcasing n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with cus. This project has 208242 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with cus. This project has 208261 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -247,7 +247,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180720"
+    "timestamp": "2026-10-22T02:14:19.378041"
   },
   {
     "type": "github_repo",
@@ -256,13 +256,13 @@
     "full_name": "firecrawl/firecrawl",
     "url": "https://github.com/firecrawl/firecrawl",
     "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. \ud83d\udd25",
-    "stars": 193890,
+    "stars": 193960,
     "language": "TypeScript",
     "created_at": "2024-04-15T21:02:29Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (193890)",
+        "High stars (193960)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -289,7 +289,7 @@
       {
         "type": "video",
         "title": "This firecrawl Project is INSANE (GitHub Trending)",
-        "description": "Showcasing firecrawl - Supercharge your AI agents with data from the web and beyond. Building the library for superintellig. This project has 193890 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing firecrawl - Supercharge your AI agents with data from the web and beyond. Building the library for superintellig. This project has 193960 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -309,7 +309,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180728"
+    "timestamp": "2026-10-22T02:14:19.378050"
   },
   {
     "type": "github_repo",
@@ -318,13 +318,13 @@
     "full_name": "Significant-Gravitas/AutoGPT",
     "url": "https://github.com/Significant-Gravitas/AutoGPT",
     "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-    "stars": 187697,
+    "stars": 187704,
     "language": "Python",
     "created_at": "2023-03-16T09:21:07Z",
     "profit_potential": {
       "score": 8,
       "reasons": [
-        "High stars (187697)",
+        "High stars (187704)",
         "Has commercial signals",
         "Solves concrete problem",
         "Actively maintained"
@@ -353,7 +353,7 @@
       {
         "type": "video",
         "title": "This AutoGPT Project is INSANE (GitHub Trending)",
-        "description": "Showcasing AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provi. This project has 187697 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provi. This project has 187704 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -373,7 +373,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180737"
+    "timestamp": "2026-10-22T02:14:19.378059"
   },
   {
     "type": "github_repo",
@@ -382,13 +382,13 @@
     "full_name": "f/prompts.chat",
     "url": "https://github.com/f/prompts.chat",
     "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source \u2014 self-host for your organization with complete privacy.",
-    "stars": 173822,
+    "stars": 173832,
     "language": "HTML",
     "created_at": "2022-12-05T13:54:13Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (173822)",
+        "High stars (173832)",
         "Has commercial signals",
         "Actively maintained"
       ],
@@ -416,7 +416,7 @@
       {
         "type": "video",
         "title": "This prompts.chat Project is INSANE (GitHub Trending)",
-        "description": "Showcasing prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and op. This project has 173822 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and op. This project has 173832 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -436,7 +436,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180746"
+    "timestamp": "2026-10-22T02:14:19.378070"
   },
   {
     "type": "github_repo",
@@ -445,13 +445,13 @@
     "full_name": "DietrichGebert/ponytail",
     "url": "https://github.com/DietrichGebert/ponytail",
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-    "stars": 171384,
+    "stars": 171763,
     "language": "JavaScript",
     "created_at": "2026-06-12T00:52:37Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (171384)",
+        "High stars (171763)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -478,7 +478,7 @@
       {
         "type": "video",
         "title": "This ponytail Project is INSANE (GitHub Trending)",
-        "description": "Showcasing ponytail - Makes your AI agent think like the laziest senior dev in the room. The best code is the code you nev. This project has 171384 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing ponytail - Makes your AI agent think like the laziest senior dev in the room. The best code is the code you nev. This project has 171763 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -498,7 +498,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180761"
+    "timestamp": "2026-10-22T02:14:19.378085"
   },
   {
     "type": "github_repo",
@@ -507,13 +507,13 @@
     "full_name": "AUTOMATIC1111/stable-diffusion-webui",
     "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
     "description": "Stable Diffusion web UI",
-    "stars": 165088,
+    "stars": 165093,
     "language": "Python",
     "created_at": "2022-08-22T14:05:26Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (165088)",
+        "High stars (165093)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -540,7 +540,7 @@
       {
         "type": "video",
         "title": "This stable-diffusion-webui Project is INSANE (GitHub Trending)",
-        "description": "Showcasing stable-diffusion-webui - Stable Diffusion web UI. This project has 165088 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing stable-diffusion-webui - Stable Diffusion web UI. This project has 165093 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -560,7 +560,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180769"
+    "timestamp": "2026-10-22T02:14:19.378093"
   },
   {
     "type": "github_repo",
@@ -569,13 +569,13 @@
     "full_name": "msitarzewski/agency-agents",
     "url": "https://github.com/msitarzewski/agency-agents",
     "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-    "stars": 162893,
+    "stars": 162961,
     "language": "Shell",
     "created_at": "2025-10-13T12:12:29Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (162893)",
+        "High stars (162961)",
         "Has commercial signals",
         "Actively maintained"
       ],
@@ -603,7 +603,7 @@
       {
         "type": "video",
         "title": "This agency-agents Project is INSANE (GitHub Trending)",
-        "description": "Showcasing agency-agents - A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whi. This project has 162893 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing agency-agents - A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whi. This project has 162961 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -623,7 +623,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.180788"
+    "timestamp": "2026-10-22T02:14:19.378105"
   },
   {
     "type": "github_repo",
@@ -632,13 +632,13 @@
     "full_name": "freeCodeCamp/freeCodeCamp",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-    "stars": 457640,
+    "stars": 457651,
     "language": "TypeScript",
     "created_at": "2014-12-24T17:49:19Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (457640)",
+        "High stars (457651)",
         "Has commercial signals",
         "Actively maintained"
       ],
@@ -666,7 +666,7 @@
       {
         "type": "video",
         "title": "This freeCodeCamp Project is INSANE (GitHub Trending)",
-        "description": "Showcasing freeCodeCamp - freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer scienc. This project has 457640 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing freeCodeCamp - freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer scienc. This project has 457651 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -686,7 +686,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682151"
+    "timestamp": "2026-10-22T02:14:19.906373"
   },
   {
     "type": "github_repo",
@@ -695,13 +695,13 @@
     "full_name": "donnemartin/system-design-primer",
     "url": "https://github.com/donnemartin/system-design-primer",
     "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
-    "stars": 375033,
+    "stars": 375053,
     "language": "Python",
     "created_at": "2017-02-26T16:15:28Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (375033)",
+        "High stars (375053)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -728,7 +728,7 @@
       {
         "type": "video",
         "title": "This system-design-primer Project is INSANE (GitHub Trending)",
-        "description": "Showcasing system-design-primer - Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashc. This project has 375033 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing system-design-primer - Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashc. This project has 375053 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -748,7 +748,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682168"
+    "timestamp": "2026-10-22T02:14:19.906390"
   },
   {
     "type": "github_repo",
@@ -757,13 +757,13 @@
     "full_name": "vinta/awesome-python",
     "url": "https://github.com/vinta/awesome-python",
     "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
-    "stars": 329244,
+    "stars": 329283,
     "language": "Python",
     "created_at": "2014-06-27T21:00:06Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (329244)",
+        "High stars (329283)",
         "Solves concrete problem",
         "Actively maintained"
       ],
@@ -791,7 +791,7 @@
       {
         "type": "video",
         "title": "This awesome-python Project is INSANE (GitHub Trending)",
-        "description": "Showcasing awesome-python - The definitive list that answers \"I want to do X in Python, which tool should I use?\". This project has 329244 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing awesome-python - The definitive list that answers \"I want to do X in Python, which tool should I use?\". This project has 329283 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -811,7 +811,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682173"
+    "timestamp": "2026-10-22T02:14:19.906396"
   },
   {
     "type": "github_repo",
@@ -820,13 +820,13 @@
     "full_name": "practical-tutorials/project-based-learning",
     "url": "https://github.com/practical-tutorials/project-based-learning",
     "description": "Curated list of project-based tutorials",
-    "stars": 287513,
+    "stars": 287530,
     "language": "Python",
     "created_at": "2017-04-12T05:07:46Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (287513)",
+        "High stars (287530)",
         "Has commercial signals",
         "Actively maintained"
       ],
@@ -854,7 +854,7 @@
       {
         "type": "video",
         "title": "This project-based-learning Project is INSANE (GitHub Trending)",
-        "description": "Showcasing project-based-learning - Curated list of project-based tutorials. This project has 287513 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing project-based-learning - Curated list of project-based tutorials. This project has 287530 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -874,7 +874,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682178"
+    "timestamp": "2026-10-22T02:14:19.906402"
   },
   {
     "type": "github_repo",
@@ -883,13 +883,13 @@
     "full_name": "react/react",
     "url": "https://github.com/react/react",
     "description": "The library for web and native user interfaces.",
-    "stars": 251620,
+    "stars": 251624,
     "language": "JavaScript",
     "created_at": "2013-05-24T16:15:54Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (251620)",
+        "High stars (251624)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -916,7 +916,7 @@
       {
         "type": "video",
         "title": "This react Project is INSANE (GitHub Trending)",
-        "description": "Showcasing react - The library for web and native user interfaces.. This project has 251620 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing react - The library for web and native user interfaces.. This project has 251624 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -936,7 +936,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682184"
+    "timestamp": "2026-10-22T02:14:19.906420"
   },
   {
     "type": "github_repo",
@@ -945,13 +945,13 @@
     "full_name": "TheAlgorithms/Python",
     "url": "https://github.com/TheAlgorithms/Python",
     "description": "All Algorithms implemented in Python",
-    "stars": 225436,
+    "stars": 225437,
     "language": "Python",
     "created_at": "2016-07-16T09:44:01Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (225436)",
+        "High stars (225437)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -978,7 +978,7 @@
       {
         "type": "video",
         "title": "This Python Project is INSANE (GitHub Trending)",
-        "description": "Showcasing Python - All Algorithms implemented in Python. This project has 225436 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing Python - All Algorithms implemented in Python. This project has 225437 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -998,7 +998,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682187"
+    "timestamp": "2026-10-22T02:14:19.906425"
   },
   {
     "type": "github_repo",
@@ -1007,13 +1007,13 @@
     "full_name": "vuejs/vue",
     "url": "https://github.com/vuejs/vue",
     "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core",
-    "stars": 212631,
+    "stars": 212633,
     "language": "TypeScript",
     "created_at": "2013-07-29T03:24:51Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (212631)",
+        "High stars (212633)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1040,7 +1040,7 @@
       {
         "type": "video",
         "title": "This vue Project is INSANE (GitHub Trending)",
-        "description": "Showcasing vue - This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core. This project has 212631 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing vue - This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core. This project has 212633 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1060,7 +1060,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682192"
+    "timestamp": "2026-10-22T02:14:19.906430"
   },
   {
     "type": "github_repo",
@@ -1069,13 +1069,13 @@
     "full_name": "tensorflow/tensorflow",
     "url": "https://github.com/tensorflow/tensorflow",
     "description": "An Open Source Machine Learning Framework for Everyone",
-    "stars": 201169,
+    "stars": 201176,
     "language": "C++",
     "created_at": "2015-11-07T01:19:20Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (201169)",
+        "High stars (201176)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1102,7 +1102,7 @@
       {
         "type": "video",
         "title": "This tensorflow Project is INSANE (GitHub Trending)",
-        "description": "Showcasing tensorflow - An Open Source Machine Learning Framework for Everyone. This project has 201169 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing tensorflow - An Open Source Machine Learning Framework for Everyone. This project has 201176 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1122,7 +1122,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682199"
+    "timestamp": "2026-10-22T02:14:19.906437"
   },
   {
     "type": "github_repo",
@@ -1131,13 +1131,13 @@
     "full_name": "yt-dlp/yt-dlp",
     "url": "https://github.com/yt-dlp/yt-dlp",
     "description": "A feature-rich command-line audio/video downloader",
-    "stars": 199966,
+    "stars": 200077,
     "language": "Python",
     "created_at": "2020-10-26T04:22:55Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (199966)",
+        "High stars (200077)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1164,7 +1164,7 @@
       {
         "type": "video",
         "title": "This yt-dlp Project is INSANE (GitHub Trending)",
-        "description": "Showcasing yt-dlp - A feature-rich command-line audio/video downloader. This project has 199966 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing yt-dlp - A feature-rich command-line audio/video downloader. This project has 200077 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1184,7 +1184,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682203"
+    "timestamp": "2026-10-22T02:14:19.906443"
   },
   {
     "type": "github_repo",
@@ -1193,13 +1193,13 @@
     "full_name": "trekhleb/javascript-algorithms",
     "url": "https://github.com/trekhleb/javascript-algorithms",
     "description": "\ud83d\udcdd Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
-    "stars": 196691,
+    "stars": 196692,
     "language": "JavaScript",
     "created_at": "2018-03-24T07:47:04Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (196691)",
+        "High stars (196692)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1226,7 +1226,7 @@
       {
         "type": "video",
         "title": "This javascript-algorithms Project is INSANE (GitHub Trending)",
-        "description": "Showcasing javascript-algorithms - \ud83d\udcdd Algorithms and data structures implemented in JavaScript with explanations and links to further re. This project has 196691 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing javascript-algorithms - \ud83d\udcdd Algorithms and data structures implemented in JavaScript with explanations and links to further re. This project has 196692 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1246,7 +1246,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:22.682215"
+    "timestamp": "2026-10-22T02:14:19.906456"
   },
   {
     "type": "github_repo",
@@ -1255,13 +1255,13 @@
     "full_name": "codecrafters-io/build-your-own-x",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "description": "Master programming by recreating your favorite technologies from scratch.",
-    "stars": 555159,
+    "stars": 555220,
     "language": "Markdown",
     "created_at": "2018-05-09T12:03:18Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (555159)",
+        "High stars (555220)",
         "Has commercial signals",
         "Actively maintained"
       ],
@@ -1289,7 +1289,7 @@
       {
         "type": "video",
         "title": "This build-your-own-x Project is INSANE (GitHub Trending)",
-        "description": "Showcasing build-your-own-x - Master programming by recreating your favorite technologies from scratch.. This project has 555159 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing build-your-own-x - Master programming by recreating your favorite technologies from scratch.. This project has 555220 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1309,7 +1309,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.208945"
+    "timestamp": "2026-10-22T02:14:20.454022"
   },
   {
     "type": "github_repo",
@@ -1318,13 +1318,13 @@
     "full_name": "sindresorhus/awesome",
     "url": "https://github.com/sindresorhus/awesome",
     "description": "\ud83d\ude0e Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
-    "stars": 522326,
+    "stars": 522429,
     "language": null,
     "created_at": "2014-07-11T13:42:37Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (522326)",
+        "High stars (522429)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1351,7 +1351,7 @@
       {
         "type": "video",
         "title": "This awesome Project is INSANE (GitHub Trending)",
-        "description": "Showcasing awesome - \ud83d\ude0e Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled . This project has 522326 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing awesome - \ud83d\ude0e Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled . This project has 522429 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1371,7 +1371,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.208966"
+    "timestamp": "2026-10-22T02:14:20.454043"
   },
   {
     "type": "github_repo",
@@ -1380,13 +1380,13 @@
     "full_name": "public-apis/public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "description": "A collective list of free APIs",
-    "stars": 491114,
+    "stars": 491140,
     "language": "Python",
     "created_at": "2016-03-20T23:49:42Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (491114)",
+        "High stars (491140)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1413,7 +1413,7 @@
       {
         "type": "video",
         "title": "This public-apis Project is INSANE (GitHub Trending)",
-        "description": "Showcasing public-apis - A collective list of free APIs. This project has 491114 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing public-apis - A collective list of free APIs. This project has 491140 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1433,7 +1433,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.208971"
+    "timestamp": "2026-10-22T02:14:20.454049"
   },
   {
     "type": "github_repo",
@@ -1442,13 +1442,13 @@
     "full_name": "freeCodeCamp/freeCodeCamp",
     "url": "https://github.com/freeCodeCamp/freeCodeCamp",
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
-    "stars": 457640,
+    "stars": 457651,
     "language": "TypeScript",
     "created_at": "2014-12-24T17:49:19Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (457640)",
+        "High stars (457651)",
         "Has commercial signals",
         "Actively maintained"
       ],
@@ -1476,7 +1476,7 @@
       {
         "type": "video",
         "title": "This freeCodeCamp Project is INSANE (GitHub Trending)",
-        "description": "Showcasing freeCodeCamp - freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer scienc. This project has 457640 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing freeCodeCamp - freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer scienc. This project has 457651 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1496,7 +1496,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.208977"
+    "timestamp": "2026-10-22T02:14:20.454056"
   },
   {
     "type": "github_repo",
@@ -1505,13 +1505,13 @@
     "full_name": "EbookFoundation/free-programming-books",
     "url": "https://github.com/EbookFoundation/free-programming-books",
     "description": ":books: Freely available programming books",
-    "stars": 399742,
+    "stars": 399758,
     "language": "Python",
     "created_at": "2013-10-11T06:50:37Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (399742)",
+        "High stars (399758)",
         "Has commercial signals",
         "Actively maintained"
       ],
@@ -1539,7 +1539,7 @@
       {
         "type": "video",
         "title": "This free-programming-books Project is INSANE (GitHub Trending)",
-        "description": "Showcasing free-programming-books - :books: Freely available programming books. This project has 399742 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing free-programming-books - :books: Freely available programming books. This project has 399758 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1559,7 +1559,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.208983"
+    "timestamp": "2026-10-22T02:14:20.454063"
   },
   {
     "type": "github_repo",
@@ -1568,13 +1568,13 @@
     "full_name": "openclaw/openclaw",
     "url": "https://github.com/openclaw/openclaw",
     "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
-    "stars": 392684,
+    "stars": 392707,
     "language": "TypeScript",
     "created_at": "2025-11-24T10:16:47Z",
     "profit_potential": {
       "score": 6,
       "reasons": [
-        "High stars (392684)",
+        "High stars (392707)",
         "Solves concrete problem",
         "Actively maintained"
       ],
@@ -1602,7 +1602,7 @@
       {
         "type": "video",
         "title": "This openclaw Project is INSANE (GitHub Trending)",
-        "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 392684 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 392707 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1622,7 +1622,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.208988"
+    "timestamp": "2026-10-22T02:14:20.454069"
   },
   {
     "type": "github_repo",
@@ -1631,13 +1631,13 @@
     "full_name": "donnemartin/system-design-primer",
     "url": "https://github.com/donnemartin/system-design-primer",
     "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
-    "stars": 375033,
+    "stars": 375053,
     "language": "Python",
     "created_at": "2017-02-26T16:15:28Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (375033)",
+        "High stars (375053)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1664,7 +1664,7 @@
       {
         "type": "video",
         "title": "This system-design-primer Project is INSANE (GitHub Trending)",
-        "description": "Showcasing system-design-primer - Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashc. This project has 375033 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing system-design-primer - Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashc. This project has 375053 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1684,7 +1684,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.208993"
+    "timestamp": "2026-10-22T02:14:20.454075"
   },
   {
     "type": "github_repo",
@@ -1693,13 +1693,13 @@
     "full_name": "nilbuild/developer-roadmap",
     "url": "https://github.com/nilbuild/developer-roadmap",
     "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
-    "stars": 370067,
+    "stars": 370074,
     "language": "TypeScript",
     "created_at": "2017-03-15T13:45:52Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (370067)",
+        "High stars (370074)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1726,7 +1726,7 @@
       {
         "type": "video",
         "title": "This developer-roadmap Project is INSANE (GitHub Trending)",
-        "description": "Showcasing developer-roadmap - Interactive roadmaps, guides and other educational content to help developers grow in their careers.. This project has 370067 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing developer-roadmap - Interactive roadmaps, guides and other educational content to help developers grow in their careers.. This project has 370074 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1746,7 +1746,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.209004"
+    "timestamp": "2026-10-22T02:14:20.454083"
   },
   {
     "type": "github_repo",
@@ -1755,13 +1755,13 @@
     "full_name": "jwasham/coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "description": "A complete computer science study plan to become a software engineer.",
-    "stars": 363213,
+    "stars": 363219,
     "language": null,
     "created_at": "2016-06-06T02:34:12Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (363213)",
+        "High stars (363219)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1788,7 +1788,7 @@
       {
         "type": "video",
         "title": "This coding-interview-university Project is INSANE (GitHub Trending)",
-        "description": "Showcasing coding-interview-university - A complete computer science study plan to become a software engineer.. This project has 363213 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing coding-interview-university - A complete computer science study plan to become a software engineer.. This project has 363219 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1808,7 +1808,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.209010"
+    "timestamp": "2026-10-22T02:14:20.454089"
   },
   {
     "type": "github_repo",
@@ -1817,13 +1817,13 @@
     "full_name": "morluto/rea",
     "url": "https://github.com/morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-    "stars": 356893,
+    "stars": 358338,
     "language": "TypeScript",
     "created_at": "2026-04-14T00:51:32Z",
     "profit_potential": {
       "score": 4,
       "reasons": [
-        "High stars (356893)",
+        "High stars (358338)",
         "Actively maintained"
       ],
       "verdict": "MEDIUM"
@@ -1850,7 +1850,7 @@
       {
         "type": "video",
         "title": "This rea Project is INSANE (GitHub Trending)",
-        "description": "Showcasing rea - Reverse engineer anything with agents, from app behavior down to native binaries.. This project has 356893 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+        "description": "Showcasing rea - Reverse engineer anything with agents, from app behavior down to native binaries.. This project has 358338 stars and is trending on GitHub. Let me show you why it's worth your attention.",
         "format": "showcase/review",
         "duration_estimate": "5-8 minutes",
         "monetization": [
@@ -1870,7 +1870,7 @@
         ]
       }
     ],
-    "timestamp": "2026-10-21T20:58:23.209016"
+    "timestamp": "2026-10-22T02:14:20.454097"
   },
   {
     "type": "web_trend",
@@ -1888,7 +1888,7 @@
       "AI Agent Starter Course ($99)",
       "Custom AI Agent Building Service"
     ],
-    "timestamp": "2026-10-21T20:58:23.210004"
+    "timestamp": "2026-10-22T02:14:20.455132"
   },
   {
     "type": "web_trend",
@@ -1906,7 +1906,7 @@
       "Business Automation Audit ($99 one-time)",
       "Pre-built Automation Workflows"
     ],
-    "timestamp": "2026-10-21T20:58:23.210006"
+    "timestamp": "2026-10-22T02:14:20.455135"
   },
   {
     "type": "web_trend",
@@ -1924,6 +1924,6 @@
       "CLI Tool Collection ($29)",
       "IDE Extension Template"
     ],
-    "timestamp": "2026-10-21T20:58:23.210007"
+    "timestamp": "2026-10-22T02:14:20.455137"
   }
 ]
