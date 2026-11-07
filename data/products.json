@@ -13,13 +13,13 @@
       "full_name": "morluto/rea",
       "url": "https://github.com/morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "stars": 438359,
+      "stars": 439433,
       "language": "TypeScript",
       "created_at": "2026-04-14T00:51:32Z",
       "profit_potential": {
         "score": 4,
         "reasons": [
-          "High stars (438359)",
+          "High stars (439433)",
           "Actively maintained"
         ],
         "verdict": "MEDIUM"
@@ -46,7 +46,7 @@
         {
           "type": "video",
           "title": "This rea Project is INSANE (GitHub Trending)",
-          "description": "Showcasing rea - Reverse engineer anything with agents, from app behavior down to native binaries.. This project has 438359 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+          "description": "Showcasing rea - Reverse engineer anything with agents, from app behavior down to native binaries.. This project has 439433 stars and is trending on GitHub. Let me show you why it's worth your attention.",
           "format": "showcase/review",
           "duration_estimate": "5-8 minutes",
           "monetization": [
@@ -66,11 +66,11 @@
           ]
         }
       ],
-      "timestamp": "2026-11-07T03:32:43.586532"
+      "timestamp": "2026-11-07T12:00:38.518022"
     },
     "status": "listed",
     "listing_url": null,
-    "created_at": "2026-11-07T03:32:44.574654",
+    "created_at": "2026-11-07T12:00:39.244337",
     "files_directory": "products/product_13"
   },
   {
@@ -87,13 +87,13 @@
       "full_name": "openclaw/openclaw",
       "url": "https://github.com/openclaw/openclaw",
       "description": "The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
-      "stars": 394085,
+      "stars": 394103,
       "language": "TypeScript",
       "created_at": "2025-11-24T10:16:47Z",
       "profit_potential": {
         "score": 6,
         "reasons": [
-          "High stars (394085)",
+          "High stars (394103)",
           "Solves concrete problem",
           "Actively maintained"
         ],
@@ -121,7 +121,7 @@
         {
           "type": "video",
           "title": "This openclaw Project is INSANE (GitHub Trending)",
-          "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 394085 stars and is trending on GitHub. Let me show you why it's worth your attention.",
+          "description": "Showcasing openclaw - The AI that really does things. Any OS. Any Platform. The lobster way. \ud83e\udd9e . This project has 394103 stars and is trending on GitHub. Let me show you why it's worth your attention.",
           "format": "showcase/review",
           "duration_estimate": "5-8 minutes",
           "monetization": [
@@ -141,11 +141,11 @@
           ]
         }
       ],
-      "timestamp": "2026-11-07T03:32:43.586555"
+      "timestamp": "2026-11-07T12:00:38.518046"
     },
     "status": "listed",
     "listing_url": null,
-    "created_at": "2026-11-07T03:32:44.574965",
+    "created_at": "2026-11-07T12:00:39.244753",
     "files_directory": "products/product_14"
   }
 ]
